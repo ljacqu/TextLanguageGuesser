@@ -1,7 +1,7 @@
 <?php
 
-require 'config.php';
-require 'functions.php';
+require './inc/config.php';
+require './inc/functions.php';
 
 setJsonHeader();
 verifyApiSecret();

@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 
-require 'functions.php';
+require './inc/functions.php';
 require './data/Language.php';
 require './data/Languages.php';
 
@@ -15,7 +15,7 @@ foreach ($lines as $line) {
     die('Invalid line: ' . $line);
   }
 
-  $entry = splitLanguageAndText($line);
+  $entry = createPuzzleRecord($line);
   if (empty($entry['lang'])) {
     die('Invalid language in line: ' . $line);
   }

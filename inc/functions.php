@@ -39,7 +39,7 @@ function selectQuestion($choices, $lastProblems) {
   }
 
   while (true) {
-    if (!hasSubArrayWithValue($lastProblems, 'full', $randomEntry)) {
+    if (!hasSubArrayWithValue($lastProblems, 'line', $randomEntry)) {
       return $randomEntry;
     }
     $randomEntry = $choices[rand(0, count($choices) - 1)];
@@ -55,13 +55,25 @@ function hasSubArrayWithValue($haystack, $key, $valueToFind) {
   return false;
 }
 
+function removeLanguagePrefix($textLine) {
+  return substr($textLine, 3);
+}
+
+function createPuzzleRecord($textLine) {
+  return [
+    'lang' => substr($textLine, 0, 2),
+    'created' => time(),
+    'line' => $textLine
+  ];
+}
+
 function splitLanguageAndText($textLine) {
   $lang = substr($textLine, 0, 2);
   $text = substr($textLine, 3);
 
   return [
     'lang' => $lang,
-    'text' => $text,
+    'created' => time(),
     'full' => $textLine
   ];
 }

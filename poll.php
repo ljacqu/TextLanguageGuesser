@@ -1,7 +1,7 @@
 <?php
 
-require 'config.php';
-require 'functions.php';
+require './inc/config.php';
+require './inc/functions.php';
 
 setJsonHeader();
 verifyApiSecret();
@@ -12,9 +12,17 @@ require './data/Languages.php';
 $choices = readPossibleLines();
 require './data/current_state.php';
 
+if (!empty($data_lastQuestions)) {
+  $lastQuestion = $data_lastQuestions[0];
+  if (!isset($lastQuestion['solver']) && (time() - $lastQuestion['created']) < POLL_WAIT_SECONDS) {
+    // Nightbot doesn't accept empty strings, but seems to trim responses and not show anything if there are only spaces.
+    die(toResultJson(' '));
+  }
+}
+
 $puzzleLine = selectQuestion($choices, $data_lastQuestions);
 
-$puzzle = splitLanguageAndText($puzzleLine);
+$puzzle = createPuzzleRecord($puzzleLine);
 $lastQuestion = null;
 if (!empty($data_lastQuestions)) {
   $lastQuestion = &$data_lastQuestions[0];
@@ -29,10 +37,10 @@ while ($newSize > 10) {
 
 $preface = '';
 if ($lastQuestion && !isset($lastQuestion['solver'])) {
-  $preface = 'The text was in ' . Languages::getLanguageName($lastQuestion['lang']) . '. ';
-  $lastQuestion['solver'] = '__unsolved';
+  $preface = 'The previous text was in ' . Languages::getLanguageName($lastQuestion['lang']) . '. ';
+  $lastQuestion['solver'] = '&__unsolved';
 }
 
 updateCurrentState($data_lastQuestions);
 
-echo toResultJson($preface . 'Guess the language: ' . $puzzle['text']);
+echo toResultJson($preface . 'Guess the language: ' . removeLanguagePrefix($puzzle['line']));

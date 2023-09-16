@@ -56,9 +56,8 @@
 </head>
 <body>
 
-  <?php
-
-require 'functions.php';
+<?php
+require './inc/functions.php';
 require './data/current_state.php';
 require './data/Language.php';
 require './data/Languages.php';
@@ -72,7 +71,7 @@ echo '<p>Hover over the language column to see the answer!</p>';
 
 echo '<table><tr><th>Text</th><th>Language</th></tr>';
 foreach ($data_lastQuestions as $question) {
-  echo "<tr><td>" . htmlspecialchars($question['text']) . "</td>";
+  echo "<tr><td>" . htmlspecialchars(removeLanguagePrefix($question['line'])) . "</td>";
   if (isset($question['solver'])) {
     echo "<td class='lang'>" . htmlspecialchars(Languages::getLanguageName($question['lang']));
   } else {
@@ -91,7 +90,7 @@ echo "</table>";
           <th>Language</th>
           <th>Aliases</th>
         </tr>
-        <?php
+<?php
 $languagesByCode = Languages::getAllLanguages();
 uasort($languagesByCode, function ($a, $b) {
   return strcmp($a->getName(), $b->getName());
@@ -102,7 +101,7 @@ foreach ($languagesByCode as $code => $lang) {
   $aliases = empty($aliases) ? $code : ($code . ', ' . $aliases);
   echo "<tr><td>{$lang->getName()}</td><td>$aliases</td></tr>";
 }
-        ?>
+?>
       </table>
     </div>
 
