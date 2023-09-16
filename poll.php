@@ -7,7 +7,8 @@ setJsonHeader();
 verifyApiSecret();
 
 
-require './data/languages.php';
+require './data/Language.php';
+require './data/Languages.php';
 $choices = readPossibleLines();
 require './data/current_state.php';
 

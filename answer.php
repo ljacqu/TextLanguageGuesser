@@ -11,6 +11,8 @@ if (!isset($_GET['a'])) {
 }
 
 require './data/current_state.php';
+require './data/Language.php';
+require './data/Languages.php';
 
 if (empty($data_lastQuestions)) {
   die(toResultJson('Error: No question was asked so far!'));
@@ -22,14 +24,38 @@ if (isset($currentRiddle['solver'])) {
 }
 
 $answer = filter_input(INPUT_GET, 'a', FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR) ?? '';
-$answer = strtolower($answer);
+$answer = strtolower(trim($answer));
 
-if ($answer === strtolower($currentRiddle['lnam']) || $answer === strtolower($currentRiddle['lang'])) {
-  $solver = $_SERVER['HTTP_NIGHTBOT_USER'] ?? 'Unknown';
-  $currentRiddle['solver'] = $solver;
+$languageAndCode = Languages::findLanguageAndCode($answer);
+if ($languageAndCode['code'] === $currentRiddle['lang']) {
+  $currentRiddle['solver'] = extractUser();
 
   updateCurrentState($data_lastQuestions);
-  echo toResultJson('Congratulations! ' . $currentRiddle['lnam'] . ' is the right answer');
+  echo toResultJson('Congratulations! ' . $languageAndCode['lang']->getName() . ' is the right answer');
 } else {
-  echo toResultJson('Sorry, that\'s not the right answer');
+
+  if ($languageAndCode['lang'] === null) {
+    $text = empty($answer) ? 'Please provide an answer!' : 'Unknown language! Run !langs to see the list';
+  } else {
+    $langName = $languageAndCode['lang']->getName();
+    // return language in text if an alias was used, just to make it clear what language we inferred
+    $text = $answer === strtolower($langName)
+      ? 'Sorry, that\'s not the right answer'
+      : 'Sorry, ' . $langName . ' is not correct';
+  }
+
+  echo toResultJson($text);
+}
+
+// --------------
+// Functions
+// --------------
+
+function extractUser() {
+  $solver = '';
+  if (isset($_SERVER['HTTP_NIGHTBOT_USER'])) {
+    $nightbotUser = $_SERVER['HTTP_NIGHTBOT_USER'];
+    $solver = preg_replace('~^.*?name=([^&]+)&.*?$~', '\\1', $nightbotUser);
+  }
+  return $solver ? $solver : 'Unknown';
 }

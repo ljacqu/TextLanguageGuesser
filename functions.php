@@ -61,10 +61,9 @@ function splitLanguageAndText($textLine) {
 
   return [
     'lang' => $lang,
-    'lnam' => Languages::LANG[substr($textLine, 0, 2)],
+    'lnam' => Languages::getInstance()->getLanguages()[$lang]->getName(),
     'text' => $text,
-    'full' => $textLine,
-    'short' => shortenText($text, 15)
+    'full' => $textLine
   ];
 }
 
