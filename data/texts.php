@@ -114,6 +114,12 @@ hu:Minden személynek joga van az élethez, a szabadsághoz és a személyi bizt
 hu:Mindenkinek joga van ahhoz, hogy jogalanyiságát bárhol elismerjék.
 hu:Senkit sem lehet önkényesen letartóztatni, őrizetbe venni vagy száműzni.
 
+id:Semua orang dilahirkan merdeka dan mempunyai martabat dan hak-hak yang sama.
+id:Mereka dikaruniai akal dan hati nurani dan hendaknya bergaul satu sama lain dalam semangat persaudaraan.
+id:Setiap orang berhak atas penghidupan, kebebasan dan keselamatan individu.
+id:Tak seorang pun boleh ditangkap, ditahan atau dibuang dengan sewenang-wenang.
+id:Setiap orang berhak atas sesuatu kewarga-negaraan.
+
 is:Hver maður er borinn frjáls og jafn öðrum að virðingu og réttindum. 
 is:Menn eru gæddir vitsmunum og samvizku, og ber þeim að breyta bróðurlega hverjum við annan.
 is:Allir menn eiga rétt til lífs, frelsis og mannhelgi.
@@ -143,6 +149,18 @@ lb:Jiddereen huet säi Verstand a säi Gewësse krut an soll an engem Geescht vu
 lb:All Mësch huet Recht op d'Liewen, op d'Fräiheet an op d'Secherheet vu sénger Persoun.
 lb:Jiddereen huet iwwerall d'Recht op Unerkennong vu sénger juristescher Perséinlechkeet.
 lb:Kee Mënsch duerf arbiträr verhaft, agesat odder ausgewise gin.
+
+lt:Visi žmonės gimsta laisvi ir lygūs savo orumu ir teisėmis.
+lt:Jiems suteiktas protas ir sąžinė ir jie turi elgtis vienas kito atžvilgiu kaip broliai.
+lt:Kiekvienas žmogus turi teisę į gyvybę, laisvę ir asmens neliečiamybę.
+lt:Visi lygūs prieš įstatymą ir turi teisę, be jokio skirtumo, į lygią įstatymo aspaugą.
+lt:Niekas negali būti savavališkai areštuotas, suimtas ar ištretmas.
+
+lv:Visi cilvēki piedzimst brīvi un vienlīdzīgi savā cieņā un tiesībās.
+lv:Viņiem ir saprāts un sirdsapziņa, un viņiem citam pret citu jāizturas brālības garā.
+lv:Katram cilvēkam ir tiesības uz dzīvību, brīvību un personas neaizskaramību.
+lv:Katram cilvēkam, lai kur viņš atrastos, ir tiesības tikt atzītam par personu likuma priekšā.
+lv:Nevienu nedrīkst patvaļīgi arestēt, aizturēt vai pakļaut izraidīšanai.
 
 mk:Ситe чoвeчки суштeствa сe рaѓaaт слoбoдни и eднaкви пo дoстoинствo и прaвa.
 mk:Tиe сe oбдaрeни сo рaзум и сoвeст и трeбa дa сe oднeсувaaт eдeн кoн друг вo дуxoт нa oпштo чoвeчкaтa припaднoст.
@@ -192,17 +210,53 @@ ru:Каждый человек имеет право на жизнь, на св�
 ru:Никто не может быть подвергнут произвольному аресту, задержанию или изгнанию.
 ru:Каждый человек, где бы он ни находился, имеет право на признание его правосубъектности.
 
+sk:Všetci ľudia sa rodia slobodní a rovní v dôstojnosti aj právach.
+sk:Sú obdarení rozumom a svedomím a majú navzájom konať v duchu bratstva.
+sk:Každý má právo na život, slobodu a osobnú bezpečnosť.
+sk:Nikoho neslobodno držať v otroctve alebo nevoľníctve.
+sk:Nikto nesmie byť svojvoľne zatknutý, zadržaný alebo vyhostený.
+
+sl:Vsi ljudje se rodijo svobodni ter imajo enako dostojanstvo in pravice.
+sl:Dana sta jim razum in vest, in bi morali drug z drugim ravnati v duhu bratstva.
+sl:Vsakdo ima pravico do življenja, prostosti in osebne varnosti.
+sl:Vsi so enaki pred zakonom in vsi imajo brez kakršnegakoli razlikovanja pravico do enakega pravnega varstva.
+sl:Nikogar se ne sme samovoljno prijeti, pridržati ali izgnati.
+
 sq:Të gjithë njerëzit lindin të lirë dhe të barabartë në dinjitet dhe në të drejta.
 sq:Ata kanë arsye dhe ndërgjegje dhe duhet të sillen ndaj njëri tjetrit me frymë vëllazërimi.
 sq:Gjithkush ka të drejtë të jetojë, të jetë i lirë dhe të ketë sigurimin vetjak.
 sq:Gjithkush ka të drejtën e lirisë së qarkullimit dhe banimit brenda kufijve të çdo shteti.
 sq:Asnjeri nuk duhet t'i nënshtrohet arbitrarisht arrestimit, ndalimit ose internimit.
 
+sr:Cвa људскa бићa рaђajу сe слoбoднa и jeднaкa у дoстojaнству и прaвимa.
+sr:Oнa су oбдaрeнa рaзумoм и свeшћу и трeбajeдни прeмa другимa дa пoступajу у духу брaтствa.
+sr:Cвaкo имa прaвo нa живoт, слoбoду и бeзбeднoст личнoсти.
+sr:Hикo нe смe бити прoизвoљнo ухaпшeн, притвoрeн, нити прoтeрaн.
+sr:Cвaкo имa прaвo дa свудa будe признaт кao прaвни субjeкт.
+
 sv:Alla människor äro födda fria och lika i värde och rättigheter.
 sv:De äro utrustade med förnuft och samvete och böra handla gentemot varandra i en anda av broderskap.
 sv:Envar har rätt till liv, frihet och personlig säkerhet. 
 sv:Envar har rätt att allestädes erkännas som person i lagens mening.
 sv:Ingen må godtyckligt anhållas, fängslas eller landsförvisas.
+
+tl:Ang lahat ng tao'y isinilang na malaya at pantay-pantay sa karangalan at mga karapatan.
+tl:Sila'y pinagkalooban ng katwiran at budhi at dapat magpalagayan ang isa't isa sa diwa ng pagkakapatiran.
+tl:Ang bawat tao'y may karapatan sa buhay, kalayaan at kapanatagan ng sarili.
+tl:Ang bawat tao'y may karapatang kilalanin saan mang dako bilang isang tao sa harap ng batas.
+tl:Walang sino mang ipaiilalim sa di-makatwirang pagdakip, pagpigil o pagpapatapon.
+
+tr:Bütün insanlar hür, haysiyet ve haklar bakımından eşit doğarlar.
+tr:Akıl ve vicdana sahiptirler ve birbirlerine karşı kardeşlik zihniyeti ile hareket etmelidirler.
+tr:Yaşamak, hürriyet ve kişi emniyeti her ferdin hakkıdır.
+tr:Hiç kimse işkenceye, zalimane, gayriinsani, haysiyet kırıcı cezalara veya muamelelere tabi tutulamaz.
+tr:Hiç kimse keyfi olarak tutuklanamaz, alıkonulanamaz veya sürülemez.
+
+uk:Всі люди народжуються вільними і рівними у своїй гідності та правах.
+uk:Вони наділені розумом і совістю і повинні діяти у відношенні один до одного в дусі братерства.
+uk:Кожна людина має право на життя, на свободу і на особисту недоторканність.
+uk:Кожна людина, де б вона не перебувала, має право на визнання ії правосуб'єктності.
+uk:Ніхто не може зазнавати безпідставного арешту, затримання або вигнання.
 
 zh:人人生而自由,在尊严和权利上一律平等。
 zh:他们赋有理性和良心,并应以兄弟关系的精神相对待。

@@ -67,11 +67,14 @@ class Languages {
       'ga' => self::entry('Irish', 'gaelic'),
       'gd' => self::entry('Scottish Gaelic', 'scottish'),
       'hu' => self::entry('Hungarian'),
+      'id' => self::entry('Indonesian'),
       'is' => self::entry('Icelandic'),
       'it' => self::entry('Italian'),
       'ja' => self::entry('Japanese', 'jp'),
       'ko' => self::entry('Korean'),
       'lb' => self::entry('Luxembourgish', 'lu', 'lux'),
+      'lt' => self::entry('Lithuanian'),
+      'lv' => self::entry('Latvian'),
       'mk' => self::entry('Macedonian'),
       'mt' => self::entry('Maltese'),
       'nb' => self::entry('Norwegian', 'no'),
@@ -84,6 +87,9 @@ class Languages {
       'sl' => self::entry('Slovene', 'slovenian'),
       'sq' => self::entry('Albanian', 'al'),
       'sv' => self::entry('Swedish', 'se'),
+      'tl' => self::entry('Filipino', 'tagalog'),
+      'tr' => self::entry('Turkish'),
+      'uk' => self::entry('Ukrainian', 'ua'),
       'zh' => self::entry('Chinese', 'cn')
     ];
   }

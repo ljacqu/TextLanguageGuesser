@@ -6,7 +6,7 @@ function toResultJson($text) {
 
 function readPossibleLines() {
   $foundPhpEnd = false;
-  $contents = file_get_contents('./data/texts.php') or die(json_encode(['result' => 'Failed to read languages file']));
+  $contents = file_get_contents('./data/texts.php') or die(toResultJson('Error: failed to read the texts file'));
 
   $choice = [];
   foreach (explode("\n", $contents) as $line) {
@@ -26,7 +26,7 @@ function readPossibleLines() {
   }
 
   if (empty($choice) && !$foundPhpEnd) {
-    die(toResultJson('Invalid text definitions'));
+    die(toResultJson('Error: Invalid text definitions'));
   }
 
   return $choice;
@@ -86,7 +86,7 @@ function setJsonHeader() {
 }
 
 function updateCurrentState($data_lastQuestions) {
-  $fh = fopen('./data/current_state.php', 'w') or die(toResultJson('Failed to update my file :( Please try again!'));
+  $fh = fopen('./data/current_state.php', 'w') or die(toResultJson('Error: failed to update the current state :( Please try again!'));
   fwrite($fh, '<?php $data_lastQuestions = ' . var_export($data_lastQuestions, true) . ';');
   fclose($fh);
 }
