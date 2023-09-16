@@ -29,7 +29,7 @@ while ($newSize > 10) {
 
 $preface = '';
 if ($lastQuestion && !isset($lastQuestion['solver'])) {
-  $preface = 'The text was in ' . $lastQuestion['lnam'] . '. ';
+  $preface = 'The text was in ' . Languages::getLanguageName($lastQuestion['lang']) . '. ';
   $lastQuestion['solver'] = '__unsolved';
 }
 

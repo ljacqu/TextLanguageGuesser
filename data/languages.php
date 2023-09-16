@@ -9,28 +9,37 @@ class Languages {
     $this->languages = $languages;
   }
 
-  public static function getInstance() {
+  static function getInstance(): Languages {
     if (self::$instance === null) {
       self::$instance = new Languages(self::languages());
     }
     return self::$instance;
   }
 
-  public function getLanguages() {
-    return $this->languages;
+  static function getAllLanguages() {
+    return self::getInstance()->getLanguages();
   }
 
-  public static function findLanguageAndCode($identifier) {
+  static function getLanguageName($code) {
+    $langs = self::getInstance()->getLanguages();
+    return $langs[$code]->getName();
+  }
+
+  static function findLanguageAndCode($identifier) {
     $langs = self::getInstance()->getLanguages();
 
     foreach ($langs as $code => $lang) {
       if ($code === $identifier
           || strtolower($lang->getName()) === $identifier
-          || array_search($identifier, $lang->getAliases(), true)) {
+          || array_search($identifier, $lang->getAliases(), true) !== false) {
         return ['code' => $code, 'lang' => $lang];
       }
     }
     return ['code' => null, 'lang' => null];
+  }
+
+  private function getLanguages(): array {
+    return $this->languages;
   }
 
   private static function entry($name, ...$aliases): Language {
@@ -51,7 +60,7 @@ class Languages {
       'en' => self::entry('English'),
       'eo' => self::entry('Esperanto'),
       'es' => self::entry('Spanish', 'espanol'),
-      'et' => self::entry('Estonian'),
+      'et' => self::entry('Estonian', 'ee'),
       'eu' => self::entry('Basque'),
       'fi' => self::entry('Finnish'),
       'fr' => self::entry('French'),

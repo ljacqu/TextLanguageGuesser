@@ -5,7 +5,7 @@ class Language {
   private $name;
   private $aliases;
 
-  public function __construct($name, $aliases) {
+  function __construct($name, $aliases) {
     $this->name = $name;
     $this->aliases = $aliases;
   }

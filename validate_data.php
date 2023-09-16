@@ -27,7 +27,8 @@ echo '<br />Total languages: ' . count(array_keys($languagesWithText));
 
 // Check the language definitions
 $identifiers = [];
-foreach (Languages::getInstance()->getLanguages() as $code => $lang) {
+$languagesWithNoText = [];
+foreach (Languages::getAllLanguages() as $code => $lang) {
   $name = strtolower($lang->getName());
   if (isset($identifiers[$name])) {
     die('Identifier "' . $name . '" is duplicated');
@@ -49,6 +50,13 @@ foreach (Languages::getInstance()->getLanguages() as $code => $lang) {
     }
     $identifiers[$alias] = 1;
   }
+
+  if (!isset($languagesWithText[$code])) {
+    $languagesWithNoText[] = $code;
+  }
 }
 
 echo '<br />Validated ' . count($identifiers) . ' language identifiers';
+if (!empty($languagesWithNoText)) {
+  echo '<br />Warning: The following languages have no texts: ' . implode(', ', $languagesWithNoText);
+}

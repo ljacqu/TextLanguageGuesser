@@ -63,25 +63,25 @@ require './data/current_state.php';
 require './data/Language.php';
 require './data/Languages.php';
 
-  echo '<h2>Recent riddles</h2>
-       <p>Hover over the language column to see the answer!</p>';
+echo '<h2>Recent riddles</h2>';
 if (empty($data_lastQuestions)) {
   echo 'No data to show!';
   exit;
 }
+echo '<p>Hover over the language column to see the answer!</p>';
 
 echo '<table><tr><th>Text</th><th>Language</th></tr>';
 foreach ($data_lastQuestions as $question) {
   echo "<tr><td>" . htmlspecialchars($question['text']) . "</td>";
   if (isset($question['solver'])) {
-    echo "<td class='lang'>" . htmlspecialchars($question['lnam']);
+    echo "<td class='lang'>" . htmlspecialchars(Languages::getLanguageName($question['lang']));
   } else {
     echo '<td>Not yet solved';
   }
   echo "</td></tr>";
 }
 echo "</table>";
-  ?>
+?>
 
 <h2>Languages</h2>
   <div style="width: 100%">
@@ -92,7 +92,7 @@ echo "</table>";
           <th>Aliases</th>
         </tr>
         <?php
-$languagesByCode = Languages::getInstance()->getLanguages();
+$languagesByCode = Languages::getAllLanguages();
 uasort($languagesByCode, function ($a, $b) {
   return strcmp($a->getName(), $b->getName());
 });
@@ -110,7 +110,8 @@ foreach ($languagesByCode as $code => $lang) {
     <div style="margin-left: 10px; margin-bottom: 20px; float: left">
       <br />
       When prompted to guess the language of a text, you can use the language name or any of its aliases.
-    For example, you can use any of the following to answer with German:<ul class="command">
+    For example, you can use any of the following to answer with German:
+      <ul class="command">
         <li>!guess german</li>
         <li>!guess de</li>
         <li>!guess deutsch</li>
