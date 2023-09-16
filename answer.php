@@ -7,7 +7,7 @@ setJsonHeader();
 verifyApiSecret();
 
 if (!isset($_GET['a'])) {
-  die(toResultJson('Error! Please provide your answer'));
+  die(toResultJson('Please provide a guess! Type ' . COMMAND_QUESTION . ' to see the text.'));
 }
 
 require './data/current_state.php';
@@ -20,7 +20,7 @@ if (empty($data_lastQuestions)) {
 
 $currentRiddle = &$data_lastQuestions[0];
 if (isset($currentRiddle['solver'])) {
-  die(toResultJson('The answer was already solved by ' . $currentRiddle['solver']));
+  die(toResultJson('The answer was solved by ' . $currentRiddle['solver']));
 }
 
 $answer = filter_input(INPUT_GET, 'a', FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR) ?? '';
@@ -35,7 +35,7 @@ if ($languageAndCode['code'] === $currentRiddle['lang']) {
 } else {
 
   if ($languageAndCode['lang'] === null) {
-    $text = empty($answer) ? 'Please provide an answer!' : 'Unknown language! Run !langs to see the list';
+    $text = empty($answer) ? 'Please provide an answer!' : 'Unknown language! Run ' . COMMAND_LANGUAGES . ' to see the list';
   } else {
     $langName = $languageAndCode['lang']->getName();
     // return language in text if an alias was used, just to make it clear what language we inferred
@@ -53,8 +53,8 @@ if ($languageAndCode['code'] === $currentRiddle['lang']) {
 
 function extractUser() {
   $solver = '';
-  if (isset($_SERVER['HTTP_NIGHTBOT_USER'])) {
-    $nightbotUser = $_SERVER['HTTP_NIGHTBOT_USER'];
+  if (isset($_SERVER[USER_HTTP_HEADER])) {
+    $nightbotUser = $_SERVER[USER_HTTP_HEADER];
     $solver = preg_replace('~^.*?name=([^&]+)&.*?$~', '\\1', $nightbotUser);
   }
   return $solver ? $solver : 'Unknown';

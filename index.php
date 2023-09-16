@@ -34,6 +34,9 @@
       color: #111;
       background-color: #cc0;
     }
+    .command {
+      color: #ffdf90;
+    }
   }
 
   @media (prefers-color-scheme: light) {
@@ -51,12 +54,16 @@
       color: #000;
       background-color: #ff0;
     }
+    .command {
+      color: #f40;
+    }
   }
   </style>
 </head>
 <body>
 
 <?php
+require './inc/config.php';
 require './inc/functions.php';
 require './data/current_state.php';
 require './data/Language.php';
@@ -67,7 +74,9 @@ if (empty($data_lastQuestions)) {
   echo 'No data to show!';
   exit;
 }
-echo '<p>Hover over the language column to see the answer!</p>';
+echo '<p>Answer the riddles with <span class="command">' . COMMAND_ANSWER . '</span>; display the current question with <span class="command">' 
+  . COMMAND_QUESTION . '</span>; create a new question with <span class="command">' . COMMAND_QUESTION . ' new</span>.';
+echo '<p>Hover over the language column below to see the answer!</p>';
 
 echo '<table><tr><th>Text</th><th>Language</th></tr>';
 foreach ($data_lastQuestions as $question) {
@@ -110,13 +119,14 @@ foreach ($languagesByCode as $code => $lang) {
       <br />
       When prompted to guess the language of a text, you can use the language name or any of its aliases.
     For example, you can use any of the following to answer with German:
-      <ul class="command">
-        <li>!guess german</li>
-        <li>!guess de</li>
-        <li>!guess deutsch</li>
+      <ul>
+        <li><span class="command"><?php echo COMMAND_ANSWER ?> german</span></li>
+        <li><span class="command"><?php echo COMMAND_ANSWER ?> de</span></li>
+        <li><span class="command"><?php echo COMMAND_ANSWER ?> deutsch</span></li>
       </ul>
 
-      Note: The first alias is always the ISO 639-1 code of the language.
+      <br />
+      Note: The first alias in the table is always the ISO 639-1 code of the language.
     </div>
   </div>
   

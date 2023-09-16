@@ -67,24 +67,6 @@ function createPuzzleRecord($textLine) {
   ];
 }
 
-function splitLanguageAndText($textLine) {
-  $lang = substr($textLine, 0, 2);
-  $text = substr($textLine, 3);
-
-  return [
-    'lang' => $lang,
-    'created' => time(),
-    'full' => $textLine
-  ];
-}
-
-function shortenText($text, $maxLength) {
-  if (strlen($text) > $maxLength) {
-    return trim(mb_substr($text, 0, $maxLength)) . "…";
-  }
-  return $text;
-}
-
 function verifyApiSecret() {
   if (!isset($_GET['secret'])) {
     die(toResultJson('Missing API secret!'));
