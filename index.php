@@ -1,36 +1,45 @@
-<?php
+<html>
+<head>
+  <title>Language guess</title>
+  <style type="text/css">
+    td, th {
+      border: 1px solid #000;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    .lang {
+      background-color: #000;
+    }
+    .lang:hover {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
 
-require 'config.php';
+  <?php
+
 require 'functions.php';
-header('Content-type: application/json; charset=utf-8');
-
-
-if (!isset($_GET['secret'])) {
-  echo toResultJson('Missing API secret!');
-  exit;
-}
-
-if ($_GET['secret'] !== API_SECRET) {
-  echo toResultJson('Invalid API secret!');
-  exit;
-}
-
-require './data/languages.php';
-$choices = readPossibleLines();
 require './data/current_state.php';
 
-$puzzleLine = selectQuestion($choices, $data_lastQuestions);
-
-$puzzle = splitLanguageAndText($puzzleLine);
-$newSize = array_unshift($data_lastQuestions, $puzzle);
-
-while ($newSize > 10) {
-  array_pop($data_lastQuestions);
-  --$newSize;
+echo '<h2>Recent riddles</h2>';
+if (empty($data_lastQuestions)) {
+  echo 'No data to show!';
+  exit;
 }
 
-$fh = fopen('./data/current_state.php', 'w') or die(toResultJson('Failed to update my file :( Please try again!'));
-fwrite($fh, '<?php $data_lastQuestions = ' . var_export($data_lastQuestions, true) . ';');
-fclose($fh);
-
-echo toResultJson('Guess the language: ' . $puzzle['text']);
+echo '<table><tr><th>Text</th><th>Language</th></tr>';
+foreach ($data_lastQuestions as $question) {
+  echo "<tr><td>" . htmlspecialchars($question['text']) . "</td>";
+  if (isset($question['solver'])) {
+    echo "<td class='lang'>" . htmlspecialchars($question['lnam']);
+  } else {
+    echo '<td>Not yet solved';
+  }
+  echo "</td></tr>";
+}
+echo "</table>";
+  ?>
+</body>
+</html>

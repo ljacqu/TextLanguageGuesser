@@ -26,7 +26,7 @@ function readPossibleLines() {
   }
 
   if (empty($choice) && !$foundPhpEnd) {
-    die(json_encode(['result' => 'Invalid text definitions'], JSON_FORCE_OBJECT));
+    die(toResultJson('Invalid text definitions'));
   }
 
   return $choice;
@@ -56,9 +56,12 @@ function hasSubArrayWithValue($haystack, $key, $valueToFind) {
 }
 
 function splitLanguageAndText($textLine) {
+  $lang = substr($textLine, 0, 2);
   $text = substr($textLine, 3);
+
   return [
-    'lang' => Languages::LANG[substr($textLine, 0, 2)],
+    'lang' => $lang,
+    'lnam' => Languages::LANG[substr($textLine, 0, 2)],
     'text' => $text,
     'full' => $textLine,
     'short' => shortenText($text, 15)
@@ -70,4 +73,22 @@ function shortenText($text, $maxLength) {
     return trim(mb_substr($text, 0, $maxLength)) . "…";
   }
   return $text;
+}
+
+function verifyApiSecret() {
+  if (!isset($_GET['secret'])) {
+    die(toResultJson('Missing API secret!'));
+  } else if ($_GET['secret'] !== API_SECRET) {
+    die(toResultJson('Invalid API secret!'));
+  }
+}
+
+function setJsonHeader() {
+  header('Content-type: application/json; charset=utf-8');
+}
+
+function updateCurrentState($data_lastQuestions) {
+  $fh = fopen('./data/current_state.php', 'w') or die(toResultJson('Failed to update my file :( Please try again!'));
+  fwrite($fh, '<?php $data_lastQuestions = ' . var_export($data_lastQuestions, true) . ';');
+  fclose($fh);
 }
