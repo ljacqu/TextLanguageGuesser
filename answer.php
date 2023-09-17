@@ -33,7 +33,7 @@ if ($languageAndCode['code'] === $currentRiddle['lang']) {
 
   updateCurrentState($data_lastQuestions);
   $congratsOptions = ['Congratulations!', 'Nice!', 'Excellent!', 'Splendid!', 'Perfect!', 'Well done!', 'Awesome!'];
-  $start = $congratsOptions[rand(0, count($congratsOptions))];
+  $start = $congratsOptions[rand(0, count($congratsOptions)-1)];
   echo toResultJson($start . ' ' . $languageAndCode['lang']->getName() . ' is the right answer');
 } else {
 

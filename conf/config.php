@@ -1,6 +1,6 @@
 <?php
 
-define('API_SECRET', 'setme');
+define('API_SECRET', 's');
 
 /**
  * If poll.php is called by Nightbot automatically and there is an unsolved riddle, how many seconds from its creation
