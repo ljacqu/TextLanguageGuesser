@@ -1,15 +1,54 @@
-## Text language guesser
+# Text language guesser
 
-Text-based language guessing game via a bot. This project has API endpoints for getting new texts and processing answers.
+PHP backend for REST calls to a language guessing game; intended for integration by Nightbot, a Twitch bot.
 
-This is currently set up so that it can be called with Nightbot, a popular bot for Twitch.
-In particular, the user that solves the answer is inferred by a HTTP header specific to Nightbot. You can change the logic
-in `answer.php`, e.g. by hardcoding it to a string like "Unknown". While the user that solved the answer is logged, this
-information is not used or displayed anywhere at the moment!
+State is saved in files and may be susceptible to rare timing issues, e.g. if a question is answered and a new
+question is requested in the same second.
 
 ## Setup
 - Change the API secret in config.php
 - Add the commands as detailed below
+
+### Nightbot commands
+
+Replace `https://example.org/ext/lang` with the URL where this is hosted; replace `CHEESE` with your actual API secret.
+
+| Command | Message |
+| ------- | ------- |
+| !langs  | See https://example.org/ext/lang |
+| !q  | `$(eval const api = $(urlfetch json https://example.org/ext/lang/poll.php?secret=CHEESE&variant=$(querystring)); api.result)` |
+| !a  | `$(eval const api = $(urlfetch json https://example.org/ext/lang/answer.php?secret=CHEESE&a=$(querystring)); api.result)` |
+
+You can use other command names; just change the values in ./data/config.php and your new names will be referenced!
+
+### Timer
+
+With the above commands, your viewers will have to run `!q` to obtain new questions. You can add a timer to Nightbot to get a new question.
+
+Go to https://nightbot.tv/timers and add a new timer:
+- Name: Languages guess
+- Message: empty
+- Interval: Whatever you want :smile: (Suggestion: every 5 minutes)
+- Chat lines: Whatever you want :smile: (Suggestion: the minimum)
+- Alias: `!q timer`
+
+### Manual timer
+
+Since the timer cannot be run more than every five minutes, this means if someone solves a question just after `!q timer` was run,
+it might take another five minutes for a new question to be generated automatically. To counter this, you can keep `regular_poll.php?secret=CHEESE`
+(replacing CHEESE with your actual API secret) open in a browser tab. It will basically run `!q timer` manually every thirty seconds.
+
+You can configure the proper waiting times in ./inc/config.php to not have too many messages!
+
+Note that running this manual timer means you have to register an application to Nightbot at https://nightbot.tv/account/applications
+
+New app:
+- Name: guesslang (or whatever you want)
+- Redirect URIs: `https://example.org/ext/lang/obtain_token.php` (where `https://example.org/ext/lang` is where your backend is hosted)
+
+Then, open `regular_poll.php` as mentioned above, and follow the link to `obtain_token.php` that is linked in an error message.
+
+Make sure not to have a **Nightbot timer running alongside** to prevent timing conflicts.
 
 ## Adding new texts
 
@@ -23,18 +62,14 @@ Modify the text lines in `data/texts.php`
 
 Modify `data/Languages.php`. Note that the entire code base assumes that languages have a two-letter code! Do not use codes of any other length!
 
-
-## Nightbot commands
-
-| Command | Message |
-| ------- | ------- |
-| !langs  | See https://example.org/ext/lang
-| !langq  | `$(eval const api = $(urlfetch json https://example.org/ext/lang/poll.php?secret=9085e6b174dab879&variant=$(querystring)); api.result)` |
-| !guess  | `$(eval const api = $(urlfetch json https://example.org/ext/lang/answer.php?secret=9085e6b174dab879&a=$(querystring)); api.result)` |
-| !g      | ^ same as !guess for convenience. Seems not to work as command alias, so copy the same text as above |
-
-## Files
+## Technical overview
 - `answer.php` is called by the !guess command to process answers
+- `index.php` shows past questions and the possible languages so that you can offer a list of languages to your users
 - `poll.php` is used by the !q command and can be called from a timer
 - `validate_data.php` should be run whenever you add new texts or languages
 - `regular_poll.php`: Open this in your browser and keep it open to regularly call poll.php and send results to Nightbot
+
+### Nightbot specifics
+The user that solves the answer is inferred by a HTTP header specific to Nightbot. You can change the logic
+in `answer.php`, e.g. by hardcoding it to a string like "Unknown". While the user that solved the answer is logged, this
+information is not used or displayed anywhere at the moment!

@@ -22,7 +22,7 @@ define('USER_POLL_WAIT_SECONDS', 90);
 define('USER_HTTP_HEADER', 'HTTP_NIGHTBOT_USER');
 
 define('COMMAND_QUESTION', '!q');
-define('COMMAND_ANSWER', '!g');
+define('COMMAND_ANSWER', '!a');
 define('COMMAND_LANGUAGES', '!langs');
 
 // ----
