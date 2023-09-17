@@ -24,3 +24,5 @@ define('USER_HTTP_HEADER', 'HTTP_NIGHTBOT_USER');
 define('COMMAND_QUESTION', '!q');
 define('COMMAND_ANSWER', '!g');
 define('COMMAND_LANGUAGES', '!langs');
+
+define('CALLBACK_URL_EXPIRATION_SECONDS', 3600); // I have no idea what the timeout is, so set it high for now?

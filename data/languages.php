@@ -85,6 +85,7 @@ class Languages {
       'ru' => self::entry('Russian'),
       'sk' => self::entry('Slovak'),
       'sl' => self::entry('Slovene', 'slovenian'),
+      'sr' => self::entry('Serbian'),
       'sq' => self::entry('Albanian', 'al'),
       'sv' => self::entry('Swedish', 'se'),
       'tl' => self::entry('Filipino', 'tagalog'),

@@ -10,6 +10,7 @@ $lines = readPossibleLines();
 
 $languagesWithText = [];
 
+$allLanguages = Languages::getAllLanguages();
 foreach ($lines as $line) {
   if (!preg_match('~^[a-z]{2}:(.){10,}$~', $line)) {
     die('Invalid line: ' . $line);
@@ -18,6 +19,8 @@ foreach ($lines as $line) {
   $entry = createPuzzleRecord($line);
   if (empty($entry['lang'])) {
     die('Invalid language in line: ' . $line);
+  } else if (!isset($allLanguages[$entry['lang']])) {
+    die('Unknown language: ' . $entry['lang']);
   }
   $languagesWithText[$entry['lang']] = 1;
 }
