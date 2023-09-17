@@ -9,24 +9,20 @@ class Languages {
     $this->languages = $languages;
   }
 
-  static function getInstance(): Languages {
+  static function getAllLanguages() {
     if (self::$instance === null) {
       self::$instance = new Languages(createLanguages());
     }
-    return self::$instance;
-  }
-
-  static function getAllLanguages() {
-    return self::getInstance()->getLanguages();
+    return self::$instance->getLanguages();
   }
 
   static function getLanguageName($code) {
-    $langs = self::getInstance()->getLanguages();
+    $langs = self::getAllLanguages();
     return $langs[$code]->getName();
   }
 
   static function findLanguageAndCode($identifier) {
-    $langs = self::getInstance()->getLanguages();
+    $langs = self::getAllLanguages();
 
     foreach ($langs as $code => $lang) {
       if ($code === $identifier
@@ -40,60 +36,5 @@ class Languages {
 
   private function getLanguages(): array {
     return $this->languages;
-  }
-
-  private static function entry($name, ...$aliases): Language {
-    return new Language($name, $aliases);
-  }
-
-  private static function languages() {
-    // Note: Currently, the entries are sorted by array key, which MUST be two characters
-    // and is currently the ISO 639-1 code of the language. Aliases must be in lower case.
-    return [
-      'af' => self::entry('Afrikaans'),
-      'bg' => self::entry('Bulgarian'),
-      'br' => self::entry('Breton'),
-      'ca' => self::entry('Catalan'),
-      'cs' => self::entry('Czech', 'cz'),
-      'cy' => self::entry('Welsh'),
-      'da' => self::entry('Danish'),
-      'de' => self::entry('German', 'deutsch'),
-      'el' => self::entry('Greek', 'gr'),
-      'en' => self::entry('English'),
-      'eo' => self::entry('Esperanto'),
-      'es' => self::entry('Spanish', 'espanol'),
-      'et' => self::entry('Estonian', 'ee'),
-      'eu' => self::entry('Basque'),
-      'fi' => self::entry('Finnish'),
-      'fr' => self::entry('French'),
-      'ga' => self::entry('Irish', 'gaelic'),
-      'gd' => self::entry('Scottish Gaelic', 'scottish'),
-      'hu' => self::entry('Hungarian'),
-      'id' => self::entry('Indonesian'),
-      'is' => self::entry('Icelandic'),
-      'it' => self::entry('Italian'),
-      'ja' => self::entry('Japanese', 'jp'),
-      'ko' => self::entry('Korean'),
-      'lb' => self::entry('Luxembourgish', 'lu', 'lux'),
-      'lt' => self::entry('Lithuanian'),
-      'lv' => self::entry('Latvian'),
-      'mk' => self::entry('Macedonian'),
-      'mt' => self::entry('Maltese'),
-      'nb' => self::entry('Norwegian', 'no'),
-      'nl' => self::entry('Dutch'),
-      'pl' => self::entry('Polish'),
-      'pt' => self::entry('Portuguese', 'portugese'),
-      'ro' => self::entry('Romanian'),
-      'ru' => self::entry('Russian'),
-      'sk' => self::entry('Slovak'),
-      'sl' => self::entry('Slovene', 'slovenian'),
-      'sr' => self::entry('Serbian'),
-      'sq' => self::entry('Albanian', 'al'),
-      'sv' => self::entry('Swedish', 'se'),
-      'tl' => self::entry('Filipino', 'tagalog'),
-      'tr' => self::entry('Turkish'),
-      'uk' => self::entry('Ukrainian', 'ua'),
-      'zh' => self::entry('Chinese', 'cn')
-    ];
   }
 }
