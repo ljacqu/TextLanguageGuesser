@@ -1,15 +1,16 @@
 <?php
 
-require './inc/config.php';
+require './conf/config.php';
 require './inc/functions.php';
 
 setJsonHeader();
 verifyApiSecret();
 
-require './data/Language.php';
-require './data/Languages.php';
+require './inc/Language.php';
+require './inc/Languages.php';
+require './data/langs.php';
 $choices = readPossibleLines();
-require './data/current_state.php';
+require './conf/current_state.php';
 
 //
 // Check if current question is still unsolved.

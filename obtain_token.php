@@ -1,7 +1,8 @@
 <?php
 
-require './inc/config.php';
+require './conf/config.php';
 require './inc/functions.php';
+require './conf/current_token.php';
 
 if (isset($_GET['state']) && !isset($_GET['secret'])) {
   // Very ugly, but does the trick—Nightbot login allows to pass on a state param,
@@ -84,7 +85,6 @@ if (!empty($code)) {
   exit;
 }
 
-require './data/current_token.php';
 $validToken = false;
 if (isset($data_token['access_token'])) {
   echo 'The token will expire on ' . date('Y-m-d, H:i', $data_token['expires']);

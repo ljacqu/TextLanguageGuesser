@@ -69,11 +69,11 @@ function createPuzzleRecord($textLine) {
 
 function verifyApiSecret() {
   if (!isset($_GET['secret'])) {
-    die(toResultJson('Missing API secret!'));
+    die(toResultJson('Error: Missing API secret!'));
   } else if ($_GET['secret'] !== API_SECRET) {
-    die(toResultJson('Invalid API secret!'));
+    die(toResultJson('Error: Invalid API secret!'));
   } else if (API_SECRET === 'setme') {
-    die(toResultJson('Update the API secret in config.php'));
+    die(toResultJson('Error: Update the API secret in config.php'));
   }
 }
 
@@ -82,7 +82,7 @@ function setJsonHeader() {
 }
 
 function updateCurrentState($data_lastQuestions) {
-  $fh = fopen('./data/current_state.php', 'w') or die(toResultJson('Error: failed to update the current state :( Please try again!'));
+  $fh = fopen('./conf/current_state.php', 'w') or die(toResultJson('Error: failed to update the current state :( Please try again!'));
   fwrite($fh, '<?php $data_lastQuestions = ' . var_export($data_lastQuestions, true) . ';');
   fclose($fh);
 }

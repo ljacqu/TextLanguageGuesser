@@ -1,6 +1,5 @@
 # Allow to keep backups with actual values without accidentally committing them
-/data/current_state.php.bk
-/data/current_token.php.bk
+/conf/*.bk
 
 # Exclude IDE files
 .vs/

@@ -1,6 +1,6 @@
 <?php
 
-require './inc/config.php';
+require './conf/config.php';
 require './inc/functions.php';
 
 setJsonHeader();
@@ -10,9 +10,10 @@ if (!isset($_GET['a'])) {
   die(toResultJson('Please provide a guess! Type ' . COMMAND_QUESTION . ' to see the text.'));
 }
 
-require './data/current_state.php';
-require './data/Language.php';
-require './data/Languages.php';
+require './conf/current_state.php';
+require './inc/Language.php';
+require './inc/Languages.php';
+require './data/langs.php';
 
 if (empty($data_lastQuestions)) {
   die(toResultJson('Error: No question was asked so far!'));

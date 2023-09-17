@@ -11,7 +11,7 @@ class Languages {
 
   static function getInstance(): Languages {
     if (self::$instance === null) {
-      self::$instance = new Languages(self::languages());
+      self::$instance = new Languages(createLanguages());
     }
     return self::$instance;
   }
@@ -47,6 +47,8 @@ class Languages {
   }
 
   private static function languages() {
+    // Note: Currently, the entries are sorted by array key, which MUST be two characters
+    // and is currently the ISO 639-1 code of the language. Aliases must be in lower case.
     return [
       'af' => self::entry('Afrikaans'),
       'bg' => self::entry('Bulgarian'),

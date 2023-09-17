@@ -1,8 +1,8 @@
 <?php
 
-require './inc/config.php';
+require './conf/config.php';
 require './inc/functions.php';
-require './data/current_token.php';
+require './conf/current_token.php';
 
 verifyApiSecret();
 

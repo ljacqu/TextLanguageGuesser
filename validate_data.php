@@ -2,8 +2,9 @@
 error_reporting(E_ALL);
 
 require './inc/functions.php';
-require './data/Language.php';
-require './data/Languages.php';
+require './inc/Language.php';
+require './inc/Languages.php';
+require './data/langs.php';
 
 // Check the text lines
 $lines = readPossibleLines();
