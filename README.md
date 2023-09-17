@@ -11,15 +11,21 @@ question is requested in the same second.
 
 ### Nightbot commands
 
+Add the commands given in the table below at https://nightbot.tv/commands/custom.
 Replace `https://example.org/ext/lang` with the URL where this is hosted; replace `CHEESE` with your actual API secret.
 
 | Command | Message |
 | ------- | ------- |
 | !langs  | See https://example.org/ext/lang |
-| !q  | `$(eval const api = $(urlfetch json https://example.org/ext/lang/poll.php?secret=CHEESE&variant=$(querystring)); api.result)` |
-| !a  | `$(eval const api = $(urlfetch json https://example.org/ext/lang/answer.php?secret=CHEESE&a=$(querystring)); api.result)` |
+| !q      | `$(eval const api = $(urlfetch json https://example.org/ext/lang/poll.php?secret=CHEESE&variant=$(querystring)); api.result)` |
+| !a      | `$(eval const api = $(urlfetch json https://example.org/ext/lang/answer.php?secret=CHEESE&a=$(querystring)); api.result)` |
 
-You can use other command names; just change the values in ./data/config.php and your new names will be referenced!
+A new question can be forced by running `!q new` after a timeout you can configure in ./inc/config.php.
+
+You can use other command names; just change the values in ./inc/config.php and your new names will be referenced!
+
+Hint: If you want to add aliases like !answer and !question, copying the messages instead of using Nightbot's aliases
+might work out better—I haven't been able to forward the arguments properly!
 
 ### Timer
 
@@ -40,13 +46,12 @@ it might take another five minutes for a new question to be generated automatica
 
 You can configure the proper waiting times in ./inc/config.php to not have too many messages!
 
-Note that running this manual timer means you have to register an application to Nightbot at https://nightbot.tv/account/applications
-
-New app:
+Note that running this manual timer means you have to register an application to Nightbot at https://nightbot.tv/account/applications:
 - Name: guesslang (or whatever you want)
 - Redirect URIs: `https://example.org/ext/lang/obtain_token.php` (where `https://example.org/ext/lang` is where your backend is hosted)
 
-Then, open `regular_poll.php` as mentioned above, and follow the link to `obtain_token.php` that is linked in an error message.
+Set the client ID and client secret that are generated to the properties in ./inc/config.php. Then, open `regular_poll.php` as mentioned above,
+and follow the link to `obtain_token.php` that is linked in an error message.
 
 Make sure not to have a **Nightbot timer running alongside** to prevent timing conflicts.
 
@@ -56,18 +61,18 @@ Modify the text lines in `data/texts.php`
 - Do not change the starting PHP code
 - Run validate_data.php and fix any errors
 - Empty lines will be ignored
-- You can write comments by starting a line with `#`�they will be ignored!
+- You can write comments by starting a line with `#`—they will be ignored!
 
 ### Adding new languages
 
 Modify `data/Languages.php`. Note that the entire code base assumes that languages have a two-letter code! Do not use codes of any other length!
 
 ## Technical overview
-- `answer.php` is called by the !guess command to process answers
+- `answer.php` is called by the !a command to process answers
 - `index.php` shows past questions and the possible languages so that you can offer a list of languages to your users
 - `poll.php` is used by the !q command and can be called from a timer
 - `validate_data.php` should be run whenever you add new texts or languages
-- `regular_poll.php`: Open this in your browser and keep it open to regularly call poll.php and send results to Nightbot
+- `regular_poll.php`: Explained under "Manual timer"
 
 ### Nightbot specifics
 The user that solves the answer is inferred by a HTTP header specific to Nightbot. You can change the logic
