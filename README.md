@@ -2,6 +2,8 @@
 
 PHP backend for REST calls to a language guessing game; intended for integration by Nightbot, a Twitch bot.
 
+![Screenshot](screenshot.png)
+
 State is saved in files and may be susceptible to rare timing issues, e.g. if a question is answered and a new
 question is requested in the same second.
 
