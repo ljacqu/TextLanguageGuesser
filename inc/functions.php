@@ -72,6 +72,8 @@ function verifyApiSecret() {
     die(toResultJson('Missing API secret!'));
   } else if ($_GET['secret'] !== API_SECRET) {
     die(toResultJson('Invalid API secret!'));
+  } else if (API_SECRET === 'setme') {
+    die(toResultJson('Update the API secret in config.php'));
   }
 }
 

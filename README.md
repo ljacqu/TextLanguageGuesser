@@ -33,4 +33,8 @@ Modify `data/Languages.php`. Note that the entire code base assumes that languag
 | !guess  | `$(eval const api = $(urlfetch json https://example.org/ext/lang/answer.php?secret=9085e6b174dab879&a=$(querystring)); api.result)` |
 | !g      | ^ same as !guess for convenience. Seems not to work as command alias, so copy the same text as above |
 
-Timer: TBD
+## Files
+- `answer.php` is called by the !guess command to process answers
+- `poll.php` is used by the !q command and can be called from a timer
+- `validate_data.php` should be run whenever you add new texts or languages
+- `regular_poll.php`: Open this in your browser and keep it open to regularly call poll.php and send results to Nightbot

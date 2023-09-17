@@ -1,6 +1,6 @@
 <?php
 
-define('API_SECRET', '9085e6b174dab879');
+define('API_SECRET', 'setme');
 
 /**
  * If poll.php is called by Nightbot automatically and there is an unsolved riddle, how many seconds from its creation
@@ -25,4 +25,10 @@ define('COMMAND_QUESTION', '!q');
 define('COMMAND_ANSWER', '!g');
 define('COMMAND_LANGUAGES', '!langs');
 
-define('CALLBACK_URL_EXPIRATION_SECONDS', 3600); // I have no idea what the timeout is, so set it high for now?
+// ----
+// Nightbot application identifier
+// You only need this if you plan on using regular_poll.php
+// Set up an application at https://nightbot.tv/account/applications
+// ----
+define('NIGHTBOT_CLIENT_ID', 'setme');
+define('NIGHTBOT_CLIENT_SECRET', 'setme');
