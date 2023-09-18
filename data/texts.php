@@ -12,11 +12,23 @@ af:Elkeen het die reg tot lewe, vryheid en sekuriteit van persoon.
 af:Elkeen het oral die reg tot erkenning as 'n persoon voor die reg.
 af:Niemand sal aan arbitrêre arrestasie, aanhouding of bannelingskap onderworpe wees nie.
 
+be:Усе людзі нараджаюцца свабоднымі і роўнымі ў сваёй годнасці і правах.
+be:Яны надзелены розумам і сумленнем і павінны ставіцца адзін да аднаго ў духу брацтва.
+be:Кожны чалавека мае права на жыццё, на свабоду і на асабістую недатыкальнасць.
+be:Кожны чалавек, дзе б ён ні знаходзіўся, мае права на прызнанне яго правасубʼектнасці.
+be:Ні над кім не павінны ўчыняцца самавольны арышт, затрыманне або выгнанне.
+
 bg:Bсички хора се раждат свободни и равни по достойнство и права.
 bg:Tе са надарени с разум и съвест и следва да се отнасят помежду си в дух на братство.
 bg:Bсеки има право на живот, свобода и лична сигурност.
 bg:Bсеки човек, където и да се намира, има право на признаване на неговата правосубектност.
 bg:Никой не трябва да бъде подлаган на произволен арест, задържане или изгнание.
+
+bn:সমস্ত মানুষ স্বাধীনভাবে সমান মর্যাদা এবং অধিকার নিয়ে জন্মগ্রহণ করে।
+bn:তাঁদের বিবেক এবং বুদ্ধি আছে; সুতরাং সকলেরই একে অপরের প্রতি ভ্রাতৃত্বসুলভ মনোভাব নিয়ে আচরণ করা উচিত।
+bn:জীবন, স্বাধীনতা এবং দৈহিক নিরাপত্তায় প্রত্যেকের অধিকার আছে।
+bn:আ‌ইনের সামনে প্রত্যেকের‌ই ব্যক্তি হিসেবে স্বীকৃতি লাভের অধিকার আছে।
+bn:কা‌উকে‌ই খেয়ালখুশীমত গ্রেপ্তার বা অন্তরীণ করা কিংবা নির্বাসন দে‌ওয়া যাবে না।
 
 br:Dieub ha par en o dellezegezh hag o gwirioù eo ganet an holl dud.
 br:Poell ha skiant zo dezho ha dleout a reont bevañ an eil gant egile en ur spered a genvreudeuriezh.
@@ -90,6 +102,12 @@ fi:Kullakin yksilöllä on oikeus elämään, vapauteen ja henkilökohtaiseen tu
 fi:Ketään ei saa kiduttaa eikä kohdella tai rangaista julmasti, epäinhimillisesti tai alentavasti.
 fi:Ketään ei saa mielivaltaisesti pidättää, vangita tai ajaa maanpakoon.
 
+fo:Øll menniskju eru fødd fræls og jøvn til virðingar og mannarættindi.
+fo:Tey hava skil og samvitsku og eiga at fara hvørt um annað í bróðuranda.
+fo:Ein og hvør hevur rætt til lív, frælsi og persónliga trygd.
+fo:Eingin skal verða píndur ella harðliga, ómenniskjaliga ella vanæruliga viðfarin ella revsaður.
+fo:Eingin skal verða tilvildarliga handtikin, settur í varðhald ella gjørdur útlagin.
+
 fr:Tous les êtres humains naissent libres et égaux en dignité et en droits.
 fr:Ils sont doués de raison et de conscience et doivent agir les uns envers les autres dans un esprit de fraternité.
 fr:Tout individu a droit à la vie, à la liberté et à la sûreté de sa personne.
@@ -108,11 +126,29 @@ gd:Tha còir aig gach neach air beatha, saorsa agus tearainteachd.
 gd:Cha bhi neach air a chur an sàs neo ann an grèim neo air fhògarrachadh gu mi-laghail.
 gd:Tha còir aig gach neach a bhith air a choimhead mar bhall den chinne-daonna ann an sealladh an lagha.
 
+hi:सभी मनुष्यों को गौरव और अधिकारों के मामले में जन्मजात स्वतन्त्रता और समानता प्राप्त है । 
+hi:उन्हें बुद्धि और अन्तरात्मा की देन प्राप्त है और परस्पर उन्हें भाईचारे के भाव से बर्ताव करना चाहिए ।
+hi:प्रत्येक व्यक्ति को जीवन, स्वाधीनता और वैयक्तिक सुरक्षा का अधिकार है ।
+hi:हर किसी को हर जगह क़ानून की निग़ाह में व्यक्ति के रूप में स्वीकृति-प्राप्ति का अधिकार है ।
+hi:किसी को भी मनमाने ढंग से गिरफ़्तार, नज़रबन्द या देश-निष्कासित न किया जाएगा ।
+
+hr:Sva ljudska bića rađaju se slobodna i jednaka u dostojanstvu i pravima.
+hr:Ona su obdarena razumom i sviješću i treba da jedno prema drugome postupaju u duhu bratstva.
+hr:Svatko ima pravo na život, slobodu i osobnu sigurnost.
+hr:Svatko ima pravo da se svagdje pred zakonom priznaje kao osoba.
+hr:Nitko ne smije biti podvrgnut samovoljnom uhićenju, zatvoru ili izgonu.
+
 hu:Minden emberi lény szabadon születik és egyenlő méltósága és joga van. 
 hu:Az emberek, ésszel és lelkiismerettel bírván, egymással szemben testvéri szellemben kell hogy viseltessenek.
 hu:Minden személynek joga van az élethez, a szabadsághoz és a személyi biztonsághoz.
 hu:Mindenkinek joga van ahhoz, hogy jogalanyiságát bárhol elismerjék.
 hu:Senkit sem lehet önkényesen letartóztatni, őrizetbe venni vagy száműzni.
+
+hy:Բոլոր մարդիկ ծնվում են ազատ ու հավասար իրենց արժանապատվությամբ ու իրավունքներով։
+hy:Նրանք ունեն բանականություն ու խիղճ և միմյանց պետք է եղբայրաբար վերաբերվեն։
+hy:Ամեն ոք, ուր էլ որ լինի, իրավունք ունի ճանաչվել որպես իրավասուբյեկտ։
+hy:Ամեն ոք ունի քաղաքացիության իրավունք։
+hy:Ոչ ոք չի կարող ենթարկվել կամայական կալանքի, բանտարկության կամ արտաքսման։
 
 id:Semua orang dilahirkan merdeka dan mempunyai martabat dan hak-hak yang sama.
 id:Mereka dikaruniai akal dan hati nurani dan hendaknya bergaul satu sama lain dalam semangat persaudaraan.
@@ -138,6 +174,12 @@ ja:すべての人は、生命、自由及び身体の安全に対する権利�
 ja:何人も、拷問又は残虐な、非人道的なもしくは屈辱的な取扱もしくは刑罰を受けることはない。 　
 ja:何人も、ほしいままに逮捕、拘禁、又は追放されることはない。
 
+ka:ყოველი ადამიანი იბადება თავისუფალი და თანასწორი თავისი ღირსებითა და უფლებებით.
+ka:მათ მინიჭებული აქვთ გონება და სინდისი და ერთმანეთის მიმართ უნდა ექცეოდნენ ძმობის სულისკვეთებით.
+ka:ყოველ ადამიანს აქვს მოქალაქეობის უფლება.
+ka:არავინ არ უნდა იმყოფებოდეს მონობაში ან ძალმომრეობითი მორჩილების მდგომარეობაში.
+ka:არავინ შეიძლება დაექვემდებაროს თვითნებურ დაკავებას, დაპატიმრებას ან გაძევებას.
+
 ko:모든 인간은 태어날 때부터 자유로우며 그 존엄과 권리에 있어 동등하다.
 ko:인간은 천부적으로 이성과 양심을 부여받았으며 서로 형제애의 정신으로 행동하여야 한다. 
 ko:모든 사람은 생명과 신체의 자유와 안전에 대한 권리를 가진다 . 
@@ -162,11 +204,35 @@ lv:Katram cilvēkam ir tiesības uz dzīvību, brīvību un personas neaizskaram
 lv:Katram cilvēkam, lai kur viņš atrastos, ir tiesības tikt atzītam par personu likuma priekšā.
 lv:Nevienu nedrīkst patvaļīgi arestēt, aizturēt vai pakļaut izraidīšanai.
 
+kk:Барлық адамдар тумысынан азат және қадір‐қасиеті мен кұқықтары тең болып дүниеге келеді.
+kk:Адамдарға ақыл‐парасат, ар‐ождан берілген, сондықтан олар бір‐бірімен туыстық, бауырмалдық қарым‐қатынас жасаулары тиіс.
+kk:Әр адам өмір сүруге, бостандықта болуға және оның жеке басына қол сұғылмауына құқылы.
+kk:Ешкім де құлдықта немесе кіріптарлықта ұсталуы тиіс емес.
+kk:Ешкім де негізсіз тұтқындалуға, қамауда ұсталуға немесе қуғынға ұшыратылуға тиіс емес.
+
+km:មនុស្សទាំងអស់ កើតមកមានសេរីភាព និងសមភាព ក្នុងផ្នែកសេចក្ដីថ្លៃថ្នូរនិងសិទ្ធិ។
+km:មនុស្ស មានវិចារណញ្ញាណនិងសតិសម្បជញ្ញៈជាប់ពីកំណើត ហើយគប្បីប្រព្រឹត្ដចំពោះគ្នាទៅវិញទៅមកក្នុងស្មារតីភាតរភាពជាបងប្អូន។
+km:បុគ្គលម្នាក់ៗ មានសិទ្ធិរស់រានមានជីវិត សេរីភាព និងសន្ដិសុខផ្ទាល់ខ្លួន។
+km:ជនគ្រប់រូប មានសិទ្ធិឱ្យគេទទួលស្គាល់បុគ្គលិកលក្ខណៈគតិយុត្ដរបស់ខ្លួន នៅគ្រប់ទីកន្លែង។
+km:គ្មានជនណាម្នាក់ ត្រូវបានចាប់ខ្លួន ឃុំខ្លួន ឬនិរទេសខ្លួន តាមអំពើចិត្ដឡើយ។
+
+ky:Бардык адамдар өз беделинде жана укуктарында эркин жана тең укуктуу болуп жаралат.
+ky:Алардын аң‐сезими менен абийири бар жана бири‐бирине бир туугандык мамилекылууга тийиш.
+ky:Ар бир адам жашоого, эркиндикке жана жеке кол тийбестикке укуктуу.
+ky:Ар бир адам граждандык алууга укуктуу.
+ky:Эч ким ээнбаштык менен камакка алынууга, кармалууга же куугунтукталууга тийиш эмес.
+
 mk:Ситe чoвeчки суштeствa сe рaѓaaт слoбoдни и eднaкви пo дoстoинствo и прaвa.
 mk:Tиe сe oбдaрeни сo рaзум и сoвeст и трeбa дa сe oднeсувaaт eдeн кoн друг вo дуxoт нa oпштo чoвeчкaтa припaднoст.
 mk:Сeкoj имa прaвo нa живoт, слoбoдa и сигурнoст.
 mk:Сeкoj имa прaвo нaсeкaдe дa бидe признaeн кaкo личнoст прeд зaкoнoт.
 mk:Никoj чoвeк нeмa дa бидe пoдлoжeн нa прoизвoлнo aпсeњe, притвoр или прoгoнувaњe.
+
+mn:Хүн бүр төрж мэндлэхэд эрх чөлөөтэй, адилхан нэр төртэй, ижил эрхтэй байдаг.
+mn:Оюун ухаан, нандин чанар заяасан хүн гэгч өөр хоорондоо ахан дүүгийн үзэл санаагаар харьцах учиртай.
+mn:Хүн бүр амьд явах, эрх чөлөөтэй байх, халдашгүй дархан байх эрхтэй.
+mn:Хүн бүр хаана ч байсан эрх зүйн этгээд байх эрхээ хүлээн зөвшөөрүүлэх эрхтэй.
+mn:Хэнийг ч дур мэдэн баривчлах, саатуулах буюу хөөн зайлуулах ёсгүй.
 
 mt:Il-bnedmin kollha jitwieldu ħielsa u ugwali fid-dinjità u d-drittijiet.
 mt:Huma mogħnija bir-raġuni u bil-kuxjenza u għandhom iġibu ruħhom ma' xulxin bi spirtu ta' aħwa.
@@ -197,6 +263,12 @@ pt:Dotados de razão e de consciência, devem agir uns para com os outros em esp
 pt:Todo indivíduo tem direito à vida, à liberdade e à segurança pessoal.
 pt:Todos os indivíduos têm direito ao reconhecimento, em todos os lugares, da sua personalidade jurídica.
 pt:Ninguém pode ser arbitrariamente preso, detido ou exilado.
+
+rm:Tuots umans naschan libers ed eguals in dignità e drets.
+rm:Els sun dotats cun intellet e conscienza e dessan agir tanter per in uin spiert da fraternità.
+rm:Mincha uman ha il dret da la vita, da la libertà e da la sgürezza da sia persuna.
+rm:Mincha uman ha dapertuot il dret, cha sia persunalità giuridica vegna arcugnuschüda.
+rm:Ingün nu po gni arrestà arbitrariamaing, tgnü in fermanza o gir exilà arbitrariamaing.
 
 ro:Toate fiinţele umane se nasc libere şi egale în demnitate şi în drepturi.
 ro:Ele înzestraţe cu raţiune şi conştiinţă şi trebuie să se comporte unii faţă de altele în spiritul fraternităţii.
@@ -240,6 +312,18 @@ sv:Envar har rätt till liv, frihet och personlig säkerhet.
 sv:Envar har rätt att allestädes erkännas som person i lagens mening.
 sv:Ingen må godtyckligt anhållas, fängslas eller landsförvisas.
 
+sw:Watu wote wamezaliwa huru, hadhi na haki zao ni sawa.
+sw:Wote wamejaliwa akili na dhamiri, hivyo yapasa watendeane kindugu.
+sw:Mtu ye yote asifanywe mtumwa au mtwana; utumwa na biashara yake ni marufuku kwa kila hali.
+sw:Mbele ya sheria kila mtu ana haki ya kutambulika kama mtu.
+sw:Mtu ye yote asikamatwe, asifungiwe au kuhamishwa kutoka nchi yake bila sheria.
+
+th:มนุษย์ทั้งปวงเกิดมามีอิสระและเสมอภาคกันในศักดิ์ศรีและสิทธิ
+th:ต่างในตนมีเหตุผลและมโนธรรม และควรปฏิบัติต่อกันด้วยจิตวิญญาณแห่งภราดรภาพ
+th:ทุกคนมีสิทธิในสัญชาติหนึ่ง
+th:ทุกคนมีสิทธิที่จะได้รับการยอมรับทุกแห่งหนว่าเป็นบุคคลตามกฎหมาย
+th:บุคคลใดจะถูกจับกุม กักขัง หรือเนรเทศตามอำเภอใจไม่ได้
+
 tl:Ang lahat ng tao'y isinilang na malaya at pantay-pantay sa karangalan at mga karapatan.
 tl:Sila'y pinagkalooban ng katwiran at budhi at dapat magpalagayan ang isa't isa sa diwa ng pagkakapatiran.
 tl:Ang bawat tao'y may karapatan sa buhay, kalayaan at kapanatagan ng sarili.
@@ -258,8 +342,38 @@ uk:Кожна людина має право на життя, на свобод�
 uk:Кожна людина, де б вона не перебувала, має право на визнання ії правосуб'єктності.
 uk:Ніхто не може зазнавати безпідставного арешту, затримання або вигнання.
 
+uz:Barcha odamlar erkin, qadr‐qimmat va huquqlarda teng boʻlib tugʻiladilar.
+uz:Ular aql va vijdon sohibidirlar va bir‐birlariga birodarlarcha muomala qilishlari zarur.
+uz:Har bir inson yashash, erkinlik va shaxsiy daxlsizlik huquqiga egadir.
+uz:Har bir inson, qayerda boʻlishidan qatʼi nazar, oʻzining huquq subyekti sifatida tan olinishi huquqiga egadir.
+uz:Hech kim oʻzboshimchalik bilan qamalishi, ushlanishi yoki quvgʻin qilinishi mumkin emas.
+
+vi:Tất cả mọi người sinh ra đều được tự do và bình đẳng về nhân phẩm và quyền.
+vi:Mọi con người đều được tạo hoá ban cho lý trí và lương tâm và cần phải đối xử với nhau trong tình bằng hữu.
+vi:Mọi người đều có quyền sống, tự do và an toàn cá nhân.
+vi:Mọi người đều có quyền được thừa nhận tư cách là con người trước pháp luật ở khắp mọi nơi.
+vi:Không ai bị bắt, giam giữ hay đày đi nơi khác một cách độc đoán.
+
+xh:Bonke abantu bazalwa bekhululekile belingana ngesidima nangokweemfanelo.
+xh:Bonke abantu banesiphiwo sesazela nesizathu sokwenza isenzo ongathanda ukuba senziwe kumzalwane wakho.
+xh:Wonke umntu unelungelo lokuphila, inkululeko kunye nokhuseleko.
+xh:Akukho namnye oyakuhluthwa athathelwe izinto zakhe.
+xh:Akukho namnye oza kubanjwa ngendlela engaqondakaliyo, abe libanjwa okanye abe selubhacweni.
+
+yo:Gbogbo ènìyàn ni a bí ní òmìnira; iyì àti ẹ̀tọ́ kọ̀ọ̀kan sì dọ́gba.
+yo:Wọ́n ní ẹ̀bùn ti làákàyè àti ti ẹ̀rí‐ọkàn, ó sì yẹ kí wọn ó máa hùwà sí ara wọn gẹ́gẹ́ bí ọmọ ìyá.
+yo:Ẹnì kọ̀ọ̀kan ló ní ẹ̀tọ́ láti wà láàyè, ẹ̀tọ́ sí òmìnira àti ẹ̀tọ́ sí ààbò ara rẹ̀.
+yo:Ẹbí jẹ́ ìpìlẹ̀ pàtàkì àdánidá ní àwùjọ, ó sì ní ẹ̀tọ́ pé kí àwùjọ àti orílẹ̀‐èdè ó dáàbò bò ó.
+yo:A kò gbọdọ̀ ṣàdédé fi òfin mú ènìyàn tàbí kí a kàn gbé ènìyàn tì mọ́lé, tàbí kí a lé ènìyàn jáde ní ìlú láìnídìí.
+
 zh:人人生而自由,在尊严和权利上一律平等。
 zh:他们赋有理性和良心,并应以兄弟关系的精神相对待。
 zh:人人有权享有生命、自由和人身安全。
 zh:任何人不得加以酷刑,或施以残忍的、不人道的或侮辱性的待遇或刑罚。
 zh:任何人不得加以任意逮捕、拘禁或放逐。
+
+zu:Bonke abantu bazalwa bekhululekile belingana ngesithunzi nangamalungelo.
+zu:Bahlanganiswe wumcabango nangunembeza futhi kufanele baphathane ngomoya wobunye.
+zu:Wonke umuntu unelungelo lempilo, lenkululeko nelokuphepha.
+zu:Akekho oyokwephucwa ngokungekho emthethweni impahla yakhe.
+zu:Akekho oyoboshwa, avelelwe noma adingiswe ngokungekho emthethweni.

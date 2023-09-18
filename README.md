@@ -24,7 +24,7 @@ Replace `https://example.org/ext/lang` with the URL where this is hosted; replac
 
 A new question can be forced by running `!q new` after a timeout you can configure in config.php.
 
-You can use other command names; just change the values in config.php and your new names will be referenced!
+You can use other command names; just change the values in config.php and your new names will be used everywhere.
 
 Hint: If you want to add aliases like !answer and !question, copying the messages instead of using Nightbot's aliases
 might work out better—I haven't been able to forward the arguments properly!
@@ -36,7 +36,7 @@ With the above commands, your viewers will have to run `!q` to obtain new questi
 Go to https://nightbot.tv/timers and add a new timer:
 - Name: Languages guess
 - Message: empty
-- Interval: Whatever you want :smile: (Suggestion: every 5 minutes)
+- Interval: Whatever you want  (Suggestion: every 5 minutes)
 - Chat lines: Whatever you want :smile: (Suggestion: the minimum)
 - Alias: `!q timer`
 
@@ -61,13 +61,12 @@ Make sure not to have a **Nightbot timer running alongside** to prevent timing c
 
 Modify the text lines in `data/texts.php`
 - Do not change the starting PHP code
+- You can write comments by starting a line with `#`—such lines will be ignored
 - Run validate_data.php and fix any errors
-- Empty lines will be ignored
-- You can write comments by starting a line with `#`—they will be ignored!
 
 ### Adding new languages
 
-Modify `data/Languages.php`. Note that the entire code base assumes that languages have a two-letter code! Do not use codes of any other length!
+Modify `data/langs.php`. Note that the entire code base assumes that languages have a two-letter code. Do not use codes of any other length!
 
 ## Technical overview
 
@@ -84,9 +83,9 @@ Modify `data/Languages.php`. Note that the entire code base assumes that languag
 - /inc/ is PHP code included in many of the files.
 
 The /conf/ folder is separate from the /data/ folder because it is "more sensitive"—you don't want to commit any secrets, nor
-do you want to commit the current state of the questions!
+do you want to commit the current state of the questions.
 
 ### Nightbot specifics
 The user that solves the answer is inferred by a HTTP header specific to Nightbot. You can change the logic
-in `answer.php`, e.g. by hardcoding it to a string like "Unknown". While the user that solved the answer is logged, this
-information is not used or displayed anywhere at the moment!
+in `answer.php`, e.g. by hardcoding it to a string like "Unknown". While the user that solved the answer is saved, this
+information is not used or displayed anywhere at the moment.
