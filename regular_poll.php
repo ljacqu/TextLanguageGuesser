@@ -91,10 +91,12 @@ if (isset($_GET['msg'])) {
           if (result.trim() !== '') {
             sendMessage(result);
           }
+          setBodyBgColor('#e5fff9');
         })
         .catch((error) => {
           pollErrorElem.style.display = 'block';
           document.getElementById('pollerrormsg').innerHTML = error.message;
+          setBodyBgColor('#fff0f0');
         });
     };
 
@@ -119,16 +121,32 @@ if (isset($_GET['msg'])) {
             msgElem.className = '';
             msgElem.innerText = data.result;
           }
+          setBodyBgColor('#eeffee');
         })
         .catch((error) => {
           msgElem.className = 'error';
           msgElem.innerText = error.message;
+          setBodyBgColor('#fff0f0');
         });
     };
 
+    var isActive = true;
+
+    function setBodyBgColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+
+    function togglePause() {
+      const isChecked = document.getElementById('pause').checked;
+      isActive = !isChecked;
+      setBodyBgColor(isActive ? '#fff' : '#ccc');
+    }
+
     function callPollRegularly() {
-      callPollFile();
-      setTimeout(callPollRegularly, 30000);
+      if (isActive) {
+        callPollFile();
+      }
+      setTimeout(callPollRegularly, 3000);
     }
   </script>
   <style>
@@ -148,17 +166,21 @@ if (isset($_GET['msg'])) {
   }
   </style>
 </head>
-<body onload="callPollRegularly()">
+<body onload="togglePause(); callPollRegularly()">
   <h2>Poll</h2>
   <div id="result" title="Last guess message"><span style="color: #333; font-style: italic; font-size: 0.9em">No response with text received yet</span></div>
   <div>Last request: <span id="time"></span></div>
   <div id="pollerror" class="error" style="display: none">Error during last call: <span id="pollerrormsg"></span> </div>
   <div>Last Nightbot message: <span id="msg"></span></div>
 
+  <div>
+    <input type="checkbox" name="pause" id="pause" onchange="togglePause();" /> <label for="pause">Pause</label>
+  </div>
+
   <?php
   if (isTokenExpired($data_token)) {
     echo '<h2>No Nightbot token</h2>
-      <div class="error">No valid Nightbot token has been found!
+      <div class="error" style="padding: 9px">No valid Nightbot token has been found!
       Please go to <a href="obtain_token.php?secret=' . API_SECRET . '">obtain_token</a> to generate a new one</div>';
   }
   ?>
