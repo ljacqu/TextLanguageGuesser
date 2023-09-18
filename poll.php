@@ -17,9 +17,8 @@ require './conf/current_state.php';
 //
 
 $unsolvedPuzzle = returnLastQuestionIfUnsolved($data_lastQuestions);
+$variant = filter_input(INPUT_GET, 'variant', FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR);
 if ($unsolvedPuzzle !== null) {
-  $variant = filter_input(INPUT_GET, 'variant', FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR);
-
   if ($variant === 'timer') {
     $timeSinceLastQuestion = time() - $unsolvedPuzzle['created'];
     if ($timeSinceLastQuestion < BOT_POLL_WAIT_SECONDS) {
@@ -36,6 +35,8 @@ if ($unsolvedPuzzle !== null) {
   } else {
     die(toResultJson('Guess the language: ' . removeLanguagePrefix($unsolvedPuzzle['line'])));
   }
+} else if ($variant === 'info') {
+  die(toResultJson(' '));
 }
 
 //
@@ -69,7 +70,8 @@ if ($lastQuestion && !isset($lastQuestion['solver'])) {
 updateCurrentState($data_lastQuestions);
 $text = removeLanguagePrefix($puzzle['line']);
 $dotAndSpace = substr($text, -1) === '.' ? ' ' : '. ';
-echo toResultJson($preface . 'Guess the language: ' . removeLanguagePrefix($puzzle['line']) . $dotAndSpace . 'Answer with !a');
+$response = connectTexts('Guess the language: ' . removeLanguagePrefix($puzzle['line']), 'Answer with !a');
+echo toResultJson($preface . $response);
 
 
 function returnLastQuestionIfUnsolved($data_lastQuestions) {
@@ -80,4 +82,12 @@ function returnLastQuestionIfUnsolved($data_lastQuestions) {
     }
   }
   return null;
+}
+
+function connectTexts($text1, $text2) {
+  $lastCharacter = mb_substr($text1, -1, 1, 'UTF-8');
+  if (IntlChar::ispunct($lastCharacter)) {
+    return trim($text1) . ' ' . trim($text2);
+  }
+  return trim($text1) . '. ' . trim($text2);
 }
