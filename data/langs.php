@@ -10,7 +10,7 @@ function createLanguages() {
     'ca' => lang('Catalan'),
     'cs' => lang('Czech', 'cz'),
     'cy' => lang('Welsh'),
-    'da' => lang('Danish'),
+    'da' => lang('Danish', 'dk'),
     'de' => lang('German', 'deutsch'),
     'el' => lang('Greek', 'gr'),
     'en' => lang('English'),

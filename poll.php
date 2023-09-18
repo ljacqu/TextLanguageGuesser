@@ -67,8 +67,9 @@ if ($lastQuestion && !isset($lastQuestion['solver'])) {
 
 // Save and return new puzzle
 updateCurrentState($data_lastQuestions);
-echo toResultJson($preface . 'Guess the language: ' . removeLanguagePrefix($puzzle['line']));
-
+$text = removeLanguagePrefix($puzzle['line']);
+$dotAndSpace = substr($text, -1) === '.' ? ' ' : '. ';
+echo toResultJson($preface . 'Guess the language: ' . removeLanguagePrefix($puzzle['line']) . $dotAndSpace . 'Answer with !a');
 
 
 function returnLastQuestionIfUnsolved($data_lastQuestions) {
