@@ -30,6 +30,7 @@ $answer = strtolower(trim($answer));
 $languageAndCode = Languages::findLanguageAndCode($answer);
 if ($languageAndCode['code'] === $currentRiddle['lang']) {
   $currentRiddle['solver'] = extractUser();
+  $currentRiddle['solved'] = time();
 
   updateCurrentState($data_lastQuestions);
   $congratsOptions = ['Congratulations!', 'Nice!', 'Excellent!', 'Splendid!', 'Perfect!', 'Well done!', 'Awesome!', 'Good job!'];
@@ -60,5 +61,5 @@ function extractUser() {
     $nightbotUser = $_SERVER[USER_HTTP_HEADER];
     $solver = preg_replace('~^.*?name=([^&]+)&.*?$~', '\\1', $nightbotUser);
   }
-  return $solver ? $solver : 'Unknown';
+  return $solver ? $solver : '&__unknown';
 }

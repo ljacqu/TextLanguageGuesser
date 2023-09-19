@@ -13,21 +13,25 @@ $choices = readPossibleLines();
 require './conf/current_state.php';
 
 //
-// Check if current question is still unsolved.
+// Check if current question is still unsolved, and whether a new question should be created.
 //
 
-$unsolvedPuzzle = returnLastQuestionIfUnsolved($data_lastQuestions);
+$lastQuestion = null;
+if (!empty($data_lastQuestions)) {
+  $lastQuestion = &$data_lastQuestions[0];
+}
+
 $variant = filter_input(INPUT_GET, 'variant', FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR);
-if ($unsolvedPuzzle !== null) {
+if ($lastQuestion !== null && empty($lastQuestion['solver'])) {
   if ($variant === 'timer') {
-    $timeSinceLastQuestion = time() - $unsolvedPuzzle['created'];
-    if ($timeSinceLastQuestion < BOT_POLL_WAIT_SECONDS) {
+    $timeSinceLastQuestion = time() - $lastQuestion['created'];
+    if ($timeSinceLastQuestion < TIMER_UNSOLVED_QUESTION_WAIT_SECONDS) {
       // Nightbot doesn't accept empty strings, but seems to trim responses and
       // not show anything if there are only spaces, so make sure to have a space in the response.
       die(toResultJson(' '));
     }
   } else if ($variant === 'new' || $variant === 'silentnew') {
-    $timeSinceLastQuestion = time() - $unsolvedPuzzle['created'];
+    $timeSinceLastQuestion = time() - $lastQuestion['created'];
     $secondsToWait = USER_POLL_WAIT_SECONDS - $timeSinceLastQuestion;
     if ($timeSinceLastQuestion < USER_POLL_WAIT_SECONDS) {
       if ($variant === 'silentnew') {
@@ -37,27 +41,29 @@ if ($unsolvedPuzzle !== null) {
       }
     }
   } else {
-    die(toResultJson('Guess the language: ' . removeLanguagePrefix($unsolvedPuzzle['line'])));
+    die(toResultJson('Guess the language: ' . removeLanguagePrefix($lastQuestion['line'])));
   }
 } else if ($variant === 'info') {
   die(toResultJson(' '));
+} else if ($variant === 'timer' && $lastQuestion !== null) { 
+  // The first `if` is triggered if there is a last unsolved question; being here means the
+  // last question exists, and it was solved
+  if ((time() - $lastQuestion['solved']) < TIMER_SOLVED_QUESTION_WAIT_SECONDS) {
+    die(toResultJson(' '));
+  }
 }
+
 
 //
 // Create new puzzle
 //
 
 $puzzleLine = selectQuestion($choices, $data_lastQuestions);
-
 $puzzle = createPuzzleRecord($puzzleLine);
-$lastQuestion = null;
-if (!empty($data_lastQuestions)) {
-  $lastQuestion = &$data_lastQuestions[0];
-}
 
 $newSize = array_unshift($data_lastQuestions, $puzzle);
 
-// Trim old puzzle
+// Trim old puzzles
 while ($newSize > 10) {
   array_pop($data_lastQuestions);
   --$newSize;
@@ -68,6 +74,7 @@ $preface = '';
 if ($lastQuestion && !isset($lastQuestion['solver'])) {
   $preface = 'The previous text was in ' . Languages::getLanguageName($lastQuestion['lang']) . '. ';
   $lastQuestion['solver'] = '&__unsolved';
+  $lastQuestion['solved'] = time();
 }
 
 // Save and return new puzzle
