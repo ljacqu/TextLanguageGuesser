@@ -18,6 +18,9 @@
   .command {
     font-family: Consolas, monospace;
   }
+  th a {
+    text-decoration: none;
+  }
 
   @media (prefers-color-scheme: dark) {
     body {
@@ -36,6 +39,12 @@
     }
     .command {
       color: #ffdf90;
+    }
+    th a {
+      color: #99f;
+    }
+    th a:hover {
+      color: #ff9;
     }
   }
 
@@ -56,6 +65,12 @@
     }
     .command {
       color: #f40;
+    }
+    th a {
+      color: #007;
+    }
+    th a:hover {
+      color: #33f;
     }
   }
   </style>
@@ -97,21 +112,24 @@ echo "</table>";
     <div style="float: left; margin-bottom: 20px;">
       <table>
         <tr>
-          <th>Language</th>
+          <th><a href="?sort=name" title="Click to sort by name">Language</a></th>
+          <th><a href="?sort=group" title="Click to sort by group">Group</a></th>
           <th>Aliases</th>
         </tr>
-<?php
+        <?php
 $languagesByCode = Languages::getAllLanguages();
-uasort($languagesByCode, function ($a, $b) {
-  return strcmp($a->getName(), $b->getName());
-});
+
+$sortFn = filter_input(INPUT_GET, 'sort', FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR) === 'group'
+  ? function ($a, $b) { return strcmp($a->getGroup(), $b->getGroup()); }
+  : function ($a, $b) { return strcmp($a->getName(),  $b->getName()); };
+uasort($languagesByCode, $sortFn);
 
 foreach ($languagesByCode as $code => $lang) {
   $aliases = implode(', ', $lang->getAliases());
   $aliases = empty($aliases) ? $code : ($code . ', ' . $aliases);
-  echo "<tr><td>{$lang->getName()}</td><td>$aliases</td></tr>";
+  echo "<tr><td>{$lang->getName()}</td><td>{$lang->getGroup()}</td><td>$aliases</td></tr>";
 }
-?>
+        ?>
       </table>
     </div>
 
