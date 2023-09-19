@@ -26,11 +26,15 @@ if ($unsolvedPuzzle !== null) {
       // not show anything if there are only spaces, so make sure to have a space in the response.
       die(toResultJson(' '));
     }
-  } else if ($variant === 'new') {
+  } else if ($variant === 'new' || $variant === 'silentnew') {
     $timeSinceLastQuestion = time() - $unsolvedPuzzle['created'];
     $secondsToWait = USER_POLL_WAIT_SECONDS - $timeSinceLastQuestion;
     if ($timeSinceLastQuestion < USER_POLL_WAIT_SECONDS) {
-      die(toResultJson('Please solve the current question, or wait ' . $secondsToWait . 's'));
+      if ($variant === 'silentnew') {
+        die(toResultJson(' '));
+      } else {
+        die(toResultJson('Please solve the current question, or wait ' . $secondsToWait . 's'));
+      }
     }
   } else {
     die(toResultJson('Guess the language: ' . removeLanguagePrefix($unsolvedPuzzle['line'])));

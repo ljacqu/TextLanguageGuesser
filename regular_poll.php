@@ -64,8 +64,8 @@ if (isset($_GET['msg'])) {
         + ":" + String(currentdate.getSeconds()).padStart(2, '0');
     }
 
-    const callPollFile = () => {
-      const request = new Request(`poll.php?secret=${secret}&variant=timer`, {
+    const callPollFile = (variant) => {
+      const request = new Request(`poll.php?secret=${secret}&variant=${variant}`, {
         method: 'GET'
       });
 
@@ -117,11 +117,12 @@ if (isset($_GET['msg'])) {
           if (!data.result || !data.result.startsWith('Success')) {
             msgElem.className = 'error';
             msgElem.innerText = data.result ?? data;
+            setBodyBgColor('#fff0f0');
           } else {
             msgElem.className = '';
             msgElem.innerText = data.result;
+            setBodyBgColor('#cfc');
           }
-          setBodyBgColor('#eeffee');
         })
         .catch((error) => {
           msgElem.className = 'error';
@@ -144,14 +145,19 @@ if (isset($_GET['msg'])) {
 
     function callPollRegularly() {
       if (isActive) {
-        callPollFile();
+        callPollFile('timer');
+      } else {
+        // Update background color to the "paused" color to reset the bgcolor
+        // in case we pressed on a manual button
+        setBodyBgColor('#ccc');
       }
-      setTimeout(callPollRegularly, 3000);
+      setTimeout(callPollRegularly, 30000);
     }
   </script>
   <style>
   body {
     font-family: Arial;
+    font-size: 12pt;
   }
   .error {
     color: #f00;
@@ -164,6 +170,11 @@ if (isset($_GET['msg'])) {
     margin: 12px;
     display: inline-block;
   }
+  .manual {
+    padding: 5px;
+    margin: 3px;
+    font-size: 12pt;
+  }
   </style>
 </head>
 <body onload="togglePause(); callPollRegularly()">
@@ -173,8 +184,11 @@ if (isset($_GET['msg'])) {
   <div id="pollerror" class="error" style="display: none">Error during last call: <span id="pollerrormsg"></span> </div>
   <div>Last Nightbot message: <span id="msg"></span></div>
 
+  <div><input type="checkbox" name="pause" id="pause" onchange="togglePause();" /> <label for="pause">Pause</label></div>
+
   <div>
-    <input type="checkbox" name="pause" id="pause" onchange="togglePause();" /> <label for="pause">Pause</label>
+    <button class="manual" style="background-color: #ecf" onclick="callPollFile('');" title="Runs !q and sends the result to Nightbot">Show question again</button>
+    <button class="manual" style="background-color: #ffe"onclick="callPollFile('silentnew');" title="Runs !q silentnew and sends the result to Nightbot">Force new question</button>
   </div>
 
   <?php
