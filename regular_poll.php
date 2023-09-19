@@ -151,7 +151,11 @@ if (isset($_GET['msg'])) {
         // in case we pressed on a manual button
         setBodyBgColor('#ccc');
       }
-      setTimeout(callPollRegularly, 30000);
+
+      // The number below is how often, in milliseconds, we call poll.php?variant=timer.
+      // If you've configured sensible timeouts in config.php, this number can be quite
+      // low; otherwise, a higher number like 90s may be more appropriate. 
+      setTimeout(callPollRegularly, 15000);
     }
   </script>
   <style>
