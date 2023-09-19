@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 
+require './conf/config.php';
 require './inc/functions.php';
 require './inc/Language.php';
 require './inc/Languages.php';
@@ -27,7 +28,7 @@ foreach ($lines as $line) {
 }
 
 echo 'Validated ' . count($lines) . ' messages.';
-echo '<br />Total languages: ' . count(array_keys($languagesWithText));
+echo '<br />Total languages: ' . count($languagesWithText);
 
 // Check the language definitions
 $identifiers = [];
@@ -63,4 +64,19 @@ foreach (Languages::getAllLanguages() as $code => $lang) {
 echo '<br />Validated ' . count($identifiers) . ' language identifiers';
 if (!empty($languagesWithNoText)) {
   echo '<br />Warning: The following languages have no texts: ' . implode(', ', $languagesWithNoText);
+}
+
+// Check some configurations
+if (HISTORY_AVOID_LAST_N_QUESTIONS > HISTORY_KEEP_ENTRIES) {
+  echo '<br />Note: HISTORY_AVOID_LAST_N_QUESTIONS is larger than HISTORY_KEEP_ENTRIES';
+}
+if (HISTORY_AVOID_LAST_N_LANGUAGES > HISTORY_KEEP_ENTRIES) {
+  echo '<br />Note: HISTORY_AVOID_LAST_N_LANGUAGES is larger than HISTORY_KEEP_ENTRIES';
+}
+
+if (HISTORY_AVOID_LAST_N_QUESTIONS >= count($lines)) {
+  echo '<br />Error: HISTORY_AVOID_LAST_N_QUESTIONS is larger than the total number of questions';
+}
+if (HISTORY_AVOID_LAST_N_LANGUAGES >= count($languagesWithText)) {
+  echo '<br />Error: HISTORY_AVOID_LAST_N_LANGUAGES is larger than the total number of languages with entries';
 }

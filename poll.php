@@ -45,7 +45,7 @@ if ($lastQuestion !== null && empty($lastQuestion['solver'])) {
   }
 } else if ($variant === 'info') {
   die(toResultJson(' '));
-} else if ($variant === 'timer' && $lastQuestion !== null) { 
+} else if ($variant === 'timer' && $lastQuestion !== null) {
   // The first `if` is triggered if there is a last unsolved question; being here means the
   // last question exists, and it was solved
   if ((time() - $lastQuestion['solved']) < TIMER_SOLVED_QUESTION_WAIT_SECONDS) {
@@ -59,12 +59,15 @@ if ($lastQuestion !== null && empty($lastQuestion['solver'])) {
 //
 
 $puzzleLine = selectQuestion($choices, $data_lastQuestions);
+if ($puzzleLine === null) {
+  die(toResultJson('Error! Could not find any question. Are your history parameters misconfigured?'));
+}
 $puzzle = createPuzzleRecord($puzzleLine);
 
 $newSize = array_unshift($data_lastQuestions, $puzzle);
 
 // Trim old puzzles
-while ($newSize > 10) {
+while ($newSize > HISTORY_KEEP_ENTRIES) {
   array_pop($data_lastQuestions);
   --$newSize;
 }

@@ -32,18 +32,40 @@ function readPossibleLines() {
   return $choice;
 }
 
-function selectQuestion($choices, $lastProblems) {
-  $randomEntry = $choices[rand(0, count($choices) - 1)];
-  if (count($choices) < 20) {
-    return $randomEntry;
+function selectQuestion($choices, $lastQuestions) {
+  $skipLanguages = [];
+  $skipTexts = [];
+
+  $cnt = 1;
+  foreach ($lastQuestions as $pastQuestion) {
+    $stopCrit = 0;
+    if ($cnt <= HISTORY_AVOID_LAST_N_LANGUAGES) {
+      $skipLanguages[] = $pastQuestion['lang'];
+    } else {
+      ++$stopCrit;
+    }
+
+    if ($cnt <= HISTORY_AVOID_LAST_N_QUESTIONS) {
+      $skipTexts[] = $pastQuestion['line'];
+    } else {
+      ++$stopCrit;
+    }
+
+    if ($stopCrit == 2) {
+      break;
+    }
+    ++$cnt;
   }
 
-  while (true) {
-    if (!hasSubArrayWithValue($lastProblems, 'line', $randomEntry)) {
-      return $randomEntry;
-    }
-    $randomEntry = $choices[rand(0, count($choices) - 1)];
+  $actualChoices = array_filter($choices, function ($choice) use ($skipLanguages, $skipTexts) {
+    $lang = substr($choice, 0, 2);
+    return !in_array($lang, $skipLanguages, true) && !in_array($choice, $skipTexts, true);
+  });
+
+  if (empty($actualChoices)) {
+    return null;
   }
+  return $actualChoices[ array_rand($actualChoices, 1) ];
 }
 
 function hasSubArrayWithValue($haystack, $key, $valueToFind) {
