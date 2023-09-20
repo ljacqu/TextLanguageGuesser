@@ -32,7 +32,7 @@ if ($lastQuestion !== null && empty($lastQuestion['solver'])) {
     } else {
       $lastAnswer = (int) file_get_contents('./conf/last_answer.php');
       if (time() - $lastAnswer < TIMER_LAST_ANSWER_WAIT_SECONDS) {
-        die(toResultJson(' f '));
+        die(toResultJson(' '));
       }
     }
   } else if ($variant === 'new' || $variant === 'silentnew') {
