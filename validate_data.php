@@ -59,6 +59,10 @@ foreach (Languages::getAllLanguages() as $code => $lang) {
   if (!isset($languagesWithText[$code])) {
     $languagesWithNoText[] = $code;
   }
+
+  if (empty(getDemoText($code))) {
+    echo '<br />Warning: No demo text for language "' . $code . '"';
+  }
 }
 
 echo '<br />Validated ' . count($identifiers) . ' language identifiers';

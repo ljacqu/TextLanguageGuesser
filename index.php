@@ -43,7 +43,7 @@
     th a {
       color: #99f;
     }
-    th a:hover {
+    th a:hover, a:link {
       color: #ff9;
     }
   }
@@ -69,7 +69,7 @@
     th a {
       color: #007;
     }
-    th a:hover {
+    th a:hover, a:link {
       color: #33f;
     }
   }
@@ -94,6 +94,8 @@ echo '<p>Answer the riddles with <span class="command">' . COMMAND_ANSWER . '</s
   . COMMAND_QUESTION . '</span>; create a new question with <span class="command">' . COMMAND_QUESTION . ' new</span>.';
 echo '<p>Hover over the language column below to see the answer!</p>';
 
+$limit = isset($_GET['allhist']) ? 100000 : 5;
+$shownEntries = 0;
 echo '<table><tr><th>Text</th><th>Language</th></tr>';
 foreach ($data_lastQuestions as $question) {
   echo "<tr><td>" . htmlspecialchars(removeLanguagePrefix($question['line'])) . "</td>";
@@ -103,17 +105,38 @@ foreach ($data_lastQuestions as $question) {
     echo '<td>Not yet solved';
   }
   echo "</td></tr>";
+
+  if (++$shownEntries >= $limit) {
+    break;
+  }
 }
 echo "</table>";
+
+if (!isset($_GET['allhist']) && count($data_lastQuestions) > $limit) {
+  echo '<a href="?allhist">Show all past questions</a>';
+}
 ?>
 
 <h2>Languages</h2>
+  <?php
+  $showDemoSentence = isset($_GET['demo']);
+  $sortLinkAddition = $showDemoSentence ? '&amp;demo' : '';
+
+  echo $showDemoSentence
+    ? '<a href="?">Hide sample sentence</a>'
+    : '<a href="?demo">Show sample sentence</a>';
+  ?>
   <div style="width: 100%">
     <div style="float: left; margin-bottom: 20px;">
       <table>
         <tr>
-          <th><a href="?sort=name" title="Click to sort by name">Language</a></th>
-          <th><a href="?sort=group" title="Click to sort by group">Group</a></th>
+          <th><a href="?sort=name<?= $sortLinkAddition ?>" title="Click to sort by name">Language</a></th>
+          <th><a href="?sort=group<?= $sortLinkAddition ?>" title="Click to sort by group">Group</a></th>
+          <?php
+          if ($showDemoSentence) {
+            echo '<th>Example</th>';
+          }
+          ?>
           <th>Aliases</th>
         </tr>
         <?php
@@ -127,7 +150,15 @@ uasort($languagesByCode, $sortFn);
 foreach ($languagesByCode as $code => $lang) {
   $aliases = implode(', ', $lang->getAliases());
   $aliases = empty($aliases) ? $code : ($code . ', ' . $aliases);
-  echo "<tr><td>{$lang->getName()}</td><td>{$lang->getGroup()}</td><td>$aliases</td></tr>";
+  echo "<tr><td>{$lang->getName()}</td><td>{$lang->getGroup()}</td>";
+  if ($showDemoSentence) {
+    $demoSentence = getDemoText($code);
+    if (mb_strlen($demoSentence) > 80) {
+      $demoSentence = mb_substr($demoSentence, 0, 80) . '…';
+    }
+    echo '<td>' . htmlspecialchars($demoSentence) . '</td>';
+  }
+  echo "<td>$aliases</td></tr>";
 }
         ?>
       </table>
