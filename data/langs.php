@@ -21,6 +21,7 @@ function createLanguages() {
     'bn' => lang($a, 'Bengali', 'ben'),
     'br' => lang($c, 'Breton', 'bre'),
     'ca' => lang($r, 'Catalan', 'cat'),
+    'ch' => lang($o, 'Cherokee', 'chr', 'che'), // no official two-letter code
     'cs' => lang($s, 'Czech', 'cz', 'cze'),
     'cy' => lang($c, 'Welsh', 'wel', 'cym'),
     'da' => lang($g, 'Danish', 'dan', 'dk'),
@@ -48,6 +49,7 @@ function createLanguages() {
     'ka' => lang($o, 'Georgian', 'geo', 'kat', 'ge'),
     'kk' => lang($t, 'Kazakh', 'kz', 'kaz', 'kazak'),
     'km' => lang($a, 'Khmer', 'khm', 'kmer'),
+    'kn' => lang($a, 'Kannada', 'kan'),
     'ko' => lang($a, 'Korean', 'kor'),
     'ky' => lang($t, 'Kyrgyz', 'kir', 'kirgizh', 'kg', 'kyr'),
     'lb' => lang($g, 'Luxembourgish', 'ltz', 'lu', 'lux'),
@@ -58,6 +60,7 @@ function createLanguages() {
     'mt' => lang($o, 'Maltese', 'mlt', 'mal'),
     'nb' => lang($g, 'Norwegian', 'nor', 'no'),
     'nl' => lang($g, 'Dutch', 'dut', 'nld'),
+    'nv' => lang($o, 'Navajo', 'nav'),
     'pl' => lang($s, 'Polish', 'pol'),
     'pt' => lang($r, 'Portuguese', 'por', 'portugese'),
     'rm' => lang($r, 'Romansh', 'roh', 'romansch', 'rumantsch'),
@@ -70,6 +73,8 @@ function createLanguages() {
     'sq' => lang($o, 'Albanian', 'alb', 'sqi', 'al'),
     'sv' => lang($g, 'Swedish', 'swe', 'se'),
     'sw' => lang($b, 'Swahili', 'swa'),
+    'ta' => lang($a, 'Tamil', 'tam'),
+    'te' => lang($a, 'Telugu', 'tel'),
     'th' => lang($a, 'Thai', 'tha'),
     'tl' => lang($a, 'Filipino', 'fil', 'tagalog'),
     'tr' => lang($t, 'Turkish', 'tur'),
@@ -97,6 +102,7 @@ function getDemoText($code) {
     case 'bn': return 'প্রত্যেকের‌ই শান্তিপূর্ণ সমাবেশে অংশগ্রহণ ও সমিতি গঠনের স্বাধীনতায় অধিকার রয়েছে।';
     case 'br': return 'Pep den en deus gwir d’ar frankiz d’en em vodañ ha d’en em gevreañ e peoc’h.';
     case 'ca': return 'Tota persona té dret a la llibertat de reunió i d’associació pacífiques.';
+    case 'ch': return 'ᏂᎦᏛ ᎠᏂᏴᏫ ᎤᏂᎲ ᎾᏍᎩ ᏚᏳᎪᏛ ᏙᎯᏉ ᎠᏕᏗᎢ ᏙᎯ ᎠᏕᏗᎢ ᎾᏍᎩ ᏅᏩᏙᎯᏯᏛᏉ ᏓᏂᎳᏫᎬ ᎠᎴ ᎤᎾᎵᎪᏒᎢ.';
     case 'cs': return 'Každému je zaručena svoboda pokojného shromažďování a sdružování.';
     case 'cy': return 'Y mae gan bawb hawl i ryddid ymgynnull a chymdeithasu heddychlon.';
     case 'da': return 'Alle har ret til under fredelige former frit at forsamles og danne foreninger.';
@@ -124,6 +130,7 @@ function getDemoText($code) {
     case 'ka': return 'ყოველ ადამიანს აქვს უფლება მშვიდობიანი შეკრებისა და გაერთიანების თავისუფლებისა.';
     case 'kk': return 'Әр адамның бейбіт жиналыстар және ассоциацияаларды құру бостандығына құқығы бар.';
     case 'km': return 'មនុស្សគ្រប់រូប មានសិទ្ធិសេរីភាពក្នុងការប្រជុំ ឬការរួមគ្នាជាសមាគម ដោយសន្ដិវិធី។';
+    case 'kn': return 'ಸ್ವತಂತ್ರವಾಗಿ ಶಾಂತಿಯಿಂದ ಸಭೆ ಸೇರಲು ಸಂಘಟಿಸಲೂ ಪ್ರತಿಯೊಬ್ಬನಿಗೂ ಹಕ್ಕುಂಟು.';
     case 'ko': return '모든 사람은 평화적인 집회 및 결사의 자유에 대한 권리를 가진다.';
     case 'ky': return 'Ар бир адам тынч чогулуштар менен ассоциациялар эркиндигине укуктуу.';
     case 'lb': return 'All Mënsch huet d\'Recht op Versammlungs- a Verenegongsfräiheet am friddleche Sënn.';
@@ -134,6 +141,7 @@ function getDemoText($code) {
     case 'mt': return 'Kulħadd għandu l-jedd għal-libertà li jiltaqa’ u jissieħeb ma’ oħrajn fil-paċi.';
     case 'nb': return 'Enhver har rett til fritt å delta i fredelige møter og organisasjoner.';
     case 'nl': return 'Een ieder heeft recht op vrijheid van vreedzame vereniging en vergadering.';
+    case 'nv': return 'Łáaʼii. Tʼáá ájíłtsoh ałah nijídleehgo dóó áłhiłdajidlį́į́go bee háhazʼą́.';
     case 'pl': return 'Każdy człowiek ma prawo spokojnego zgromadzania i stowarzyszania się.';
     case 'pt': return 'Toda a pessoa tem direito à liberdade de reunião e de associação pacíficas.';
     case 'rm': return 'Mincha uman ha il dret a la libertà da reuniun e d\'associaziun cun meras paschaivlas.';
@@ -146,6 +154,8 @@ function getDemoText($code) {
     case 'sq': return 'Gjithkush ka të drejtën e lirisë së mbledhjes dhe bashkimit paqësor.';
     case 'sv': return 'Envar har rätt till frihet i fråga om fredliga möten och sammanslutningar.';
     case 'sw': return 'Kila mtu anayo haki ya kushiriki katika mkutano na chama kwa hali ya amani.';
+    case 'ta': return 'எவரும் அமைதியான முறையில் ஒன்று கூடுவதற்கும் இணைவதற்குமான சுதந்திரத்துக்கு உரிமையுண்டு.';
+    case 'te': return 'ప్రతి వ్యక్తికిని శాంతియుత సమావేశమునకు, సాహచర్యమునకు హక్కు గలదు.';
     case 'th': return 'ทุกคนมีสิทธิในอิสรภาพแห่งการร่วมประชุมและการตั้งสมาคมโดยสันติ';
     case 'tl': return 'Ang bawat tao\'y may karapatan sa kalayaan sa mapayapang pagpupulong at pagsasamahan.';
     case 'tr': return 'Her şahıs saldırısız toplanma ve dernek kurma ve derneğe katılma serbestisine maliktir.';
