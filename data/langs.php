@@ -15,6 +15,7 @@ function createLanguages() {
   // and is currently the ISO 639-1 code of the language. Aliases must be in lower case.
   return [
     'af' => lang($g, 'Afrikaans', 'afr'),
+    'ar' => lang($b, 'Arabic', 'ara', 'arab'),
     'be' => lang($s, 'Belarusian', 'bel', 'belo', 'bela', 'belorussian', 'belarusan', 'byelorussian'),
     'bg' => lang($s, 'Bulgarian', 'bul'),
     'bn' => lang($a, 'Bengali', 'ben'),
@@ -29,11 +30,13 @@ function createLanguages() {
     'es' => lang($r, 'Spanish', 'spa', 'espanol'),
     'et' => lang($f, 'Estonian', 'est', 'ee'),
     'eu' => lang($o, 'Basque', 'baq', 'eus', 'bas'),
+    'fa' => lang($a, 'Persian', 'per', 'fas', 'farsi'),
     'fi' => lang($f, 'Finnish', 'fin'),
     'fo' => lang($g, 'Faroese', 'fao', 'far'),
     'fr' => lang($r, 'French', 'fra', 'fre'),
     'ga' => lang($c, 'Irish', 'gle', 'gaelic', 'iri'),
     'gd' => lang($c, 'Scottish Gaelic', 'gla', 'scottish', 'sga'),
+    'he' => lang($o, 'Hebrew', 'heb'),
     'hi' => lang($a, 'Hindi', 'hin'),
     'hr' => lang($s, 'Croatian', 'hrv', 'cro'),
     'hu' => lang($f, 'Hungarian', 'hun'),
@@ -88,6 +91,7 @@ function getDemoText($code) {
   // Article 20 of the human rights
   switch ($code) {
     case 'af': return 'Elkeen het die reg tot vryheid van vreedsame vergadering en assosiasie.';
+    case 'ar': return 'لكل شخص الحق في حرية الاشتراك في الجمعيات والجماعات السلمية.';
     case 'be': return 'Кожны чалавек мае права на свабоду мірных сходаў і асацыяцый.';
     case 'bg': return 'Всеки човек има право на свобода на мирни събрания и сдружения.';
     case 'bn': return 'প্রত্যেকের‌ই শান্তিপূর্ণ সমাবেশে অংশগ্রহণ ও সমিতি গঠনের স্বাধীনতায় অধিকার রয়েছে।';
@@ -102,11 +106,13 @@ function getDemoText($code) {
     case 'es': return 'Toda persona tiene derecho a la libertad de reunión y de asociación pacíficas.';
     case 'et': return 'Igal inimesel on õigus rahumeelse kogunemise ja liitumise vabadusele.';
     case 'eu': return 'Nornahik du bakean biltzeko eta elkartzeko eskubidea.';
+    case 'fa': return 'هر کس حق دارد آزادانه مجامع و جمعیت‌های مسالمت‌آمیز تشکیل دهد.';
     case 'fi': return 'Kaikilla on oikeus rauhanomaiseen kokoontumis- ja yhdistymisvapauteen.';
     case 'fo': return 'Øll hava rætt til frítt og á friðarligan hátt at koma saman og taka seg saman í felagsskapir.';
     case 'fr': return 'Toute personne a droit à la liberté de réunion et d’association pacifiques.';
     case 'ga': return 'Tá ag gach uile dhuine an ceart go mbeidh saoirse aige teacht ar tionól agus gabháil le comhlachas go sítheoilte';
     case 'gd': return 'Tha còir aig na h-uile saorsa a bhith aca airson co-chruinneachadh agus co-chomunn.';
+    case 'he': return 'כל אדם זכאי לחירות ההתאספות וההתאגדות בדרכי שלום.';
     case 'hi': return 'प्रत्येक व्यक्ति को शान्ति पूर्ण सभा करने या समिति बनाने की स्वतन्त्रता का अधिकार है ।';
     case 'hr': return 'Svatko ima pravo na slobodu mirnog okupljanja i udruživanja.';
     case 'hu': return 'Minden személynek joga van békés célú gyülekezési és egyesülési szabadsághoz.';

@@ -12,6 +12,12 @@ af:Elkeen het die reg tot lewe, vryheid en sekuriteit van persoon.
 af:Elkeen het oral die reg tot erkenning as 'n persoon voor die reg.
 af:Niemand sal aan arbitrêre arrestasie, aanhouding of bannelingskap onderworpe wees nie.
 
+ar:يولد جميع الناس أحرارًا متساوين في الكرامة والحقوق.
+ar:وقد وهبوا عقلاً وضميرًا وعليهم أن يعامل بعضهم بعضًا بروح الإخاء.
+ar:لكل فرد الحق في الحياة والحرية وسلامة شخصه.
+ar:لكل إنسان أينما وجد الحق في أن يعترف بشخصيته القانونية.
+ar:لا يجوز القبض على أي إنسان أو حجزه أو نفيه تعسفاً.
+
 be:Усе людзі нараджаюцца свабоднымі і роўнымі ў сваёй годнасці і правах.
 be:Яны надзелены розумам і сумленнем і павінны ставіцца адзін да аднаго ў духу брацтва.
 be:Кожны чалавека мае права на жыццё, на свабоду і на асабістую недатыкальнасць.
@@ -96,6 +102,12 @@ eu:Norbanako guztiek dute bizitzeko, aske izateko eta segurtasunerako eskubidea.
 eu:Ezin daiteke inor torturatu, ezta inori zigor edo tratu txar, anker eta lotsarazlerik eman ere. 
 eu:Inor ezingo da arrazoirik gabe atxilotu, preso hartu edo erbesteratu.
 
+fa:تمام افراد بشر آزاد بدنیا میایند و از لحاظ حیثیت و حقوق با هم برابرند.
+fa:همه دارای عقل و وجدان میباشند و باید نسبت بیکدیگر با روح برادری رفتار کنند.
+fa:هر کس حق زندگی، آزادی و امنیت شخصی دارد.
+fa:هر کس حق دارد که دارای تابعیت باشد.
+fa:احدی نمیتواند خودسرانه توقیف ‐ حبس یا تبعید بشود.
+
 fi:Kaikki ihmiset syntyvät vapaina ja tasavertaisina arvoltaan ja oikeuksiltaan.
 fi:Heille on annettu järki ja omatunto, ja heidän on toimittava toisiaan kohtaan veljeyden hengessä.
 fi:Kullakin yksilöllä on oikeus elämään, vapauteen ja henkilökohtaiseen turvallisuuteen.
@@ -125,6 +137,12 @@ gd:Tha iad air am breth le reusan is le cogais agus mar sin bu chòir dhaibh a b
 gd:Tha còir aig gach neach air beatha, saorsa agus tearainteachd.
 gd:Cha bhi neach air a chur an sàs neo ann an grèim neo air fhògarrachadh gu mi-laghail.
 gd:Tha còir aig gach neach a bhith air a choimhead mar bhall den chinne-daonna ann an sealladh an lagha.
+
+he:כל בני אדם נולדו בני חורין ושווים בערכם ובזכויותיהם.
+he:כולם חוננו בתבונה ובמצפון, לפיכך חובה עליהם לנהוג איש ברעהו ברוח של אחוה.
+he:כל אדם יש לו הזכות לחיים, לחרות ולבטחון אישי.
+he:כל אדם זכאי לאזרחות.
+he:לא ייאסר אדם, לא ייעצר ולא יוגלה באופן שרירותי.
 
 hi:सभी मनुष्यों को गौरव और अधिकारों के मामले में जन्मजात स्वतन्त्रता और समानता प्राप्त है । 
 hi:उन्हें बुद्धि और अन्तरात्मा की देन प्राप्त है और परस्पर उन्हें भाईचारे के भाव से बर्ताव करना चाहिए ।
