@@ -23,10 +23,15 @@ define('TIMER_UNSOLVED_QUESTION_WAIT_SECONDS', 180);
  * regular_poll.php to call !q timer very frequently and don't want Nightbot to seem too aggressive with posting new
  * questions as soon as someone answers a previous question. If you use a timer with large intervals, this setting can be 0.
  */
-define('TIMER_SOLVED_QUESTION_WAIT_SECONDS', 120);
+define('TIMER_SOLVED_QUESTION_WAIT_SECONDS', 180);
+/**
+ * When there's an unsolved question and someone tried an answer, how many seconds should we wait for !q timer before
+ * the question is resolved and a new answer is created?
+ */
+define('TIMER_LAST_ANSWER_WAIT_SECONDS', 30);
 
 /**
- * If poll.php is called by a user (via Nightbot) and there is an unsolved riddle, how many seconds from its creation
+ * If "!q new" is called and there is an unsolved riddle, how many seconds from its creation
  * should we wait before solving the riddle and generating a new one?
  */
 define('USER_POLL_WAIT_SECONDS', 90);

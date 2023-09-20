@@ -49,6 +49,12 @@ if ($languageAndCode['code'] === $currentRiddle['lang']) {
   }
 
   echo toResultJson($text);
+
+  $fh = fopen('./conf/last_answer.php', 'w');
+  if ($fh) {
+    fwrite($fh, time());
+    fclose($fh);
+  }
 }
 
 // --------------
