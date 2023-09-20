@@ -4,7 +4,7 @@ if (!isset($guesser_context)) {
 }
 ?>
 
-# https://www.ohchr.org/en/search?f%5B0%5D=event_type_taxonomy_term_name%3AUniversal%20Declaration%20of%20Human%20Rights
+# https://unicode.org/udhr/translations.html
 
 af:Alle menslike wesens word vry, met gelyke waardigheid en regte, gebore.
 af:Hulle het rede en gewete en behoort in die gees van broederskap teenoor mekaar op te tree.
@@ -281,6 +281,12 @@ ru:Они наделены разумом и совестью и должны п
 ru:Каждый человек имеет право на жизнь, на свободу и на личную неприкосновенность.
 ru:Никто не может быть подвергнут произвольному аресту, задержанию или изгнанию.
 ru:Каждый человек, где бы он ни находился, имеет право на признание его правосубъектности.
+
+sb:Wšitcy čłowjekojo su wot naroda swobodni a su jenacy po dostojnosći a prawach.
+sb:Woni su z rozumom a swědomjom wobdarjeni a maja mjezsobu w duchu bratrowstwa wobchadźeć.
+sb:Kóždy ma prawo na žiwjenje, swobodu a wěstotu wosohy.
+sb:Kóždy ma prawo na statnu płisłušnosć.
+sb:Nichtó njesmě so swojowólnje zajeć w jatbje dźržeć abo z kraja wupokazać.
 
 sk:Všetci ľudia sa rodia slobodní a rovní v dôstojnosti aj právach.
 sk:Sú obdarení rozumom a svedomím a majú navzájom konať v duchu bratstva.

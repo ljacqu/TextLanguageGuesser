@@ -60,6 +60,7 @@ function createLanguages() {
     'rm' => lang($r, 'Romansh', 'roh', 'romansch', 'rumantsch'),
     'ro' => lang($r, 'Romanian', 'rum', 'ron'),
     'ru' => lang($s, 'Russian', 'rus'),
+    'sb' => lang($s, 'Sorbian', 'wen', 'sorb'), // no official two-letter code
     'sk' => lang($s, 'Slovak', 'slo', 'slk'),
     'sl' => lang($s, 'Slovene', 'slv', 'slovenian', 'si'),
     'sr' => lang($s, 'Serbian', 'srp', 'ser'),
@@ -132,6 +133,7 @@ function getDemoText($code) {
     case 'rm': return 'Mincha uman ha il dret a la libertà da reuniun e d\'associaziun cun meras paschaivlas.';
     case 'ro': return 'Orice persoană are dreptul la libertatea de întrunire și de asociere pașnică.';
     case 'ru': return 'Каждый человек имеет право на свободу мирных собраний и ассоциаций.';
+    case 'sb': return 'Kóždy ma prawo na swobodu zhromadźnja a zjednoćenja za měrliwe zaměry.';
     case 'sk': return 'Každému je zaručená sloboda pokojného shromažďovania a sdružovania sa.';
     case 'sl': return 'Vsakdo ima pravico do svobodnega in mirnega zbiranja in združevanja.';
     case 'sr': return 'Свако има право на слободу мирног окупљања и удруживања.';
