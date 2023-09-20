@@ -43,7 +43,7 @@
     th a {
       color: #99f;
     }
-    th a:hover, a:link {
+    th a:hover, a:link, a:visited {
       color: #ff9;
     }
   }
@@ -69,7 +69,7 @@
     th a {
       color: #007;
     }
-    th a:hover, a:link {
+    th a:hover, a:link, a:visited {
       color: #33f;
     }
   }
@@ -122,9 +122,11 @@ if (!isset($_GET['allhist']) && count($data_lastQuestions) > $limit) {
   $showDemoSentence = isset($_GET['demo']);
   $sortLinkAddition = $showDemoSentence ? '&amp;demo' : '';
 
+  echo '<p>';
   echo $showDemoSentence
     ? '<a href="?">Hide sample sentence</a>'
     : '<a href="?demo">Show sample sentence</a>';
+  echo '</p>';
   ?>
   <div style="width: 100%">
     <div style="float: left; margin-bottom: 20px;">
@@ -176,7 +178,7 @@ foreach ($languagesByCode as $code => $lang) {
       </ul>
 
       <br />
-      Note: The first alias in the table is always the ISO 639-1 code of the language.
+      Note: The first alias in the table is always the ISO 639-1 code of the language, the second alias is the ISO 639-2 code (or similar).
     </div>
   </div>
   
