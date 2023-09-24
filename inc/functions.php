@@ -72,6 +72,13 @@ function removeLanguagePrefix($textLine) {
   return substr($textLine, 3);
 }
 
+// From https://stackoverflow.com/a/4167053
+// For some reason, certain users (maybe using Twitch extensions?) write stuff like
+// "xho 󠀀", which has a zero-width space at the end. PHP's trim() does not remove it.
+function unicodeTrim($text) {
+  return preg_replace('/^[\pZ\pC]+|[\pZ\pC]+$/u', '', $text);
+}
+
 function createPuzzleRecord($textLine) {
   return [
     'lang' => substr($textLine, 0, 2),

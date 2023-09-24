@@ -21,7 +21,9 @@ if (!empty($data_lastQuestions)) {
   $lastQuestion = &$data_lastQuestions[0];
 }
 
-$variant = filter_input(INPUT_GET, 'variant', FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR);
+$variant = filter_input(INPUT_GET, 'variant', FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR) ?? '';
+$variant = unicodeTrim($variant);
+
 if ($lastQuestion !== null && empty($lastQuestion['solver'])) {
   if ($variant === 'timer') {
     $timeSinceLastQuestion = time() - $lastQuestion['created'];

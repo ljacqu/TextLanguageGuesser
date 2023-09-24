@@ -25,7 +25,7 @@ if (isset($currentRiddle['solver'])) {
 }
 
 $answer = filter_input(INPUT_GET, 'a', FILTER_UNSAFE_RAW, FILTER_REQUIRE_SCALAR) ?? '';
-$answer = strtolower(trim($answer));
+$answer = strtolower(unicodeTrim($answer));
 
 $languageAndCode = Languages::findLanguageAndCode($answer);
 if ($languageAndCode['code'] === $currentRiddle['lang']) {
