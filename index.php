@@ -155,10 +155,7 @@ foreach ($languagesByCode as $code => $lang) {
   echo "<tr><td>{$lang->getName()}</td><td>{$lang->getGroup()}</td>";
   if ($showDemoSentence) {
     $demoSentence = getDemoText($code);
-    if (mb_strlen($demoSentence) > 80) {
-      $demoSentence = mb_substr($demoSentence, 0, 80) . '…';
-    }
-    echo '<td>' . htmlspecialchars($demoSentence) . '</td>';
+    echo '<td>' . htmlspecialchars(trimDemoText($demoSentence, $code)) . '</td>';
   }
   echo "<td>$aliases</td></tr>";
 }
@@ -184,3 +181,17 @@ foreach ($languagesByCode as $code => $lang) {
   
 </body>
 </html>
+
+<?php
+  
+function trimDemoText($text, $code) {
+  if ($code === 'kk' || mb_strlen($text) > 80) {
+    switch ($code) {
+      case 'kk': $limit = 68; break;
+      case 'ta': $limit = 56; break;
+      default:   $limit = 80;
+    }
+    return trim(mb_substr($text, 0, $limit)) . '…';
+  }
+  return $text;
+}
