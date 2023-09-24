@@ -68,15 +68,6 @@ function selectQuestion($choices, $lastQuestions) {
   return $actualChoices[ array_rand($actualChoices, 1) ];
 }
 
-function hasSubArrayWithValue($haystack, $key, $valueToFind) {
-  foreach ($haystack as $entryToSearch) {
-    if ($entryToSearch[$key] === $valueToFind) {
-      return true;
-    }
-  }
-  return false;
-}
-
 function removeLanguagePrefix($textLine) {
   return substr($textLine, 3);
 }

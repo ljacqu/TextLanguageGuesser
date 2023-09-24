@@ -87,21 +87,9 @@ if ($lastQuestion && !isset($lastQuestion['solver'])) {
 
 // Save and return new puzzle
 updateCurrentState($data_lastQuestions);
-$text = removeLanguagePrefix($puzzle['line']);
-$dotAndSpace = substr($text, -1) === '.' ? ' ' : '. ';
 $response = connectTexts('Guess the language: ' . removeLanguagePrefix($puzzle['line']), 'Answer with !a');
 echo toResultJson($preface . $response);
 
-
-function returnLastQuestionIfUnsolved($data_lastQuestions) {
-  if (!empty($data_lastQuestions)) {
-    $lastQuestion = $data_lastQuestions[0];
-    if (!isset($lastQuestion['solver'])) {
-      return $lastQuestion;
-    }
-  }
-  return null;
-}
 
 function connectTexts($text1, $text2) {
   $lastCharacter = mb_substr($text1, -1, 1, 'UTF-8');

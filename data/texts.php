@@ -1,7 +1,5 @@
 <?php
-if (!isset($guesser_context)) {
-  exit;
-}
+exit;
 ?>
 
 # https://unicode.org/udhr/translations.html
