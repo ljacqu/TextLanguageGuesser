@@ -142,6 +142,12 @@ gd:Tha còir aig gach neach air beatha, saorsa agus tearainteachd.
 gd:Cha bhi neach air a chur an sàs neo ann an grèim neo air fhògarrachadh gu mi-laghail.
 gd:Tha còir aig gach neach a bhith air a choimhead mar bhall den chinne-daonna ann an sealladh an lagha.
 
+gl:Tódolos seres humanos nacen libres e iguais en dignidade e dereitos e, dotados como están de razón e conciencia, díbense comportar fraternalmente uns cos outros.
+gl:Todo individuo ten dereito á vida, á liberdade e á seguridade da súa persoa.
+gl:Ninguín estará sometido á escravitude nin a servidume; a escravitude e a trata de escravos está prohibida en tódalas súas maneiras.
+gl:Ninguín poderá ser arbitrariamente detido, preso nin desterrado.
+gl:Toda persoa ten dereito a circular libremente e a elixir a súa residencia no territorio dun estado.
+
 he:כל בני אדם נולדו בני חורין ושווים בערכם ובזכויותיהם.
 he:כולם חוננו בתבונה ובמצפון, לפיכך חובה עליהם לנהוג איש ברעהו ברוח של אחוה.
 he:כל אדם יש לו הזכות לחיים, לחרות ולבטחון אישי.

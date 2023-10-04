@@ -37,6 +37,7 @@ function createLanguages() {
     'fr' => lang($r, 'French', 'fra', 'fre'),
     'ga' => lang($c, 'Irish', 'gle', 'gaelic', 'iri'),
     'gd' => lang($c, 'Scottish Gaelic', 'gla', 'scottish', 'sga'),
+    'gl' => lang($r, 'Galician', 'glg', 'galego'),
     'he' => lang($o, 'Hebrew', 'heb'),
     'hi' => lang($a, 'Hindi', 'hin'),
     'hr' => lang($s, 'Croatian', 'hrv', 'cro'),
@@ -118,6 +119,7 @@ function getDemoText($code) {
     case 'fr': return 'Toute personne a droit à la liberté de réunion et d’association pacifiques.';
     case 'ga': return 'Tá ag gach uile dhuine an ceart go mbeidh saoirse aige teacht ar tionól agus gabháil le comhlachas go sítheoilte';
     case 'gd': return 'Tha còir aig na h-uile saorsa a bhith aca airson co-chruinneachadh agus co-chomunn.';
+    case 'gl': return 'Toda persoa ten dereito á liberdade de reunión e de asociación pacíficas.';
     case 'he': return 'כל אדם זכאי לחירות ההתאספות וההתאגדות בדרכי שלום.';
     case 'hi': return 'प्रत्येक व्यक्ति को शान्ति पूर्ण सभा करने या समिति बनाने की स्वतन्त्रता का अधिकार है ।';
     case 'hr': return 'Svatko ima pravo na slobodu mirnog okupljanja i udruživanja.';
