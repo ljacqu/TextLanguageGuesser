@@ -57,6 +57,9 @@ if (isset($_GET['msg'])) {
   <script>
     const secret = '<?php echo API_SECRET ?>';
 
+    var isActive = true;
+    var hash = 'notset';
+
     function getCurrentTimeAsString() {
       const currentdate = new Date();
       return String(currentdate.getHours()).padStart(2, '0')
@@ -65,7 +68,7 @@ if (isset($_GET['msg'])) {
     }
 
     const callPollFile = (variant) => {
-      const request = new Request(`poll.php?secret=${secret}&variant=${variant}`, {
+      const request = new Request(`poll.php?secret=${secret}&variant=${variant}&hash=${hash}`, {
         method: 'GET'
       });
 
@@ -82,6 +85,9 @@ if (isset($_GET['msg'])) {
             document.getElementById('result').innerHTML = data.result;
           } else if (data.info && data.info.trim() !== '') {
             document.getElementById('result').innerHTML = data.info;
+          }
+          if (data.hash) {
+            hash = data.hash;
           }
 
           document.getElementById('time').innerHTML = getCurrentTimeAsString();
@@ -132,8 +138,6 @@ if (isset($_GET['msg'])) {
           setBodyBgColor('#fff0f0');
         });
     };
-
-    var isActive = true;
 
     function setBodyBgColor(color) {
       document.body.style.backgroundColor = color;

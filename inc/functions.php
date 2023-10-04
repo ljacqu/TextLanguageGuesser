@@ -1,8 +1,9 @@
 <?php
 
-function toResultJson($text, $info=null) {
-  if ($info) {
-    return json_encode(['result' => $text, 'info' => $info], JSON_FORCE_OBJECT);
+function toResultJson($text, $additionalProperties=null) {
+  if ($additionalProperties) {
+    $additionalProperties['result'] = $text;
+    return json_encode($additionalProperties, JSON_FORCE_OBJECT);
   }
   return json_encode(['result' => $text], JSON_FORCE_OBJECT);
 }
