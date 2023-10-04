@@ -30,11 +30,11 @@ if ($lastQuestion !== null && empty($lastQuestion['solver'])) {
     if ($timeSinceLastQuestion < TIMER_UNSOLVED_QUESTION_WAIT_SECONDS) {
       // Nightbot doesn't accept empty strings, but seems to trim responses and
       // not show anything if there are only spaces, so make sure to have a space in the response.
-      die(toResultJson(' '));
+      die(toResultJson(' ', removeLanguagePrefix($lastQuestion['line'])));
     } else {
       $lastAnswer = (int) file_get_contents('./conf/last_answer.php');
       if (time() - $lastAnswer < TIMER_LAST_ANSWER_WAIT_SECONDS) {
-        die(toResultJson(' '));
+        die(toResultJson(' ', removeLanguagePrefix($lastQuestion['line'])));
       }
     }
   } else if ($variant === 'new' || $variant === 'silentnew') {
@@ -42,7 +42,7 @@ if ($lastQuestion !== null && empty($lastQuestion['solver'])) {
     $secondsToWait = USER_POLL_WAIT_SECONDS - $timeSinceLastQuestion;
     if ($timeSinceLastQuestion < USER_POLL_WAIT_SECONDS) {
       if ($variant === 'silentnew') {
-        die(toResultJson(' '));
+        die(toResultJson(' ', removeLanguagePrefix($lastQuestion['line'])));
       } else {
         die(toResultJson('Please solve the current question, or wait ' . $secondsToWait . 's'));
       }

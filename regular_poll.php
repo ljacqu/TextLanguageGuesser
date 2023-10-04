@@ -80,6 +80,8 @@ if (isset($_GET['msg'])) {
         .then((data) => {
           if (data.result.trim() !== '') {
             document.getElementById('result').innerHTML = data.result;
+          } else if (data.info && data.info.trim() !== '') {
+            document.getElementById('result').innerHTML = data.info;
           }
 
           document.getElementById('time').innerHTML = getCurrentTimeAsString();
