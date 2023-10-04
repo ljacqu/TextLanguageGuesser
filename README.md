@@ -36,26 +36,28 @@ With the above commands, your viewers will have to run `!q` to obtain new questi
 Go to https://nightbot.tv/timers and add a new timer:
 - Name: Languages guess
 - Message: empty
-- Interval: Whatever you want  (Suggestion: every 5 minutes)
+- Interval: Whatever you want
 - Chat lines: Whatever you want :smile: (Suggestion: the minimum)
 - Alias: `!q timer`
 
 ### Manual timer
 
-Since the timer cannot be run more than every five minutes, this means if someone solves a question just after `!q timer` was run,
-it might take another five minutes for a new question to be generated automatically. To counter this, you can keep `regular_poll.php?secret=CHEESE`
-(replacing CHEESE with your actual API secret) open in a browser tab. It will basically run `!q timer` manually every thirty seconds.
+Since the Nightbot timer cannot be run more than every five minutes, a lot of timing issues can happen, i.e. there can be a delay of almost
+ten minutes depending on when a user solves a question and on your configured timeouts. To counter this, you can keep `regular_poll.php?secret=CHEESE` 
+(replacing CHEESE with your actual API secret) open in a browser tab. It runs `!q timer` manually in smaller intervals and sends
+the message to Nightbot whenever needed.
 
-You can configure the proper waiting times in config.php to not have too many messages!
+You can configure the timeouts in config.php to not have too many messages!
 
 Note that running this manual timer means you have to register an application to Nightbot at https://nightbot.tv/account/applications:
 - Name: guesslang (or whatever you want)
 - Redirect URIs: `https://example.org/ext/lang/obtain_token.php` (where `https://example.org/ext/lang` is where your backend is hosted)
 
 Set the client ID and client secret that are generated to the properties in config.php. Then, open `regular_poll.php` as mentioned above,
-and follow the link to `obtain_token.php` that is linked in an error message.
+and follow the link to obtain a token that is linked in an error message.
 
-Make sure not to have a **Nightbot timer running alongside** to prevent timing conflicts.
+Make sure that you don't have a **Nightbot timer running alongside** to prevent timing conflicts (i.e. choose to use the Nightbot timer,
+or use the regular_poll.php page, but not both at the same time).
 
 ## Adding new texts
 
@@ -74,8 +76,8 @@ Modify `data/langs.php`. Note that the entire code base assumes that languages h
 - `answer.php` is called by the !a command to process answers
 - `index.php` shows past questions and the possible languages so that you can offer a list of languages to your users
 - `poll.php` is used by the !q command and can be called from a timer
+- `regular_poll.php`: See "Manual timer"
 - `validate_data.php` should be run whenever you add new texts or languages
-- `regular_poll.php`: Explained under "Manual timer"
 
 ### Folders
 - /conf/ holds configurations (config.php) that you should change, and other state that is automatically saved.
