@@ -188,7 +188,7 @@ if (isset($_GET['msg'])) {
   <div id="pollerror" class="error" style="display: none">Error during last call: <span id="pollerrormsg"></span> </div>
   <div>Last Nightbot message: <span id="msg"></span></div>
 
-  <div><input type="checkbox" name="pause" id="pause" onchange="togglePause();" /> <label for="pause">Pause</label></div>
+  <div><input type="checkbox" checked="checked" name="pause" id="pause" onchange="togglePause();" /> <label for="pause">Pause</label></div>
 
   <div>
     <button class="manual" style="background-color: #ecf" onclick="callPollFile('');" title="Runs !q and sends the result to Nightbot">Show question again</button>
