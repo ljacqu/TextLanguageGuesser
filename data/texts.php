@@ -1,7 +1,3 @@
-<?php
-exit;
-?>
-
 # https://unicode.org/udhr/translations.html
 
 af:Alle menslike wesens word vry, met gelyke waardigheid en regte, gebore.

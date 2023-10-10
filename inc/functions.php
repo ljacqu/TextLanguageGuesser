@@ -9,19 +9,11 @@ function toResultJson($text, $additionalProperties=null) {
 }
 
 function readPossibleLines() {
-  $foundPhpEnd = false;
   $contents = file_get_contents('./data/texts.php') or die(toResultJson('Error: failed to read the texts file'));
 
   $choice = [];
   foreach (explode("\n", $contents) as $line) {
     $line = trim($line);
-    if (!$foundPhpEnd) {
-      if ($line === '?>') {
-        $foundPhpEnd = true;
-      }
-      continue;
-    }
-
     if (empty($line) || $line[0] === '#') {
       continue;
     }
@@ -29,7 +21,7 @@ function readPossibleLines() {
     $choice[] = $line;
   }
 
-  if (empty($choice) && !$foundPhpEnd) {
+  if (empty($choice)) {
     die(toResultJson('Error: Invalid text definitions'));
   }
 
