@@ -33,7 +33,9 @@ echo '<br />Total languages: ' . count($languagesWithText);
 // Check the language definitions
 $identifiers = [];
 $languagesWithNoText = [];
+$allCodes = [];
 foreach (Languages::getAllLanguages() as $code => $lang) {
+  $allCodes[] = $code;
   $name = strtolower($lang->getName());
   if (isset($identifiers[$name])) {
     die('Identifier "' . $name . '" is duplicated');
@@ -59,16 +61,41 @@ foreach (Languages::getAllLanguages() as $code => $lang) {
   if (!isset($languagesWithText[$code])) {
     $languagesWithNoText[] = $code;
   }
-
-  if (empty(getDemoText($code))) {
-    echo '<br />Warning: No demo text for language "' . $code . '"';
-  }
 }
 
 echo '<br />Validated ' . count($identifiers) . ' language identifiers';
 if (!empty($languagesWithNoText)) {
   echo '<br />Warning: The following languages have no texts: ' . implode(', ', $languagesWithNoText);
 }
+
+// Check demo sentences
+$demoLines = explode("\n", file_get_contents('./data/demo_texts.txt'));
+$languagesWithDemo = [];
+foreach ($demoLines as $demoText) {
+  $demoText = trim($demoText);
+  if (empty($demoText)) {
+    continue;
+  }
+
+  if (!preg_match('/^[a-z]{2}:./', $demoText)) {
+    die('Found demo text line in unsupported format: "' . htmlspecialchars($demoText) . '"');
+  }
+  $code = substr($demoText, 0, 2);
+  if (isset($languagesWithDemo[$code])) {
+    echo '<br />Error: Language ' . $code . ' has multiple demo sentences';
+  } else if (!in_array($code, $allCodes)) {
+    echo '<br />Warning: Found demo sentence for unknown language code "' . $code . '"';
+  }
+  $languagesWithDemo[$code] = true;
+}
+
+foreach ($allCodes as $code) {
+  if (!isset($languagesWithDemo[$code])) {
+    echo '<br />Warning: No demo sentence for language "' . $code . '"';
+  }
+}
+echo '<br />Validated ' . count($demoLines) . ' demo lines';
+
 
 // Check some configurations
 if (HISTORY_AVOID_LAST_N_QUESTIONS > HISTORY_KEEP_ENTRIES) {

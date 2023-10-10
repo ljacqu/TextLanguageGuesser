@@ -127,6 +127,7 @@ if (!isset($_GET['allhist']) && count($data_lastQuestions) > $limit) {
     ? '<a href="?">Hide sample sentence</a>'
     : '<a href="?demo">Show sample sentence</a>';
   echo '</p>';
+  $demoSentencesByCode = $showDemoSentence ? loadDemoSentences() : [];
   ?>
   <div style="width: 100%">
     <div style="float: left; margin-bottom: 20px;">
@@ -154,7 +155,7 @@ foreach ($languagesByCode as $code => $lang) {
   $aliases = empty($aliases) ? $code : ($code . ', ' . $aliases);
   echo "<tr><td>{$lang->getName()}</td><td>{$lang->getGroup()}</td>";
   if ($showDemoSentence) {
-    $demoSentence = getDemoText($code);
+    $demoSentence = $demoSentencesByCode[$code] ?? '';
     echo '<td>' . htmlspecialchars(trimDemoText($demoSentence, $code)) . '</td>';
   }
   echo "<td>$aliases</td></tr>";
@@ -194,4 +195,19 @@ function trimDemoText($text, $code) {
     return trim(mb_substr($text, 0, $limit)) . '…';
   }
   return $text;
+}
+
+function loadDemoSentences() {
+  $demoLines = explode("\n", file_get_contents('./data/demo_texts.txt'));
+  $demoTextsByCode = [];
+
+  foreach ($demoLines as $demoText) {
+    $demoText = trim($demoText);
+    if (!empty($demoText)) {
+      $code = substr($demoText, 0, 2);
+      $text = substr($demoText, 3);
+      $demoTextsByCode[$code] = $text;
+    }
+  }
+  return $demoTextsByCode;
 }
