@@ -76,7 +76,7 @@ if (!empty($code)) {
 
     $token['expires'] = time() + $token['expires_in'] - 30;
 
-    $fh = fopen('./data/current_token.php', 'w') or die('Failed to write to file');
+    $fh = fopen('./conf/current_token.php', 'w') or die('Failed to write to file');
     fwrite($fh, '<?php $data_token = ' . var_export($token, true) . ';');
     fclose($fh);
 
