@@ -92,15 +92,3 @@ function createLanguages() {
 function lang($group, $name, ...$aliases): Language {
   return new Language($name, $group, $aliases);
 }
-
-function exportLanguages() {
-  foreach (createLanguages() as $code => $lang) {
-    echo "\n$code | {$lang->getName()}";
-    $spaces = 18 - strlen($lang->getName());
-    echo str_repeat(' ', $spaces);
-    echo "| {$lang->getGroup()}";
-    $spaces = 10 - strlen($lang->getGroup());
-    echo str_repeat(' ', $spaces);
-    echo "| " . implode(',', $lang->getAliases());
-  }
-}
