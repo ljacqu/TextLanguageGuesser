@@ -468,8 +468,8 @@ bn:প্রায় ১৫ হাজার বছর আগে একপ্র
 br:Ur wezenn zo ur blantenn goadek gant brankoù stag ouzh ur c'hef.
 br:Dourredennoù naturel eo ar stêrioù. Redek a reont eus ul lec'h uhel, e-lec'h m'emañ o mammenn pe o andon…
 br:Tamm-ha-tamm e vez lakaet da vont strobadoù emlusk e-lec'h m'he deus pep gwetur ur mekanik stlejañ.
-br:Un nebeud dezerzhioù a vez kavet er menezioù uhelañ eus ar bed war harzoù Bro-Sina ha n'eo ket an dour a vank eno met an oksigen hag an tommder.
-br:Muioc'h a gemmoù morfologiezh hag emzalc'h zo en isspesad-se evit n'eus forzh peseurt spesad bronneged all.
+br:Pa n'eus ket dour a-walc'h evit gounit boued e vez digenvez an dezerzh.
+br:Abalamour d'o zalvoudegezh evit an dud kentañ e voent implijet buan e pep lec'h.
 
 ca:Hi ha altres tipus de plantes amb fusta veritable, però els arbres es diferencien per la seua mida més important.
 ca:La major part és aigua salada, ja que els oceans contenen 96,5% de l'aigua del nostre planeta.
@@ -477,7 +477,7 @@ ca:Els trens més moderns són impulsats per locomotores amb motors dièsel o el
 ca:Segons aquesta definició, també són deserts altres climes més freds com l'àrtic o la tundra.
 ca:Els gossos que tenen els avantpassats registrats formalment són denominats com a gossos amb pedigrí.
 
-# TODO: Cherokee texts need to come from other articles
+# Cherokee (ch) skipped because the Wikipedia is of poor quality, and its a niche language.
 
 cs:Strom má obvykle mnoho sekundárních větví nesených kmenem nad zemí.
 cs:Místo, na kterém se řeka vlévá do moře nebo jezera, se nazývá ústí.
@@ -664,15 +664,15 @@ lv:Ja suns netiek pareizi audzināts, tas var kļūt par sabiedrībai bīstamu d
 kk:Жер бетінде климаттың өзгеруіне байланысты, ағашты өсімдіктердің даму циклы қысқаруда.
 kk:Өзен қар суы, жаңбыр, мұздық және жер асты суларының есебінен толығып отырады.
 kk:Кезексіз түрде жолға шығатын Пойыздарға өрт сөндіруші, қар тазалаушы, жол жөндеуші Пойыздар жатады.
-kk:Судың булануы, жерге сіңу шығыны көп болғандықтан, шөл арқылы ағатын кейбір өзендер сағасына жетпей тартылып қалады.
-kk:Қоян мен түлкі аулайтын әуесқой аңшылар жергілікті жағдайға қарай тазы немесе жүйрік ит тұқымдарын өсіреді.
+kk:Ол жердегі өсімдіктер құдықтардың сулары немесе жер асты көздерінің есебінін өседі.
+kk:Үйде ит ұстайтындар ит өсіру әуесқойлары клубына немесе қоғамына мүшелікке кірелі.
 
-# No article for tree, train or desert - other articles were taken
+# Texts from other articles
 km:ចំណែកឯផ្លែទុំវិញគេអាច យកវាទៅធ្វើជានំយ៉ាងឈ្ងុយឆ្ងាញ់បានផងដែរ។
 km:ទន្លេជាច្រើនក៏ជាកន្លែងសម្គាល់វប្បធម៌ និងប្រវត្តិសាស្ត្រដ៏សំខាន់ផងដែរ ហើយបានដើរតួនាទីក្នុងការអភិវឌ្ឍន៍អរិយធម៌របស់មនុស្ស។
 km:ពាក្យថា ផ្លូវថ្នល់ ហៅកាត់ថា ផ្លូវ ជាទំហំទាំងមូលនៃទ្រូងផ្លូវ រួមជាមួយជាយផ្លូវ ឬ ចិញ្ចើមផ្លូវ
 km:នៅប្រទេសមួយបានមានប្រជាជន​ភាសា​និង​សាសន៏ផ្សេងៗ​ដូចនៅប្រទេសឥណ្ឌា។
-km:សត្វឆ្កែ ពេលខ្លះត្រូវបានគេចាត់ទុកជា "មិត្តសំឡាញ់របស់មនុស្ស" ពីព្រោះវា​ត្រូវ​បានគេ​​​ទុកជាសត្វចិញ្ចឹម ហើយវាស្មោះត្រង់នឹងម្ចាស់ និងចូលចិត្ត​នៅក្បែរ​មនុស្ស​។
+km:បច្ចុប្បន្ននេះ​ ពួក​វាគឺ​ជា​​សត្វ​ចិញ្ចឹមដ៏ពេញនិយម​បំផុតក្នុង​​ពិភព​លោក។
 
 kn:ಎತ್ತರದ ಮರ ಎಂದರೆ, ಹೈಪರಿಯನ್ ಎಂಬ ಕರಾವಳಿಯ ಮಂಜತ್ತಿಮರವು ೧೧೫೬ ಮೀ (೩೭೯ ಅಡಿ) ಎತ್ತರವಿದೆ.
 kn:ಈ ಜಲರೂಪಗಳು ಒಡನೆ ನೆಲದ ಮೇಲಿನ ಪ್ರವಾಹವಾಗಿ ಹರಿದುಹೋಗಬಹುದು ಅಥವಾ ಭೂಗತಪ್ರವಾಹಗಳಾಗಿ ಹರಿಯಬಹುದು.
@@ -718,7 +718,12 @@ nl:Ook een enkele (rijdende) locomotief wordt wel als trein aangeduid, maar dat 
 nl:Na een regenbui kan een groot deel van de woestijn ineens zeer sterk begroeid raken.
 nl:Om een stabiele vachtkleur van een ras te verkrijgen, was het dus nodig nauw verwante honden met elkaar te kruisen.
 
-# TODO: nv texts need to come from other articles
+# Texts taken from other articles due to lack of availability
+nv:Naatsédlózii éí hosh biyaagóó éí doodaiiʼ éí chʼiltsoh naazkaadgóó bitʼóh ánáyiilʼįįh.
+nv:Bitsʼíís éí diłhiłgo łitso dóó dibéłchíʼíigo yistłʼin łeh. Diyóózh éí naaldlooshii yázhí yilghał.
+nv:Tsétah tłʼízí bikąʼígíí dóó biʼáádígíí tʼáá áła bidaʼgáá hólǫ́.
+nv:Tsinlátah ayáanii éí chʼil bitʼąąʼ dóó tłʼoh deiłchozh dóó ńdaʼatʼaał.
+nv:Bįįh éí tʼáá ałtso bijáád danineez dóó bitseeʼ doo nineez da.
 
 pl:W ciągu życia drzewo ciągle powiększa przekrój pnia i gałęzi.
 pl:W celu stworzenia nowej „naturalnej” rzeki o parametrach dostosowanych do potrzeb gospodarczych.

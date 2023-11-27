@@ -24,7 +24,7 @@ foreach ($lines as $line) {
   } else if (!isset($allLanguages[$entry['lang']])) {
     die('Unknown language: ' . $entry['lang']);
   }
-  $languagesWithText[$entry['lang']] = 1;
+  $languagesWithText[$entry['lang']] = ($languagesWithText[$entry['lang']] ?? 0) + 1;
 }
 
 echo 'Validated ' . count($lines) . ' messages.';
@@ -110,4 +110,29 @@ if (HISTORY_AVOID_LAST_N_QUESTIONS >= count($lines)) {
 }
 if (HISTORY_AVOID_LAST_N_LANGUAGES >= count($languagesWithText)) {
   echo '<br />Error: HISTORY_AVOID_LAST_N_LANGUAGES is larger than the total number of languages with entries';
+}
+
+// Output
+if (isset($_GET['output'])) {
+  echo '<table border="1" style="font-family: Arial; font-size: 10pt; border-collapse: collapse">
+          <tr><th>Lang</th><th>Message</th></tr>';
+  foreach ($lines as $line) {
+    $lang = substr($line, 0, 2);
+    $text = substr($line, 3);
+    echo "\n<tr><td>$lang</td><td>$text</td></tr>";
+  }
+  echo '</table>';
+} else {
+  echo '<p><a href="?output">Show all sentences</a></p>';
+}
+
+if (isset($_GET['dist'])) {
+  echo '<table><tr><th>Language</th><th>Number of texts</th></tr>';
+  foreach (Languages::getAllLanguages() as $code => $lang) {
+    $cnt = $languagesWithText[$code] ?? 0;
+    echo "\n<tr><td title='" . htmlspecialchars($lang->getName()) . "'>$code</td><td>$cnt</td></tr>";
+  }
+  echo '</table>';
+} else {
+  echo '<p><a href="?dist">Show sentences by language</a></p>';
 }
