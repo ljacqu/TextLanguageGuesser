@@ -431,3 +431,444 @@ zu:Bahlanganiswe wumcabango nangunembeza futhi kufanele baphathane ngomoya wobun
 zu:Wonke umuntu unelungelo lempilo, lenkululeko nelokuphepha.
 zu:Akekho oyokwephucwa ngokungekho emthethweni impahla yakhe.
 zu:Akekho oyoboshwa, avelelwe noma adingiswe ngokungekho emthethweni.
+
+
+# Wikipedia (tree, river, train, desert, dog)
+
+af:'n Boom het tipies baie sekondêre takke wat vry van die grond deur die stam ondersteun word.
+af:Die primêre rede waarom lopende water oor die aardoppervlak beweeg, is swaartekrag.
+af:Stoomtreine het 'n stoker aanboord, wat die vuur moet stook om die stoom wat die trein aandryf te lewer.
+af:Die aanwesigheid van 'n dierelewe is veral tydens en na 'n reëntyd merkbaar.
+af:Die hond het 'n sterk sosiale instink waarmee hy 'n hegte band vorm met die mense saam met wie hy woon.
+
+ar:كما ان الأشجار تتخلص من الفضلات بعدة طرق تختلف حسب نوع الأشجار.
+ar:يحدث أشكال الأرض الجيولوجية، وتمتد الأنهار ما بين المنبع والمصب.
+ar:كانت إنجلترا أول من استخدمت السكك الحديدية لأول مرة في التاريخ عام 1789م حتى عم استخدام القطارات في جميع البلاد.
+ar:فتنعم الصخور وتحول الرياح حبيبات الرمل لأشكال متجانسة فترصفها كطبقات على الأرض أو تكدسها مكونة كثبانً رملية.
+ar:ورغم هذه الاختلافات في كل فصائل الكلاب إلا أنها جميعها متطابقة من الناحية التشريحية.
+
+be:З дрэва здаўна вырабляюць хатняе начынне, прылады працы, транспартныя сродкі, мэблю і інш.
+be:Па характары плыні ракі бываюць раўнінныя і горныя.
+be:Як зразумела з азначэння, цягнік фармуецца з цягавых і нецягавых адзінак рухомага саставу.
+be:Снежныя пустыні ў асноўным знаходзяцца за палярнымі кругамі і населеныя жывёламі, устойлівымі да холаду.
+be:Існуюць сотні парод сабак, якія істотна адрозніваюцца адна ад адной.
+
+bg:Частта от ботаниката, която разглежда дървесните растения се нарича дендрология.
+bg:Повърхността на сушата, от която речната система събира водите си, се нарича водосборен басейн.
+bg:Принципът ѝ на работа е създаване на частичен вакуум чрез кондензиране на парата в специален цилиндър.
+bg:Растенията и животните, обитаващи пустините, използват специални адаптации, за да оцелеят в суровата среда.
+bg:Едни от първите домашни животни, кучетата се използват широко по целия свят и играят важна роля в ранните човешки селища.
+
+bn:আবার কিছু লেখক গাছের কাণ্ডের ন্যূনতম ব্যাস নির্ধারণ করেছেন ১০ সেমি।
+bn:সাধারণত পর্বত,উঁচু ভূমি,পাহাড়ের গিরিখাত থেকে সৃষ্ট ঝরণাধারা, বরফগলিত স্রোত কিংবা প্রাকৃতিক পরিবর্তন থেকে নদীর জন্ম।
+bn:ট্রেন যে সমান্তরাল ধাতব পাতদ্বয়ের উপরে দিয়ে চালিত হয়, তাকে বলা হয় রেললাইন।
+bn:মরুভূমি বলতে বোঝায় অত্যন্ত শুস্ক, বৃষ্টিবিরল ও অধিকাংশ ক্ষেত্রে বালি দিয়ে আবৃত অঞ্চল।
+bn:প্রায় ১৫ হাজার বছর আগে একপ্রকার নেকড়ে মানুষের শিকারের সঙ্গী হওয়ার মাধ্যমে গৃহপালিত পশুতে পরিণত হয়।
+
+br:Ur wezenn zo ur blantenn goadek gant brankoù stag ouzh ur c'hef.
+br:Dourredennoù naturel eo ar stêrioù. Redek a reont eus ul lec'h uhel, e-lec'h m'emañ o mammenn pe o andon…
+br:Tamm-ha-tamm e vez lakaet da vont strobadoù emlusk e-lec'h m'he deus pep gwetur ur mekanik stlejañ.
+br:Pa n'eus ket dour a-walc'h evit gounit boued e vez digenvez an dezerzh.
+br:Abalamour d'o zalvoudegezh evit an dud kentañ e voent implijet buan e pep lec'h.
+
+ca:Hi ha altres tipus de plantes amb fusta veritable, però els arbres es diferencien per la seua mida més important.
+ca:La major part és aigua salada, ja que els oceans contenen 96,5% de l'aigua del nostre planeta.
+ca:Els trens més moderns són impulsats per locomotores amb motors dièsel o elèctrics.
+ca:Segons aquesta definició, també són deserts altres climes més freds com l'àrtic o la tundra.
+ca:Els gossos que tenen els avantpassats registrats formalment són denominats com a gossos amb pedigrí.
+
+# Cherokee (ch) skipped because the Wikipedia is of poor quality, and its a niche language.
+
+cs:Strom má obvykle mnoho sekundárních větví nesených kmenem nad zemí.
+cs:Místo, na kterém se řeka vlévá do moře nebo jezera, se nazývá ústí.
+cs:V průběhu 20. století byly parní lokomotivy vytlačovány dieselovými a elektrickými lokomotivami.
+cs:Obvyklá je řídká vegetace specifického typu, byť se výjimečně mohou vyskytnout i rozsáhlejší porosty.
+cs:Obecně se předpokládá, že se jedná o zdomácnělého a umělým výběrem změněného vlka obecného.
+
+cy:Mae rôl bwysig gan goed mewn llawer o chwedlau'r byd.
+cy:Ystyrid llif yr afon yn gyfrwng i olchi ymaith bechodau a dyma, efalli'r sail i fedyddio pobl mewn afon.
+cy:Ceir mathau gwahanol o drên ar gyfer gwahanol reilffyrdd a phwrpasau.
+cy:Yn draddodiadol mae nifer o'i drigolion yn byw bywyd nomadaidd neu led-nomadaidd.
+cy:Drwy fridio dethol y ci gwyllt dros filoedd o flynyddoedd cyrhaeddwyd ei ffurf amrywiol, presennol.
+
+da:De fleste træer er længelevende, og nogle kan blive flere tusinde år gamle og nå en højde på mere end 100 m.
+da:Vand på og nær jordoverfladen kan delvist fordampe. Disse processer kaldes evapotranspiration.
+da:Sporvogne adskiller sig fra tog, ved at køre i gadeplan og ikke på særskilte baner.
+da:Jordbunden spiller også en vis rolle efter jordarternes forskellige evne til at holde på vandet.
+da:Det er stadig usikkert, hvornår hunden blev tæmmet og blev en del af menneskets husholdning.
+
+de:Sie besaßen verholzte Stämme, die auch ein sekundäres Dickenwachstum aufwiesen.
+de:Dieser Fließweg führt, flussaufwärts betrachtet, an jedem Mündungspunkt jeweils die größere Wassermenge.
+de:Das Eisenbahnverkehrsunternehmen gibt dem Zugpersonal bekannt, welche Nebenfahrzeuge für Züge geeignet sind.
+de:Die Wüsten der Erde können klimatisch in fünf Typen eingeteilt werden, je nach der Ursache für ihre Trockenheit.
+de:Historisch wurde ein Hund, der zur Bewachung des Hauses gehalten wird, als Haushund bezeichnet.
+
+el:Σε σύγκριση με τα περισσότερα άλλα φυτά, πόες και θάμνους, τα δέντρα είναι μακρόβια.
+el:Τα νερά του ποταμού συνεχίζουν μέχρι να καταλήξουν κάπου.
+el:Επίσης μπορεί να είναι μονής τροχιάς, όπως παλαιότερα, ή μαγνητικές.
+el:Οι έρημοι καταλαμβάνουν το ένα τρίτο της εδαφικής επιφάνειας της Γης.
+el:Υπάρχουν φυλές που έχουν ειδικευτεί στο κυνήγι, στη φύλαξη στην καθοδήγηση των κοπαδιών ή σε κάτι άλλο.
+
+eo:Arboj ekzistas en du malsamaj grupoj de vaskulaj aŭ pli altaj plantoj, nome la gimnospermoj kaj la angiospermoj.
+eo:Riveroj povas flui laŭ montoj, tra valoj (depresioj) aŭ laŭ ebenaĵoj, kaj povas krei kanjonojn aŭ gorĝojn.
+eo:En ŝipveturado trajno normale konsistas el trenŝipo kaj aro da senmotoraj barĝoj.
+eo:Pro la sekegeco de la dezertoj, ili estas lokoj taŭgaj por la konservado de homaj restaĵoj kaj fosilioj.
+eo:Same kiel lupoj, la hundoj havas felon, nome mantelon da haroj kiuj ŝirmas iliajn tutan korpon.
+
+es:Los árboles han existido desde hace 370 millones de años.
+es:Las especies que habitan los ríos se han tenido que adaptar a las corrientes y a los desniveles.
+es:Los trenes tienen su origen en los vagones que eran impulsados por caballos o tirados por cables.
+es:Debido a la sequedad de los desiertos, son lugares ideales para la preservación de artefactos humanos y fósiles.
+es:Junto al gato doméstico, es uno de los animales de compañía más populares del mundo.
+
+et:Üle 80-aastane puu ei seo rohkem süsihappegaasi kui ta väljastab.
+et:Vesi jõuab jõkke põhiliselt maapinna ning kraavide, allikate ja muude jõkke suubuvate veekogude kaudu.
+et:Veduri asemel võib rongi vedada ka mootorvagun.
+et:Kõrbete elustik on üsna vaene ning inimasustus enamasti hõre.
+et:Kõik tõud kuuluvad ühte neljast omavahel suguluses olevasse tõugrupeeringusse.
+
+eu:Zuhaitz talde txikiek zuhaiztiak osatzen dituzte eta populazio handiek, berriz, baso eta oihanak.
+eu:Uholde-lautadak oso zabalak izan daitezke ubidearekin alderatuta.
+eu:Lebitazio magnetikoa erabiliz trenbide baten gainetik airean zintzilikatuta ibiltzen den trena da.
+eu:Basamortuak sailkatzeko hainbat modu daude, ia munduan dauden basamortuak adina.
+eu:Txakurrek bariazio handia izan dute tamainan, kolorean eta forman.
+
+fa:ر گیاه‌شناسی درخت یکی از بادوام‌ترین گیاهان است که با رشد کردن ساقه یا تنه از برگ‌ها نگهداری می‌کند.
+fa:پیچان رودها در اثر شیب کم، تغییرات دینامیکی جریان و رسوبگذاری شکل می‌گیرند.
+fa:قطارها انواع مختلفی دارند که برای اهداف خاصی طراحی شده‌اند.
+fa:در گیاه‌شناسی، علوم کشاورزی و منابع طبیعی مناطقی را بیابان گویند که از لحاظ پوشش گیاهی بسیار فقیر باشد.
+fa:سگ‌ها صدها نژاد گوناگون دارند که بیشتر آن‌ها در چند صد سال اخیر به وسیلهٔ اصلاح نژادی توسط انسان‌ها ایجاد شده‌اند.
+
+fi:Kannosta voidaan laskea vuosirenkaat eli lustot, joiden lukumäärä osoittaa puun iän.
+fi:Aluetta, jolle satanut vesi valuu joen uomaan, kutsutaan valuma-alueeksi. Tämän alueen ympärille muodostuu vedenjakaja.
+fi:Juna on rautatiellä kulkeva kulkuväline, jossa on vaihteleva määrä vaunuja.
+fi:Autiomailta saa monia mineraaleja, ja etenkin kuivien alueiden maaöljyvarat ovat merkittävät.
+fi:Koiran tuntoaisti on tarkka, ja sillä on tuntokarvoja kuonossa, leuassa ja silmien yläpuolella.
+
+# No article for "River" in Faroese; second sentence is from "Sea" (Sjógvur) instead
+fo:Í hvørjum fræ eru føðsla og ílegur til nýggja træið.
+fo:Miðaldýpdin í havinum er umleið 3 729 metrar; umleið 60 prosent av havinum er djúphav.
+fo:Eitt tok er eitt flutningsfar ið koyrur eftir skinnarum á einari jarnbreyt.
+fo:Oyðimerkurnar vaksa alla tíðina. Eini 20 % av jørðini eru oyðimørk.
+fo:Summir hundar duga so væl at snodda, at teir verða brúktir sum narkohundar ella løgregluhundar.
+
+fr:La feuille est l’endroit où se prépare la sève élaborée, qui contient sucres et minéraux qui fait vivre la plante.
+fr:La rivière coule dans un chenal appelé le lit, qui chemine dans les terres jusqu'au terme de la rivière, l'embouchure.
+fr:Elle se compose de rails posés sur des traverses à un écartement précis, elles-mêmes posées sur du ballast.
+fr:Les roches sont lissées vers le bas, et le vent répartit le sable en dépôts uniformes.
+fr:La vision du chien est plutôt modeste comparée à ses deux premiers sens.
+
+ga:Gan iad ní bheadh formhór na nithe beo ar domhan in ann maireachtáil in aon chor.
+ga:Má bhíonn titim mhaith leis an dtalamh, ritheann an t-uisce go mear.
+ga:Bhíodh tine ar lasadh san inneall a théadh an t-uisce leis an ngal a chruthú.
+ga:Is fásach tuairim agus trian de dhromchla an domhain.
+ga:Mamach atá ann. D'eascair madraí an lae atá inniu ann ón mac tíre.
+
+gd:Is e craobh luibh àrd air a bheil duilleagan, meangain, rùsg agus stoc reamhar fiodhach.
+gd:Canar srath aibhne ris an talamh far am bi uisge a' cruinneachadh.
+gd:B' iad eich a bha a' tarraing nan carbadan air na ciad rathaidean-iarainn.
+gd:Faodaidh fàsaichean a ghnethaichear leis an t-suidheachadh chruinn-eòlasach agus an t-sìde.
+gd:Tha gaoisid dhen a h-uile seòrsa is dath orra eadar dubh is geal, ruadh, riabhach, liath is donn.
+
+gl:Os gomos que quedan no extremo das poliñas chámanse gomos terminais.
+gl:A presenza de grandes cantidades de auga é o que distingue a Terra doutros planetas coñecidos, e o que fai posible a vida.
+gl:O tren pode ser puxado por unha locomotora ou por unha unidade autoalimentada.
+gl:A correlación entre a aridez e a falta de poboación é complexa e pode variar en función da cultura.
+gl:Con todo, algúns científicos sosteñen que o can é unha subespecie de lobo.
+
+he:הענף מתמקד בעצים בעלי תועלת לאדם ובטכניקות לגידולם.
+he:בימינו מספקים נהרות מהירי זרימה גם אנרגיה הידרואלקטרית וכן נתיב לסילוק מי שופכין ופסולת תעשייתית.
+he:רכבת היא כלי תחבורה יבשתי, המשמש להובלת נוסעים ומטען על גבי מסילה.
+he:מדבר צל גשם קורה כאשר מסת אוויר לחה מתייבשת במורד ההרים.
+he:מכל מיני בעלי החיים, הכלב הוא המין עם השונות הגדולה ביותר בין פרטיו.
+
+hi:पर लकड़ियो तथा ज़मीन की आवश्यकताओं के कारण लोग इसे काटते जा रहे हैं।
+hi:नदियों को प्रदूषित करने में दिनों दिन बढ़ते उद्योगों ने भी प्रमुख भूमिका निभाई है।
+hi:यह पथ आमतौर पर दो पटरियों से बना होता है, लेकिन यह एक पटरीय या मेग्लेव गाइडवे भी हो सकता है।
+hi:अन्य मरुस्थल समतल, पथरीले मैदान हैं जहाँ सभी महीन सामग्री को उड़ा दिया गया है और सतह में चिकने पत्थरों की मोज़ेक है।
+hi:कुत्तों की आम तौर पर भूरी आंखें होती हैं और भेड़िये लगभग हमेशा अम्बर या हल्के रंग के होते हैं।
+
+hr:Stabla rastu na prostorima, gdje ima dovoljno svjetlosti, topline i vode.
+hr:Od izvora do ušća u drugu rijeku, jezero ili more, rijeke primaju vodu od pritoka i svojim tokom stvaraju riječno korito.
+hr:Vlak je sastavljen od jedne ili više lokomotiva i jednog ili više vagona.
+hr:Većina nepolarnih pustinja su vruća područja zbog malenih količina vode.
+hr:Dominantno štene je ono koje prvo jede, koje započinje igru i ono koje se usudi izaći iz legla.
+
+hu:A fa legtöbbször dús lombozattal rendelkezik. Egy adott faj mint cserje és mint fa is előfordulhat.
+hu:A folyásirányba nézve bal kéz felől a folyó bal partja, jobb kéz felől pedig a jobb partja van.
+hu:Több ország emeletes személyszállító kocsikat használ a városok közötti forgalomban.
+hu:A hőmérséklet szélsőséges ingadozása aprózza a kőzeteket.
+hu:Néhány generáció után egyre több kutyára jellemző viselkedési és külső jegy jelent meg a populációban.
+
+hy:Տնկարկների ծառերի բույնը բարձր է, գրեթե գլանաձև, իսկ սաղարթը՝ փոքր, բարձր դիրքով։
+hy:Որոշ դեպքերում գետը կարող է անցնել հողի մեջ կամ չորանալ, մինչև այլ ջրային օբյեկտի հասնելը։
+hy:Գնացքները և դրանց շարժումը ուսումնասիրող գիտակարգը կոչվում է գնացքների քարշի ուժ։
+hy:Ամռանը խոնավությունն իջնում է մինչև 14%, ամիսներ շարունակ երկինքը պարզ է։
+hy:Շունը գորշ գայլի ենթատեսակներից է, աշխարհում ընտելացված ամենատարածված կենդանիներից։
+
+id:Pohon biasanya memiliki banyak cabang sekunder yang ditopang oleh batangnya dari tanah.
+id:Pengujung sungai di mana sungai bertemu laut dikenali sebagai muara sungai.
+id:Kereta pertama dengan bentuk ditarik menggunakan tali, gravitasi bertenaga atau ditarik oleh kuda.
+id:Bukit pasir yang disebut erg dan permukaan berbatu merupakan bagian pembentuk lain dari gurun.
+id:Anjing kesayangan bahkan sering diberi nama keluarga yang sama seperti nama pemiliknya.
+
+is:Tré utan hitabeltis fara í vetrardvala; hætta að vaxa og mynda brum sem mynda síðar laufblöð/barr.
+is:Á getur runnið í stöðuvatn, aðra stóra á, eða til sjávar.
+is:Samanstendur oftast af eimreið með mismarga járnbrautarvagna í eftirdragi.
+is:Slík svæði einkennast af litlum gróðri og þekja nú um það bil einn þriðja af jörðinni.
+is:Genarannsóknir benda til þess að hundar séu komnir af einu eða fleiri afbrigðum villtra úlfa.
+
+it:L'albero con la più grande circonferenza del tronco è il baobab: anche oltre 40 m di circonferenza.
+it:L'alveo è la sede all'interno della quale si verifica lo scorrimento delle acque fluviali.
+it:Il periodo tra le due guerre servì a confermare le potenzialità del mezzo ferroviario.
+it:I paesaggi aridi e estremamente aridi sono deserti e le praterie semiaride sono da riferimento alle steppe.
+it:Anche il senso dell’udito si sviluppa bene verso il decimo giorno di vita.
+
+ja:また「木・樹」と言って、特に高木を指す場合もある。
+ja:河川の水流は単純なものではなく、川底の地形などによって、二次流、回転流、螺旋状の流れなど様々な流れが発生している。
+ja:編成には、列車として具備するべき前述の条件に加えて、動力装置、電源系統、サービス設備などの制約もある。
+ja:これは砂漠の強い風などによって表層の土壌が吹き飛ばされてしまったためである。
+ja:前肢はほとんど前後にしか動かず、鎖骨は退化して失われている。
+
+# No train article for Georgian, so third entry comes from "bus" (ავტობუსი)
+ka:ამ ჯგუფს მიეკუთვნება ნეკერჩხალი, წიფელი, იფანი, ევკალიპტი და სხვა.
+ka:მთავარი მდინარე თავის შენაკადებთან ერთად ქმნის მდინარეთა სისტემას.
+ka:თავდაპირველი ვერსიები იყო 14-ადგილიანი და გადაადგილდებოდა, დაახლოებით 30 კმ/სთ სიჩქარით.
+ka:ზომიერი სარტყლის უდაბნოებთან შედარებით სუბტროპიკული და ტროპიკული უდაბნოს მცენარეულობა უფრო მეჩხერია.
+ka:ყველაზე ცნობილი და უძველესი ფუნქცია, რაც ძაღლებს აკისრიათ, ესაა შინაური ცხოველების დაცვა.
+
+ko:또한 나무는 우리가 숨을 쉴 수 있는 산소를 내보내고, 이산화탄소를 빨아들인다.
+ko:하천종단도에서 하천 임의 두 지점의 표고차와 수평거리의 비를 하천 경사라고 한다.
+ko:열차는 철도의 탄생과 함께 나타났기 때문에, 열차를 ‘철도에서 사람이나 물자의 수송을 위하여 궤도 위를 달리는 차’로 정의할 수 있다.
+ko:낙타는 귀중한 젖을 내어 주고, 운송수단으로도 이용하기 때문에 사막에 사는 사람들에게 매우 중요한 가축이라 할 수 있다.
+ko:개는 여러모로 유용하였기 때문에 대부분 모든 원시 인류 사회가 개를 길렀다.
+
+lb:E Bam ass eng Planz déi aus Holz ass an aus Wuerzelen, engem Stamm an enger Kroun besteet.
+lb:Wa Flëss vill Waasser féieren oder vill Gefäll hunn, kënne se benotzt gi fir Stroum ze maachen.
+lb:Meeschtens fuere Passagéierzich mat engem festen Horaire. Heiansdo hu s'eng Restaurantsvoiture oder e Schlofwaggon.
+lb:Wüste bedecken ongeféier e Véirel vum Festland op der Äerd.
+lb:An anere Regioune gouf et guer kee Kontakt oder nëmmen a gewësse Grenzen.
+
+lt:Tirpstant ledynams, palaipsniui ėmė formuotis ir anksčiau augusios, bet ledynų nustumtos į pietus medžių rūšys.
+lt:Upė teka nuolydžio kryptimi, veikiama sunkio jėgos. Dauguma upių įteka į kitas upes, ežerus arba jūras.
+lt:Dauguma traukinių yra varomi dyzeliniais varikliais ar elektra, tiekiama geležinkelio elektros sistema.
+lt:Dykumos susidaro ten, kur vanduo išgaruoja nesuspėjęs susigerti į žemę.
+lt:Pasaulyje yra išvesta tūkstančiai naminių šunų veislių, pasižyminčių stebinančia įvairove.
+
+lv:Pēc tam tās atmirst, nokrīt un to vietā no pumpuriem veidojas jaunas lapas.
+lv:Upe ir pa Zemes virsmu plūstoša ievērojama izmēra ūdenstece, kurai ir izteikta gultne.
+lv:Vilcieni var pārvietoties pa divsliežu, viensliežu un šaursliežu dzelzceļu.
+lv:Tuksnesis ir augāja tips un bioma, kas veidojas karsta vai auksta arīda klimata apstākļos.
+lv:Ja suns netiek pareizi audzināts, tas var kļūt par sabiedrībai bīstamu dzīvnieku.
+
+kk:Жер бетінде климаттың өзгеруіне байланысты, ағашты өсімдіктердің даму циклы қысқаруда.
+kk:Өзен қар суы, жаңбыр, мұздық және жер асты суларының есебінен толығып отырады.
+kk:Кезексіз түрде жолға шығатын Пойыздарға өрт сөндіруші, қар тазалаушы, жол жөндеуші Пойыздар жатады.
+kk:Ол жердегі өсімдіктер құдықтардың сулары немесе жер асты көздерінің есебінін өседі.
+kk:Үйде ит ұстайтындар ит өсіру әуесқойлары клубына немесе қоғамына мүшелікке кірелі.
+
+# Texts from other articles
+km:ចំណែកឯផ្លែទុំវិញគេអាច យកវាទៅធ្វើជានំយ៉ាងឈ្ងុយឆ្ងាញ់បានផងដែរ។
+km:ទន្លេជាច្រើនក៏ជាកន្លែងសម្គាល់វប្បធម៌ និងប្រវត្តិសាស្ត្រដ៏សំខាន់ផងដែរ ហើយបានដើរតួនាទីក្នុងការអភិវឌ្ឍន៍អរិយធម៌របស់មនុស្ស។
+km:ពាក្យថា ផ្លូវថ្នល់ ហៅកាត់ថា ផ្លូវ ជាទំហំទាំងមូលនៃទ្រូងផ្លូវ រួមជាមួយជាយផ្លូវ ឬ ចិញ្ចើមផ្លូវ
+km:នៅប្រទេសមួយបានមានប្រជាជន​ភាសា​និង​សាសន៏ផ្សេងៗ​ដូចនៅប្រទេសឥណ្ឌា។
+km:បច្ចុប្បន្ននេះ​ ពួក​វាគឺ​ជា​​សត្វ​ចិញ្ចឹមដ៏ពេញនិយម​បំផុតក្នុង​​ពិភព​លោក។
+
+kn:ಎತ್ತರದ ಮರ ಎಂದರೆ, ಹೈಪರಿಯನ್ ಎಂಬ ಕರಾವಳಿಯ ಮಂಜತ್ತಿಮರವು ೧೧೫೬ ಮೀ (೩೭೯ ಅಡಿ) ಎತ್ತರವಿದೆ.
+kn:ಈ ಜಲರೂಪಗಳು ಒಡನೆ ನೆಲದ ಮೇಲಿನ ಪ್ರವಾಹವಾಗಿ ಹರಿದುಹೋಗಬಹುದು ಅಥವಾ ಭೂಗತಪ್ರವಾಹಗಳಾಗಿ ಹರಿಯಬಹುದು.
+kn:ಬೇರೆ ಬೇರೆ ಉಧೇಶಗಳಿಗೆ ಬೇರೆ ಬೇರೆ ರೈಲುಗಳನ್ನು ಬಳಸುತ್ತಾರೆ. ಒಂದು ರೈಲಿಗೆ ಹಲವಾರು ಇಂಜಿನ್‍ಗಳು ಇರುತ್ತದೆ.
+kn:ಕಳ್ಳಿ ಗಿಡಗಳಂತಹ ಗಿಡಗಳಲ್ಲಿ ನೀರು ಇಂಗುವಿಕೆಯನ್ನು ಕಡಿಮೆಮಾಡಲು ಬಹಳ ಕಡಿಮೆ ಎಲೆಗಳಿರುತ್ತವೆ.
+kn:ನಾಯಿ ಒಂದು ಸಾಕು ಪ್ರಾಣಿ. ಮನೆ ನಾಯಿಗೂ, ಬೀದಿ ನಾಯಿಗೂ ಅಜಗಜಾಂತರ ವ್ಯತ್ಯಾಸ ಇರುತ್ತದೆ.
+
+# Text from Bus instead of train
+ky:Дарактын сөңгөгү курулуш материалдары, ошондой эле тирилчиликте колдонулуучу жыгач буюмдары жасалат.
+ky:Жер шарындагы нымдуу жана тоолуу аймактардагы дарыя суусу мол болсо, ысык жана чөлдүү аймактарда өтө аз болот.
+ky:Астыңкы негизине кыймылдаткыч, кыймыл берүү кутусу, алдыңкы жана арткы дөңгөлөк октору бекитилет.
+ky:Субстратына жараша кумдуу, таштуу, чополуу, лёсстуу, шордуу ж.б. болуп ажыратылат.
+ky:Ит кутурма, котур, чакалай сыяктуу жугуштуу жана мите курттуу ооруларга чалдыгат.
+
+mk:Дрвјата можат да бидат егзогени и ендогени, зависно од начинот на кој се зголемува пречникот на стеблото.
+mk:Крајниот дел на реката најчесто се нарекува устие, и реката обично се проширува на крајот и формира делта или естуар.
+mk:Воз е композиција од повеќе поврзани шински вагони кои се влечени или туркани од една или повеќе локомотиви.
+mk:Тоа се соголени предели со незабени висови, карпести кањони и рамнини покриени со чакал и дини.
+mk:Иако се далеку од нив, кучињата имаат малку сличности со своите предци, волците.
+
+mn:Мод нь үндэс, их бие, иш мөчир болон навч гэсэн 4 гол зүйлээс бүрдэнэ.
+mn:Онц цөөн тохиолдолд ямар нэгэн мөрөн болон горхийг гол гэх нь байдаг.
+mn:Төмөр зам нь ихэвчлэн хоёр царигтай байхаас гадна ганц царигт, соронзон замтай бас байдаг.
+mn:Цөлд өдөр, шөнийн агаарын температурын ялгаа маш их байна.
+mn:Нохой бол хүний гэршүүлсэн хамгийн анхны гэрийн тэжээвэр амьтдын нэг гэж үздэг.
+
+# Taken from completely different articles due to lack of content
+mt:Xi wħud mix-xogħlijiet tiegħu fil-pittura, l-iskultura u l-arkitettura huma fost l-aktar famużi fid-dinja.
+mt:Bħal fil-każ tal-koċċli, sab li partijiet omoloġi jwettqu funzjonijiet differenti fi speċi differenti.
+mt:Waqt li uħud minnhom sarilhom manutenzjoni żgħira, oħrajn ġew kompletament restawrati u oħrajn speċifikament mibnija.
+mt:Kiteb aktar tard li fatti bħal dawn jidhru li jitfgħu xaqq ta' dawl fuq l-oriġini tal-ispeċi.
+mt:Huwa kien baqgħalu jispjega xi karatteristiċi li m'għandhom l-ebda użu ovvju ħlief min-naħa tal-estetika.
+
+nb:Skjelltrærne skulle etter hvert dominere sumpskogene i karbonperioden og oppnå høyder på 50 meter.
+nb:Om elveløpet tar en ny vei, dannes det en såkalt kroksjø av den gamle elvesvingen.
+nb:Det tradisjonelle toget består av et lokomotiv først, og så én eller flere etterhengte vogner.
+nb:De fleste ørkenene ligger rundt vendesirklene, der høytrykkene dominerer. Man skiller mellom kalde og varme ørkener.
+nb:Disse verktøyene har gitt forskerne mer presise svar, noe som igjen har ført til flere nye oppdagelser.
+
+nl:Bomen kunnen zeer oud worden, sommige worden honderden of zelfs duizenden jaren oud.
+nl:Soms heeft één rivier meerdere, min of meer parallel lopende geulen.
+nl:Ook een enkele (rijdende) locomotief wordt wel als trein aangeduid, maar dat is strikt genomen onjuist.
+nl:Na een regenbui kan een groot deel van de woestijn ineens zeer sterk begroeid raken.
+nl:Om een stabiele vachtkleur van een ras te verkrijgen, was het dus nodig nauw verwante honden met elkaar te kruisen.
+
+# Texts taken from other articles due to lack of availability
+nv:Naatsédlózii éí hosh biyaagóó éí doodaiiʼ éí chʼiltsoh naazkaadgóó bitʼóh ánáyiilʼįįh.
+nv:Bitsʼíís éí diłhiłgo łitso dóó dibéłchíʼíigo yistłʼin łeh. Diyóózh éí naaldlooshii yázhí yilghał.
+nv:Tsétah tłʼízí bikąʼígíí dóó biʼáádígíí tʼáá áła bidaʼgáá hólǫ́.
+nv:Tsinlátah ayáanii éí chʼil bitʼąąʼ dóó tłʼoh deiłchozh dóó ńdaʼatʼaał.
+nv:Bįįh éí tʼáá ałtso bijáád danineez dóó bitseeʼ doo nineez da.
+
+pl:W ciągu życia drzewo ciągle powiększa przekrój pnia i gałęzi.
+pl:W celu stworzenia nowej „naturalnej” rzeki o parametrach dostosowanych do potrzeb gospodarczych.
+pl:Do pociągu pasażerskiego mogą zostać włączone wagony towarowe, np. wagony do przewozu samochodów.
+pl:Sukulenty to rośliny trwałe, dostosowane do środowisk ubogich w wodę, ale niebędące właściwymi kserofitami.
+pl:Najważniejszym zmysłem dla psa jest węch. Zaczyna się nim posługiwać już jako szczenię.
+
+pt:A forma das folhas geralmente caracteriza a espécie, auxiliando na identificação da mesma.
+pt:Muitos nomes de rios de pequeno porte são específicos para a sua localização geográfica.
+pt:O trem que há muito vencia o obstáculo da água, através das pontes, passava agora a fazê-lo também por debaixo desta.
+pt:À medida que o ar sobe a montanha, a água se precipita e o ar perde seu conteúdo úmido.
+pt:O lobo obtém a maior parte de sua comida caçando em grupo e atacando presas de grande porte.
+
+# Some texts taken from other articles
+rm:Quai succeda savens pli baud che tar plantas che s’orienteschan en lur creschientscha tenor in brumbel final.
+rm:La basa da viver principala han però furmà fritgs, ragischs ed animals pitschens.
+rm:Cun la fin da l’ultim temp da glatsch èn las zonas climaticas sa spustadas vers nord.
+rm:Tratgs cuminaivels e colliaziuns paran surtut d’esser sa sviluppads per lung dals gronds sistems da flums.
+rm:Sia furma selvadia originara è il luf; a quel è il chaun attribuì sco sutspezia.
+
+ro:Ramurile cresc în grosime și lungime anual prin mugurii terminali.
+ro:Adâncitura din teren prin care curge râul se numește albia, valea sau vadul râului.
+ro:Trenurile sunt de mai multe feluri, fiecare conceput pentru un scop diferit.
+ro:Aproximativ o treime din suprafața Terrei este acoperită de deșerturi.
+ro:Cel mai longeviv câine despre care există date a trăit 30 de ani.
+
+ru:Кора тёмно-серая, на молодых стволах гладкая, на старых растрескивающаяся, чешуйчатая.
+ru:Русла пересыхающих рек в пустынях изменяются из-за перемещения песков.
+ru:В дальнейшем с развитием железнодорожного транспорта слово «поезд» стало применяться и к нему.
+ru:Эрозионный тип рельефообразования сильно ослаблен, широко распространены эоловые формы рельефа.
+ru:Ископаемые остатки доисторических собак найдены в человеческих пещерах по всему миру.
+
+# No article for 'tree' or 'train', so first sentence is from 'City' and third one is from 'University'
+sb:Wědomosć, kotraž so z městami a měšćanskimi temami zaběra, rěka urbanistika.
+sb:Rěki su w powšitkownym zmysle přirodne a runočarne běžate wodźizny na powjerchu zemje.
+sb:Uniwersity hraja wažnu rólu we wědomostnym slědźenju. Jich organizacija a struktura wotwisuje wot kraja.
+sb:Jako pusćina woznamjenja so forma krajiny, w kotrejž njeje nimale žana wegetacija.
+sb:Domestikacija so je před něhdźe 15000 lětami w juhozapadnej a južnej Aziji započinała.
+
+sk:Veľkosť listov je teda obmedzená, veľkosť stoniek a koreňov u stromov neobmedzená.
+sk:Splavné rieky sú dôležité pre obchodnú alebo rekreačnú plavbu, t.j. vodnú dopravu a lodnú prepravu.
+sk:Prvé vlaky boli ťahané ľuďmi alebo koňmi. Neskôr ich nahradil parný rušeň.
+sk:Približne jednu tretinu zemského povrchu tvoria púšte.
+sk:Z kostrových nálezov niekoľkých druhov psov sa odvodzovali a dodnes odvodzujú dnešné plemená.
+
+sl:Tako nastane koreninski sistem, ki je značilen za posamezne drevesne vrste.
+sl:Glavna razvodnica loči povodij, ki se odmakajo v različne oceane.
+sl:Vlaki lahko prevažajo potnike in/ali tovor iz enega na drugo mesto vzdolž proge.
+sl:Razen oaz in območij tradicionalnih trgovskih poti, so puščave območja anekumene.
+sl:Psi so znani po svojem izredno ostrem vohu, saj igrajo vonjave več pomembnih vlog v pasjem življenju.
+
+sq:Pemët kanë ekzistuar për 370 milionë vjet. Vlerësohet se ka rreth tre trilion pemë të pjekura në botë.
+sq:Lumenjtë së bashku me detrat dhe liqenet bëjnë pjesë në Hidrosferë.
+sq:Shpikja e motorit me avull paraqet një moment me rëndësi për trenat dhe hekurudhat moderne.
+sq:Përafërsisht një të tretën e sipërfaqes kontinentale të Tokës e përbëjnë shkretëtirat.
+sq:Lagështia e hundës është thelbësore për përcaktimin e drejtimit të ajrit i cili përmban aromë.
+
+sr:На почетку вегетацијског раздобља, отварају се пупољци и започиње даљњи раст и развој.
+sr:Многа имена за мале реке су специфична за географске локације.
+sr:Пруге по којима се крећу возови се обично састоје од две, три или четири шине.
+sr:Изглед стеновитог терена је типичан и одражава минималан развој тла и разасутост вегетације.
+sr:Према најновијим истраживањима, пас највјероватније води поријекло од вука.
+
+sv:Med sly avses unga träd, oftast lövträd, utan ekonomiskt värde för skogsbruket.
+sv:Floder kan vara källor för bevattning, utgöra transportleder och skapa kraften i elproduktion.
+sv:Nattåg är avsedda att trafikera längre sträckor, oftast under natten.
+sv:Ofta ligger grundvattnet ytligt och träd kan nå grundvattnet längs den torra flodfåran.
+sv:Barn som växer upp med hund i huset lär sig ofta tidigare betydelsen av att ta hänsyn.
+
+sw:Kwa jumla ugumu wa ubao na uzito wake hutegemea namna ya kukua kwa mti.
+sw:Mdomoni kwa kawaida mto huishia katika gimba kubwa zaidi ya maji, ama mto mkubwa au ziwa au bahari.
+sw:Mahali ambako treni inasimama na kupokea abiria au mizigo huitwa kituo cha reli.
+sw:Wakati mwingine huitwa jangwa hata maeneo ambayo ni makavu kutokana na baridi kali.
+sw:Mbwa huwa na uwezo mzuri wa kusikia na kunusa lakini hawaoni vizuri sana hasa rangi.
+
+ta:எல்லா மரங்களும் முன் கூறிய பாகங்களைக் கொண்டிருக்க வேண்டுமென்பதில்லை.
+ta:ஆறுகள் பொதுவாக மற்றொரு ஆற்றிலோ, ஏரிகளிலோ அல்லது கடலிலோ இணைகின்றன.
+ta:பொதுவாக இரயில்களில் ஒன்றுடன் ஒன்றாக பலபெட்டிகள் இணைக்கப்பட்டிருக்கும்.
+ta:குளிர்ப் பாலைவனங்கள் உறைபனியால் மூடப்பட்டவையாகும்.
+ta:நாய்கள் மனிதனின் நண்பன் என்று பரவலாக கருதப்படுகிறது.
+
+te:కొన్ని చెట్లు వేయి సంవత్సరాలు పైన జీవిస్తాయి.
+te:వర్షం ఆగిపోగానే మిగిలిన నీరు నేలలోకి ఇంకిపోయి ఎండి పోతాయి.
+te:ఈ రైళ్ళు పోయే మార్గమును రైలు మార్గము అంటారు.
+te:కేవలం ఇసుకతోనే కాకుండా మంచుతో నిండి ఉన్న మంచు ఎడారులు కూడా ఉన్నాయి.
+te:మానవులు కూడా కుక్కలతో విడదీయరాని సంబంధం ఏర్పరుచుకుంటారు.
+
+th:ต้นไม้ คือ พืชนานปีซึ่งมีลำต้นยาวและรับน้ำหนักกิ่งแขนงและใบได้
+th:น้ำฝนที่ตกลงบนพื้นดินจะไหลไปยังแม่น้ำแล้วออกสู่มหาสมุทรหรือแอ่งน้ำขนาดใหญ่อื่น ๆ
+th:รถไฟเป็นกลุ่มของยานพาหนะ
+th:บริเวณแห้งแล้งสามารถจำแนกได้โดยปริมาณหยาดน้ำฟ้าที่ตก อุณหภูมิ สาเหตุของการกลายเป็นบริเวณแห้งแล้งหรือโดยที่ตั้งภูมิศาสตร์
+th:หมาสายพันธุ์ต่าง ๆ ในสมัยใหม่มีขนาด รูปร่าง และพฤติกรรมหลากหลายกว่าสัตว์เลี้ยงชนิดอื่น
+
+tl:Ang puno o punungkahoy ay binubuo ng mga dahon, sanga, at ugat. May mga puno ring may prutas.
+tl:Maaaring pinagkukunan nito ang isang lawa, isang bukal o pagtitipon ng maliit na mga batis, kilala bilang agos.
+tl:Tinatawag na estasyon ng tren ang lugar na pinaghihintuan ng tren upang makasakay o makababa ang mga tao.
+tl:Binubuo din ang maliit na bahagi nito ng mga buhanging duna na tinatawag na erg at mabatong ibabaw.
+tl:Ginagamit din ang mga aso sa pangangaso at sa pagbabantay.
+
+tr:Dünyada yaklaşık üç trilyon olgunluğa erişmiş ağacın olduğu tahmin edilmektedir.
+tr:Büyük ırmaklara katılan görece küçük ırmaklar genellikle kol diye adlandırılır.
+tr:Otobüslerin yaygınlaşması bu dönemde de birçok hızlı toplu taşıma ve tramvay sisteminin kapanmasına neden oldu.
+tr:Canlı biyokütlesi çok düşüktür ve canlı türleri oldukça özelleşmiştir.
+tr:Köpeklerin işlevleri ve algılanışları toplumdan topluma fark etmiştir.
+
+uk:В порівнянні з більшістю інших форм рослин тривалість життя дерев вища.
+uk:Вирізняють річки гірські та рівнинні. Інколи річки бувають сезонними.
+uk:При проведенні профілактичних і потокових ремонтів поїзд не розформовується.
+uk:Формування рельєфу пустель відбувається під впливом вітрової та водної ерозії.
+uk:Це перша одомашнена тварина, яка протягом віків супроводжувала людину.
+
+# Last sentence comes from "Bird" (Qushlar) because the article for dogs (and cats) censors the animal name?!
+uz:Daraxtlarning doim yashil va barglarini har yili kuzda toʻkadigan xillari ham bor.
+uz:Daryo yoki daryolarning ayrim qismlari balandliklari farqining uzunligiga nisbati daryo nishabligi deyiladi.
+uz:Bitta yoki bir nechta tirkama ulangan avtomobil avtopoyezd deb ataladi.
+uz:Choʻl deb juda oz miqdorda yogʻin sodir boʻladigan mintaqaga aytiladi.
+uz:Qushlar muhit sharoitiga oʻz ehtiyojiga qarab faol moslanish xususiyatlarga ega.
+
+vi:Cây và rừng cung cấp môi trường sống cho nhiều loài động vật và thực vật.
+vi:Sông chảy trên đá gốc thường rất ít có bồi tích trên đáy của chúng.
+vi:Một con tàu có thể lắp một hay nhiều hơn số đầu tàu và các toa, trong đó có thể là toa hành khách và toa hàng.
+vi:Những loại cây lớn, có bộ rễ ăn sâu xuống để hút nước.
+vi:Răng của chúng dùng để giết mồi, nhai thịt và gặm thịt, thỉnh thoảng để cắn nhau.
+
+xh:Anabela ngaphandle emacaleni ukuze amagqabi afumane imitha yelanga.
+xh:Le ndlela okanye lo mzila uhamba amanzi kuthiwa yiriverbed aze wona umhlaba macala omabini kuthiwe ngamanxweme amanzi.
+xh:Ololiwe bamandulo babesebenzisa amandla ehashe kwaye babebaleka kwimizila eyenziwe ngeenkuni okanye nge-iron.
+xh:Oko kuquka umhlaba omninzi waseAntarctica, apho umhlaba omninzi ungafumani liqhwa kwaphela.
+xh:Igama "inja yasekhaya" lisetyenziselwa ukubiza izinja zasekhaya neziphila ngasendle.
+
+# Texts are from random articles
+yo:Awon ogede un wa lorisirisi itobi ati awo nigba ti won ba ti pon.
+yo:Odò jẹ́ ojú-ọ̀nà fún omi tó ń ṣàn ní orí ilẹ̀ láti ibi gíga sí ibi ìsàlẹ̀.
+yo:Òjò jẹ́ omi tí ó ń rọ̀ láti sánmọ̀, tí ó ṣì ń di omi ní orí ilẹ̀.
+yo:Àìsí ewéko jẹ́ kí orí ilẹ̀ kó mọ́ nìí àbò rárá, ilẹ̀ le là tàbí kó fọ́.
+yo:Bí ìyípopyípo omi ṣe ń ṣẹlẹ̀ rèé: Kùrukùru omi yóò gòkè lọ sójú sánmà, yóò wá di òjò.
+
+zh:樹在減少土地侵蝕及調整氣候上相當的重要，樹可以從空氣中吸收二氧化碳，將大量的碳儲存在組織內。
+zh:而其餘的，就在大氣中通過從地表蒸發成水汽或滲透為地下水。
+zh:在英國等國家，有軌電車和火車的差異很明確，而且在法律中有明確規定。
+zh:滩地可能是覆盖盐的平地。风成过程是形成荒漠景观的主要诱因。
+zh:狗的汗腺多分布在脚掌上，因此出汗的时候会在地上留下湿的脚印。
+
+zu:Isihlahla noma umuthi yisitshalo eside esinamagatsha namacembe, esakhiwe ngokhuni.
+zu:Kwesinye isikhathi umfula uchazwa njengomkhulu kunomfula, kodwa hhayi njalo: ulimi aluqondakali.
+zu:Impisi inezinyawo zangaphambili ezinde kunezinyawo zangemuva.
+zu:Izindlovu zisaba abantu kuphela kodwa uma zibuthakathaka amabhubhesi angazibulala.
+zu:Inja isilwane. Insikazi yenja injakazi. Iduna yenja ichalaha.
