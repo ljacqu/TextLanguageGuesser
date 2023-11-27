@@ -769,3 +769,101 @@ sl:Glavna razvodnica loči povodij, ki se odmakajo v različne oceane.
 sl:Vlaki lahko prevažajo potnike in/ali tovor iz enega na drugo mesto vzdolž proge.
 sl:Razen oaz in območij tradicionalnih trgovskih poti, so puščave območja anekumene.
 sl:Psi so znani po svojem izredno ostrem vohu, saj igrajo vonjave več pomembnih vlog v pasjem življenju.
+
+sq:Pemët kanë ekzistuar për 370 milionë vjet. Vlerësohet se ka rreth tre trilion pemë të pjekura në botë.
+sq:Lumenjtë së bashku me detrat dhe liqenet bëjnë pjesë në Hidrosferë.
+sq:Shpikja e motorit me avull paraqet një moment me rëndësi për trenat dhe hekurudhat moderne.
+sq:Përafërsisht një të tretën e sipërfaqes kontinentale të Tokës e përbëjnë shkretëtirat.
+sq:Lagështia e hundës është thelbësore për përcaktimin e drejtimit të ajrit i cili përmban aromë.
+
+sr:На почетку вегетацијског раздобља, отварају се пупољци и започиње даљњи раст и развој.
+sr:Многа имена за мале реке су специфична за географске локације.
+sr:Пруге по којима се крећу возови се обично састоје од две, три или четири шине.
+sr:Изглед стеновитог терена је типичан и одражава минималан развој тла и разасутост вегетације.
+sr:Према најновијим истраживањима, пас највјероватније води поријекло од вука.
+
+sv:Med sly avses unga träd, oftast lövträd, utan ekonomiskt värde för skogsbruket.
+sv:Floder kan vara källor för bevattning, utgöra transportleder och skapa kraften i elproduktion.
+sv:Nattåg är avsedda att trafikera längre sträckor, oftast under natten.
+sv:Ofta ligger grundvattnet ytligt och träd kan nå grundvattnet längs den torra flodfåran.
+sv:Barn som växer upp med hund i huset lär sig ofta tidigare betydelsen av att ta hänsyn.
+
+sw:Kwa jumla ugumu wa ubao na uzito wake hutegemea namna ya kukua kwa mti.
+sw:Mdomoni kwa kawaida mto huishia katika gimba kubwa zaidi ya maji, ama mto mkubwa au ziwa au bahari.
+sw:Mahali ambako treni inasimama na kupokea abiria au mizigo huitwa kituo cha reli.
+sw:Wakati mwingine huitwa jangwa hata maeneo ambayo ni makavu kutokana na baridi kali.
+sw:Mbwa huwa na uwezo mzuri wa kusikia na kunusa lakini hawaoni vizuri sana hasa rangi.
+
+ta:எல்லா மரங்களும் முன் கூறிய பாகங்களைக் கொண்டிருக்க வேண்டுமென்பதில்லை.
+ta:ஆறுகள் பொதுவாக மற்றொரு ஆற்றிலோ, ஏரிகளிலோ அல்லது கடலிலோ இணைகின்றன.
+ta:பொதுவாக இரயில்களில் ஒன்றுடன் ஒன்றாக பலபெட்டிகள் இணைக்கப்பட்டிருக்கும்.
+ta:குளிர்ப் பாலைவனங்கள் உறைபனியால் மூடப்பட்டவையாகும்.
+ta:நாய்கள் மனிதனின் நண்பன் என்று பரவலாக கருதப்படுகிறது.
+
+te:కొన్ని చెట్లు వేయి సంవత్సరాలు పైన జీవిస్తాయి.
+te:వర్షం ఆగిపోగానే మిగిలిన నీరు నేలలోకి ఇంకిపోయి ఎండి పోతాయి.
+te:ఈ రైళ్ళు పోయే మార్గమును రైలు మార్గము అంటారు.
+te:కేవలం ఇసుకతోనే కాకుండా మంచుతో నిండి ఉన్న మంచు ఎడారులు కూడా ఉన్నాయి.
+te:మానవులు కూడా కుక్కలతో విడదీయరాని సంబంధం ఏర్పరుచుకుంటారు.
+
+th:ต้นไม้ คือ พืชนานปีซึ่งมีลำต้นยาวและรับน้ำหนักกิ่งแขนงและใบได้
+th:น้ำฝนที่ตกลงบนพื้นดินจะไหลไปยังแม่น้ำแล้วออกสู่มหาสมุทรหรือแอ่งน้ำขนาดใหญ่อื่น ๆ
+th:รถไฟเป็นกลุ่มของยานพาหนะ
+th:บริเวณแห้งแล้งสามารถจำแนกได้โดยปริมาณหยาดน้ำฟ้าที่ตก อุณหภูมิ สาเหตุของการกลายเป็นบริเวณแห้งแล้งหรือโดยที่ตั้งภูมิศาสตร์
+th:หมาสายพันธุ์ต่าง ๆ ในสมัยใหม่มีขนาด รูปร่าง และพฤติกรรมหลากหลายกว่าสัตว์เลี้ยงชนิดอื่น
+
+tl:Ang puno o punungkahoy ay binubuo ng mga dahon, sanga, at ugat. May mga puno ring may prutas.
+tl:Maaaring pinagkukunan nito ang isang lawa, isang bukal o pagtitipon ng maliit na mga batis, kilala bilang agos.
+tl:Tinatawag na estasyon ng tren ang lugar na pinaghihintuan ng tren upang makasakay o makababa ang mga tao.
+tl:Binubuo din ang maliit na bahagi nito ng mga buhanging duna na tinatawag na erg at mabatong ibabaw.
+tl:Ginagamit din ang mga aso sa pangangaso at sa pagbabantay.
+
+tr:Dünyada yaklaşık üç trilyon olgunluğa erişmiş ağacın olduğu tahmin edilmektedir.
+tr:Büyük ırmaklara katılan görece küçük ırmaklar genellikle kol diye adlandırılır.
+tr:Otobüslerin yaygınlaşması bu dönemde de birçok hızlı toplu taşıma ve tramvay sisteminin kapanmasına neden oldu.
+tr:Canlı biyokütlesi çok düşüktür ve canlı türleri oldukça özelleşmiştir.
+tr:Köpeklerin işlevleri ve algılanışları toplumdan topluma fark etmiştir.
+
+uk:В порівнянні з більшістю інших форм рослин тривалість життя дерев вища.
+uk:Вирізняють річки гірські та рівнинні. Інколи річки бувають сезонними.
+uk:При проведенні профілактичних і потокових ремонтів поїзд не розформовується.
+uk:Формування рельєфу пустель відбувається під впливом вітрової та водної ерозії.
+uk:Це перша одомашнена тварина, яка протягом віків супроводжувала людину.
+
+# Last sentence comes from "Bird" (Qushlar) because the article for dogs (and cats) censors the animal name?!
+uz:Daraxtlarning doim yashil va barglarini har yili kuzda toʻkadigan xillari ham bor.
+uz:Daryo yoki daryolarning ayrim qismlari balandliklari farqining uzunligiga nisbati daryo nishabligi deyiladi.
+uz:Bitta yoki bir nechta tirkama ulangan avtomobil avtopoyezd deb ataladi.
+uz:Choʻl deb juda oz miqdorda yogʻin sodir boʻladigan mintaqaga aytiladi.
+uz:Qushlar muhit sharoitiga oʻz ehtiyojiga qarab faol moslanish xususiyatlarga ega.
+
+vi:Cây và rừng cung cấp môi trường sống cho nhiều loài động vật và thực vật.
+vi:Sông chảy trên đá gốc thường rất ít có bồi tích trên đáy của chúng.
+vi:Một con tàu có thể lắp một hay nhiều hơn số đầu tàu và các toa, trong đó có thể là toa hành khách và toa hàng.
+vi:Những loại cây lớn, có bộ rễ ăn sâu xuống để hút nước.
+vi:Răng của chúng dùng để giết mồi, nhai thịt và gặm thịt, thỉnh thoảng để cắn nhau.
+
+xh:Anabela ngaphandle emacaleni ukuze amagqabi afumane imitha yelanga.
+xh:Le ndlela okanye lo mzila uhamba amanzi kuthiwa yiriverbed aze wona umhlaba macala omabini kuthiwe ngamanxweme amanzi.
+xh:Ololiwe bamandulo babesebenzisa amandla ehashe kwaye babebaleka kwimizila eyenziwe ngeenkuni okanye nge-iron.
+xh:Oko kuquka umhlaba omninzi waseAntarctica, apho umhlaba omninzi ungafumani liqhwa kwaphela.
+xh:Igama "inja yasekhaya" lisetyenziselwa ukubiza izinja zasekhaya neziphila ngasendle.
+
+# Texts are from random articles
+yo:Awon ogede un wa lorisirisi itobi ati awo nigba ti won ba ti pon.
+yo:Odò jẹ́ ojú-ọ̀nà fún omi tó ń ṣàn ní orí ilẹ̀ láti ibi gíga sí ibi ìsàlẹ̀.
+yo:Òjò jẹ́ omi tí ó ń rọ̀ láti sánmọ̀, tí ó ṣì ń di omi ní orí ilẹ̀.
+yo:Àìsí ewéko jẹ́ kí orí ilẹ̀ kó mọ́ nìí àbò rárá, ilẹ̀ le là tàbí kó fọ́.
+yo:Bí ìyípopyípo omi ṣe ń ṣẹlẹ̀ rèé: Kùrukùru omi yóò gòkè lọ sójú sánmà, yóò wá di òjò.
+
+zh:樹在減少土地侵蝕及調整氣候上相當的重要，樹可以從空氣中吸收二氧化碳，將大量的碳儲存在組織內。
+zh:而其餘的，就在大氣中通過從地表蒸發成水汽或滲透為地下水。
+zh:在英國等國家，有軌電車和火車的差異很明確，而且在法律中有明確規定。
+zh:滩地可能是覆盖盐的平地。风成过程是形成荒漠景观的主要诱因。
+zh:狗的汗腺多分布在脚掌上，因此出汗的时候会在地上留下湿的脚印。
+
+zu:Isihlahla noma umuthi yisitshalo eside esinamagatsha namacembe, esakhiwe ngokhuni.
+zu:Kwesinye isikhathi umfula uchazwa njengomkhulu kunomfula, kodwa hhayi njalo: ulimi aluqondakali.
+zu:Impisi inezinyawo zangaphambili ezinde kunezinyawo zangemuva.
+zu:Izindlovu zisaba abantu kuphela kodwa uma zibuthakathaka amabhubhesi angazibulala.
+zu:Inja isilwane. Insikazi yenja injakazi. Iduna yenja ichalaha.
