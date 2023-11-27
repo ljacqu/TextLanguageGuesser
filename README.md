@@ -2,6 +2,13 @@
 
 PHP backend for REST calls to a language guessing game; intended for integration by Nightbot, a Twitch bot.
 
+***
+
+**ARCHIVED** in favor of [ljacqu/NightbotQuiz](https://github.com/ljacqu/NightbotQuiz), which uses a database,
+it can run multiple quizzes for different people, and it saves answer by different people before solving the question.
+
+***
+
 ![Screenshot](screenshot.png)
 
 State is saved in files and may be susceptible to rare timing issues, e.g. if a question is answered and a new
